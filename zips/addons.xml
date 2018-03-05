@@ -20,7 +20,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.blamo" version="2.5.0" name="Death Streams" provider-name="Mr. Blamo">
+<addon id="plugin.video.blamo" version="2.5.1" name="Death Streams" provider-name="Mr. Blamo">
     <requires>        
 		<import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -81,7 +81,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-<addon id="plugin.video.dsrdplus" version="1.0.9" name="Death Streams RD" provider-name="Mr. Blamo">
+<addon id="plugin.video.dsrdplus" version="1.1.0" name="Death Streams RD" provider-name="Mr. Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.futures" version="2.2.0"/>
@@ -260,7 +260,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.6" provider-name="Mr. Blamo">
+<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.7" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -277,7 +277,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.3" provider-name="Mr. Blamo">
+<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.4" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
