@@ -429,7 +429,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.placenta" name="Placenta Module" version="1.2.5" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.2.6" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
@@ -589,7 +589,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<platform>all</platform>
 	</extension>
 </addon>
-<addon id="script.wraith" name="[COLOR purple]Wraith[/COLOR]" version="0.0.1" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
+<addon id="script.wraith" name="[COLOR purple]Wraith[/COLOR]" version="0.0.2" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
   <requires>
     <import addon="xbmc.python"                     version="2.19.0"/>
     <import addon="plugin.program.super.favourites"/>
