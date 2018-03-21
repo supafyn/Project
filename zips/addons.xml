@@ -339,7 +339,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<license>Beerware rev. 42</license>
 	</extension>
 </addon>
-<addon id="script.extendedinfo" name="[COLOR purple]Wraith[/COLOR]" version="9.0.0" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
+<addon id="script.extendedinfo" name="[COLOR purple]Wraith[/COLOR]" version="9.0.1" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
   <requires>
     <import addon="xbmc.python"                     version="2.19.0"/>
     <import addon="plugin.program.super.favourites"/>
