@@ -89,12 +89,12 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.blamo" version="2.5.2" name="Death Streams" provider-name="Mr. Blamo">
+<addon id="plugin.video.blamo" version="2.5.3" name="Death Streams" provider-name="Mr. Blamo">
     <requires>        
 		<import addon="xbmc.python" version="2.19.0"/>
-        <import addon="script.module.pyxbmct" version="1.1.4"/>
+        <import addon="script.module.pyxbmct"/>
         <import addon="script.module.resolveurl" />
-		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.metahandler" />
 		<import addon="script.module.futures"/>
         <import addon="script.module.myconnpy" />
         <import addon="script.module.deathstreams"/>
@@ -211,19 +211,20 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-<addon id="plugin.video.dsrdplus" version="1.1.0" name="Death Streams RD" provider-name="Mr. Blamo">
+<addon id="plugin.video.dsrdplus" version="1.1.1" name="Death Streams RD" provider-name="Mr Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.futures" version="2.2.0"/>
         <import addon="script.module.metahandler" version="3.0.2" />
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
+        <import addon="script.module.pyxbmct" />
 		<import addon="script.deaths.themepak"/>
         <import addon="script.module.dateutil"/>
         <import addon="script.module.myconnpy"/>
-		<import addon="script.module.requests" />
+		<import addon="script.module.requests"/>
         <import addon="script.module.dsrd"/>
-        <import addon="script.module.six" version="1.9.0"/>
-        <import addon="script.module.resolveurl" />
+        <import addon="script.module.six"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.resolveurl"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="dsrd.py">
         <provides>video</provides>

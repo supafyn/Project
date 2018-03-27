@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.dsrdplus" version="1.1.0" name="Death Streams RD" provider-name="Mr Blamo. Blamo">
+<addon id="plugin.video.dsrdplus" version="1.1.1" name="Death Streams RD" provider-name="Mr Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.futures" version="2.2.0"/>
@@ -8,10 +8,11 @@
 		<import addon="script.deaths.themepak"/>
         <import addon="script.module.dateutil"/>
         <import addon="script.module.myconnpy"/>
-		<import addon="script.module.requests" />
+		<import addon="script.module.requests"/>
         <import addon="script.module.dsrd"/>
-        <import addon="script.module.six" version="1.9.0"/>
-        <import addon="script.module.resolveurl" />
+        <import addon="script.module.six"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.resolveurl"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="dsrd.py">
         <provides>video</provides>
