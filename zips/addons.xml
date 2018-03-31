@@ -122,13 +122,14 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	<platform>all</platform>
 	</extension>
 </addon>
-<addon id="plugin.video.chappaai" name="Chappa'ai" version="G.0.5" provider-name="Mr.Blamo">
+
+<addon id="plugin.video.chappaai" name="Chappa'ai" version="G.0.6" provider-name="Mr.Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
 		<import addon="script.module.futures" version="2.2.0"/>
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
+	<extension point="xbmc.python.pluginsource" library="chappaai.py">
 		<provides>video audio</provides>
 	</extension>
 	<extension point="xbmc.service" library="service.py" start="[login|startup]">
@@ -184,6 +185,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<news>Fixed duration error on non-default version of kodi</news>
 	</extension>
 </addon>
+
 <addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="1.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
@@ -314,7 +316,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.placenta" version="1.2.0" name="Placenta" provider-name="Team Afterbirth">
+<addon id="plugin.video.placenta" version="1.2.1" name="Placenta" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.placenta" />
@@ -573,7 +575,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.placenta" name="Placenta Module" version="1.2.8" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.2.9" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
