@@ -89,7 +89,7 @@
     <platform>all</platform>
   </extension>
 </addon>
-<addon id="plugin.video.aragon" name=" [COLOR gold][B]A[COLOR lime]RAGON [COLOR gold][B]L[COLOR lime]IVE[/B][/COLOR]" version="1.0.0" provider-name="Gandelf powered by JEN">
+<addon id="plugin.video.aragon" name=" [COLOR gold][B]A[COLOR lime]RAGON [COLOR gold][B]L[COLOR lime]IVE[/B][/COLOR]" version="1.0.1" provider-name="RACC/Gandelf powered by JEN">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -109,7 +109,7 @@
     <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
       <summary lang="en">ARAGON LIVE</summary>
-      <description lang="en">This addon is powered by JEN. This addon simply links to websites for content that are freely available on the internet . Use at your own risk!</description>
+      <description lang="en">Credit goes to RACC for the scripts used in this addon.This addon is powered by JEN. This addon simply links to websites for content that are freely available on the internet . Use at your own risk!</description>
       <disclaimer lang="en">This addon does not host any content.This addon does not form part of the Kodi Foundation. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.</disclaimer>
       <platform>all</platform>
         <website></website>
@@ -441,7 +441,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
             <genre>movies,usa</genre>
         </extension>
     </addon>
-<addon id="script.module.aragon" name="Aragon Live" version="1.0" provider-name="Gandelf/RACC">
+<addon id="script.module.aragon" name="Aragon Live" version="1.1" provider-name="Gandelf/RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
