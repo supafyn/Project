@@ -75,7 +75,7 @@
   </extension>
 
 </addon>
-<addon id="plugin.program.TerrorizeWizard" name="Terrorize Wizard" version="1.2" provider-name="Terrorize Kodi">
+<addon id="plugin.program.TerrorizeWizard" name="Terrorize Wizard" version="1.3" provider-name="Terrorize Kodi">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
