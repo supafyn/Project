@@ -422,7 +422,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 <addon id="plugin.video.squad"
 	name="The 69 Squad Tube"
-	version="0.0.4"
+	version="0.0.5"
 	provider-name="Mr.Blamo">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -807,7 +807,20 @@ This is a Non-profit resource, organized solely for educational purposes which i
                 <license>GPL v3</license>
         </extension>
 </addon>
-
+<addon id="script.module.ytpsearch" name="YouTube Playlist Search" version="0.0.4" provider-name="MuadDib">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="plugin.video.youtube"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <language>en</language>
+        <summary lang="en">Searches passed playlists on YouTube for matching content</summary>
+        <description lang="en"/>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
 <addon id="script.neptune.artwork" version="1.1.2" name="Neptune Rising Artwork" provider-name="Mr. Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
