@@ -501,7 +501,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 <addon id="plugin.video.squad"
 	name="The 69 Squad Tube"
-	version="0.0.5"
+	version="0.0.7"
 	provider-name="Mr.Blamo">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
