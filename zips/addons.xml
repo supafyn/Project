@@ -359,7 +359,25 @@ This is a Non-profit resource, organized solely for educational purposes which i
         </assets>
     </extension>
 </addon>
-
+<addon id="plugin.video.dubbedanime" version="1.0.4" name="Dubbed Anime" provider-name="#">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en"></disclaimer>
+		<news></news>
+	</extension>
+</addon>
 <addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -557,7 +575,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 </addon>
 <addon id="plugin.video.squad"
 	name="The 69 Squad Tube"
-	version="0.0.8"
+	version="0.0.9"
 	provider-name="Mr.Blamo">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
