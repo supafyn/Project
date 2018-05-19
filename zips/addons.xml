@@ -284,7 +284,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.video.boxsets" name="Patron Box Sets" version="0.0.1" provider-name="Marcos Murillo">
+<addon id="plugin.video.boxsets" name="Patron Box Sets" version="0.0.2" provider-name="Marcos Murillo">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -480,7 +480,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<news></news>
 	</extension>
 </addon>
-<addon id="plugin.video.patron" name="Patron" version="0.0.5" provider-name="Marcos Murillo">
+<addon id="plugin.video.patron" name="Patron" version="0.0.6" provider-name="Marcos Murillo">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -508,7 +508,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <video_guide></video_guide>
     </extension>
 </addon>
-<addon id="plugin.video.patrontv" name="Patron TV" version="0.0.1" provider-name="Patron">
+<addon id="plugin.video.patrontv" name="Patron TV" version="0.0.2" provider-name="Patron">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.universalscrapers" />
