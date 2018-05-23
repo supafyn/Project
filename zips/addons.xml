@@ -199,7 +199,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	<platform>all</platform>
 	</extension>
 </addon>
-<addon id="plugin.video.chappaai" name="Chappa'ai" version="G.0.6" provider-name="Mr.Blamo">
+<addon id="plugin.video.chappaai" name="Chappa'ai" version="G.0.7" provider-name="Mr.Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -508,7 +508,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <video_guide></video_guide>
     </extension>
 </addon>
-<addon id="plugin.video.patrontv" name="Patron TV" version="0.0.2" provider-name="Patron">
+<addon id="plugin.video.patrontv" name="Patron TV" version="0.0.3" provider-name="Patron">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.universalscrapers" />
@@ -804,7 +804,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<license>Beerware rev. 42</license>
 	</extension>
 </addon>
-<addon id="script.extendedinfo" name="[COLOR purple]Wraith[/COLOR]" version="9.0.1" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
+<addon id="script.extendedinfo" name="[COLOR purple]Wraith[/COLOR]" version="9.0.3" provider-name="Revived by [COLOR purple]Mr.Blamo[/COLOR], original work by phil65">
   <requires>
     <import addon="xbmc.python"                     version="2.19.0"/>
     <import addon="plugin.program.super.favourites"/>
