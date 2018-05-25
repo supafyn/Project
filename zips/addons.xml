@@ -284,34 +284,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <platform>all</platform>
     </extension>
 </addon>
-<addon id="plugin.video.boxsets" name="Patron Box Sets" version="0.0.2" provider-name="Marcos Murillo">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides> video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en">Spanish Addon</summary>
-      <summary lang="he">Patron Box Sets</summary>
-      <description lang="en"></description>
-      <description lang="he"></description>
-      <disclaimer lang="en"></disclaimer>
-      <disclaimer lang="he"></disclaimer>
-      <platform>all</platform>
-        <website></website>
-        <video_guide></video_guide>
-    </extension>
-</addon>
 <addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="1.8" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
