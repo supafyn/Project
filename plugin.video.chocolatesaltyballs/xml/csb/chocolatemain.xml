@@ -26,6 +26,12 @@
 </dir>
 
 <dir>
+    <name>[B][COLORorange]Blamo's Collection (1 Click) [/COLOR][/B]</name>
+    <link>file://csb/oneclick.xml</link>
+</dir>
+
+
+<dir>
     <name>[B][COLORlimegreen]South Park[/COLOR][/B]</name>
     <link>file://csb/southpark.xml</link>
     <thumbnail>https://i.imgur.com/jK3Kzao.jpg</thumbnail>
