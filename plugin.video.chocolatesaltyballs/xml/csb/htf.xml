@@ -1,0 +1,20 @@
+<plugin>
+<title>[B][COLORorange]All Episodes[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/playlist/PL19B0B5CCFEF1C0C9/</link>
+<thumbnail>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_icon.png</thumbnail>
+<fanart>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[B][COLORlimegreen]KAPOW![/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/playlist/PL9DA338772A68C85A/</link>
+<thumbnail>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_icon.png</thumbnail>
+<fanart>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+<title>[B][COLORorange]TV Episodes[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/playlist/PLB41A78E48B73AAC0/</link>
+<thumbnail>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_icon.png</thumbnail>
+<fanart>https://gitlab.com/MrBlamo/Mr_Blamo_Repo/raw/master/_xmls/csb/icons/htf_fanart.jpg</fanart>
+</plugin>

@@ -40,7 +40,7 @@ class Generator:
         self.config.read('config.ini')
         
         self.tools_path=os.path.abspath(os.path.join(os.path.dirname(os.path.realpath(__file__))))
-        self.output_path="_" + self.config.get('locations', 'output_path')
+        self.output_path=self.config.get('locations', 'output_path')
         
         self.excludes=self.config.get('addon', 'excludes').split(',')
 
