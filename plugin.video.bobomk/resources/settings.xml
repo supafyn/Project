@@ -60,8 +60,8 @@
         <setting label="30063" type="text" id="tmdb_api_key" option="hidden" default="" visible="true"/>
         <setting label="30064" type="text" id="trakt_api_client_id" option="hidden" default="" visible="true"/>
         <setting label="30065" type="text" id="trakt_api_client_secret" option="hidden" default="" visible="true"/>
-        <setting label="30069" type="text" id="lastfm_api_key" option="hidden" default="3ec34c514a9230ebf006c8e24a8419d6" visible="true"/>
-        <setting label="30070" type="text" id="lastfm_secret" option="hidden" default="41314c7fc8a8d391d28fa9721e08fdf2" visible="true"/>
+        <setting label="30069" type="text" id="lastfm_api_key" option="hidden" default="" visible="true"/>
+        <setting label="30070" type="text" id="lastfm_secret" option="hidden" default="" visible="true"/>
         <setting id="TRAKT_ACCESS_TOKEN" label="" type="text" visible="false"/>
         <setting id="TRAKT_EXPIRES_AT" label="" type="text" visible="false"/>
         <setting id="TRAKT_REFRESH_TOKEN" label="" type="text" visible="false"/>
