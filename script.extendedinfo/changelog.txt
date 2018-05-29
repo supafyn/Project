@@ -1,3 +1,6 @@
+v9.0.4
+- Few minor tweaks
+- Changed api
 v9.0.3
 - Fixed loading hang
 - Edited few things to fix issues causing chappa'ai to hang using wraith

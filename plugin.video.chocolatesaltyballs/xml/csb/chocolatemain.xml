@@ -460,19 +460,6 @@
 </dir>
 
 <dir>
-	<title>[B][COLORorange]Brickleberry[/COLOR][/B]</title>
-	<meta>
-		<imdb/>
-		<content>tvshow</content>
-		<tvshowtitle>Brickleberry</tvshowtitle>
-		<year>2012</year>
-	</meta>
-	<link>tmdb_tv_show(44169, 2012, Brickleberry)</link>
-	<thumbnail>https://image.tmdb.org/t/p/w1280//4Uy151t8UGMoAXaFKx8ZAmvFn6q.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/w1280//lXUZiV9tpAyrHZ4hLsxtLhslQVl.jpg</fanart>
-</dir>
-
-<dir>
 	<title>[B][COLORlimegreen]Monkey Dust[/COLOR][/B]</title>
 	<meta>
 		<imdb/>
