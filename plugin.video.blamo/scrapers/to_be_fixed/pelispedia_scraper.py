@@ -31,7 +31,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import XHR
 
 logger = log_utils.Logger.get_logger()
-BASE_URL = 'http://www.pelispedia.tv'
+BASE_URL = 'https://www.pelispedia.tv'
 PK_URL = 'http://player.pelispedia.tv/template/protected.php'
 GK_URL = '/gkphp_flv/plugins/gkpluginsphp.php'
 DEL_LIST = ['sub', 'id']

@@ -29,7 +29,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
-BASE_URL = 'http://tunemovie.is'
+BASE_URL = 'http://tunemovie.net/'
 LINK_URL = '/ip.temp/swf/plugins/ipplugins.php'
 LINK_URL2 = '/ip.temp/swf/ipplayer/ipplayer.php'
 XHR = {'X-Requested-With': 'XMLHttpRequest'}

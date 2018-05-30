@@ -26,8 +26,8 @@ from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 
-BASE_URL = 'https://movie4k.org'
-QUALITY_MAP = {None: None, '0': QUALITIES.LOW, '1': QUALITIES.LOW, '2': QUALITIES.MEDIUM, '3': QUALITIES.MEDIUM, '4': QUALITIES.HIGH, '5': QUALITIES.HIGH}
+BASE_URL = 'https://movie4k.io'
+QUALITY_MAP = {None: None, '0': QUALITIES.LOW, '1': QUALITIES.MEDIUM, '2': QUALITIES.HIGH, '3': QUALITIES.HIGH, '4': QUALITIES.HD720, '5': QUALITIES.HD1080}
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

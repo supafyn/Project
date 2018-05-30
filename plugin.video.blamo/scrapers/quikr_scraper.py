@@ -30,7 +30,7 @@ import scraper
 
 logger = log_utils.Logger.get_logger(__name__)
 
-BASE_URL = 'http://quikrmovies.to'
+BASE_URL = 'https://quikrmovies.to'
 DIRECT_HOSTS = ['quikr.stream', 'openload.stream', 'qvideos.stream']
 
 class Scraper(scraper.Scraper):

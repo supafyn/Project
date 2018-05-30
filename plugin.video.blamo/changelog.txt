@@ -1,13 +1,15 @@
+[B]Version 2.5.7[/B]]
+- Fixed some scrapers
+- Removed dead scrapers 
+- Few little Tweaks
 [B]Version 2.5.6[/B]]
 - Fixed a few scrapers
 - Removed dead scrapers 
-- Removed a few imports and some otherr things. (speed it up a bit)
+- Removed a few imports and some other things. (speed it up a bit)
 - removed a a few unneeded files
-
 [B]Version 2.5.5[/B]]
 - Fixed a source name
 - Moved 2 scrapers to fixed folder
-
 [B]Version 2.5.4[/B]]
 - Fixed import errors
 - Added a missing import. (blame the testers)

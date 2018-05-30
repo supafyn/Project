@@ -15,11 +15,11 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
-import re
-import scraper
-import urllib
-import urlparse
 import base64
+import urllib
+import scraper
+import urlparse
+import re
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2

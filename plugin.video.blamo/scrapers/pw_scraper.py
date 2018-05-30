@@ -26,8 +26,8 @@ from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 logger = log_utils.Logger.get_logger()
-QUALITY_MAP = {'DVD': QUALITIES.HIGH, 'TS': QUALITIES.MEDIUM, 'CAM': QUALITIES.LOW}
-BASE_URL = 'http://www.primewire.ag'
+QUALITY_MAP = {'HD': QUALITIES.HD720, 'DVD': QUALITIES.HIGH, 'TS': QUALITIES.MEDIUM, 'CAM': QUALITIES.LOW}
+BASE_URL = 'http://primewire.unblockall.org'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

@@ -1836,6 +1836,10 @@ msgctxt "#30659"
 msgid "Exclude Completed, Ended Shows from My Next Episodes"
 msgstr "Izdvoji završene emisije iz Moje sljedeće epizode"
 
+msgctxt "#30733"
+msgid "HD4K"
+msgstr "HD4K"
+
 msgctxt "#30660"
 msgid "HD1080"
 msgstr "HD1080"

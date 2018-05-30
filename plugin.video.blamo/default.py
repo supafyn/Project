@@ -32,6 +32,7 @@ import log_utils
 import utils
 import httplib
 import cookielib
+import plugintools
 from url_dispatcher import URL_Dispatcher
 from deaths_lib.db_utils import DB_Connection, DatabaseRecoveryError
 from deaths_lib.srt_scraper import SRT_Scraper

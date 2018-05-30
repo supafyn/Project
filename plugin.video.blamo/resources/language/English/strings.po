@@ -1849,6 +1849,10 @@ msgctxt "#30659"
 msgid "Exclude Completed, Ended Shows from My Next Episodes"
 msgstr ""
 
+msgctxt "#30733"
+msgid "HD4K"
+msgstr ""
+
 msgctxt "#30660"
 msgid "HD1080"
 msgstr ""

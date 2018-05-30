@@ -42,7 +42,7 @@ class Scraper(scraper.Scraper):
 
     @classmethod
     def get_name(cls):
-        return 'tvonline'
+        return 'TVOnline'
 
     def get_sources(self, video):
         source_url = self.get_url(video)

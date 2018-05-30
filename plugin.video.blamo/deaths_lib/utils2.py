@@ -116,8 +116,8 @@ def sort_list(sort_key, sort_direction, list_data):
         return sorted(list_data, key=lambda x: x[x['type']].get('votes', 0), reverse=reverse)
     elif sort_key == TRAKT_LIST_SORT.PERCENTAGE:
         return sorted(list_data, key=lambda x: x[x['type']].get('rating', 0), reverse=reverse)
-    elif sort_key == TRAKT_LIST_SORT.VOTES:
-        return sorted(list_data, key=lambda x: x[x['type']].get('votes', 0), reverse=reverse)
+    # elif sort_key == TRAKT_LIST_SORT.VOTES:
+        # return sorted(list_data, key=lambda x: x[x['type']].get('votes', 0), reverse=reverse)
     else:
         logger.log('Unrecognized list sort key: %s - %s' % (sort_key, sort_direction), log_utils.LOGWARNING)
         return list_data

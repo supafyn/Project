@@ -25,7 +25,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
-BASE_URL = 'https://myprojectfreetv.net'
+BASE_URL = 'http://www2.project-free-tv.ag'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

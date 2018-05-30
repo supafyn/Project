@@ -25,7 +25,7 @@ from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import QUALITIES
 
 logger = log_utils.Logger.get_logger(__name__)
-BASE_URL = 'https://www.mehlizmovies.is'
+BASE_URL = 'https://www1.mehlizmovieshd.com'
 Q_MAP = {'HD': QUALITIES.HD720, 'DVD': QUALITIES.HIGH, 'CAM': QUALITIES.LOW}
 
 class Scraper(scraper.Scraper):

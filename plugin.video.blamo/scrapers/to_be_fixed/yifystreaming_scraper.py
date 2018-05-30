@@ -32,7 +32,7 @@ import scraper
 
 logger = log_utils.Logger.get_logger()
 
-BASE_URL = 'http://yify.rocks'
+BASE_URL = 'https://ymovies.tv'
 CATEGORIES = {VIDEO_TYPES.MOVIE: 'category-movies', VIDEO_TYPES.EPISODE: 'category-tv-series'}
 
 class YifyStreaming_Scraper(scraper.Scraper):
@@ -129,4 +129,4 @@ class YifyStreaming_Scraper(scraper.Scraper):
         return results
 
     def _http_get(self, url, data=None, cache_limit=8):
-        return super(YifyStreaming_Scraper, self)._cached_http_get(url, self.base_url, self.timeout, data=data, cache_limit=cache_limit)
+        return self._cached_http_get(url, self.base_url, self.timeout, data=data, cache_limit=cache_limit)

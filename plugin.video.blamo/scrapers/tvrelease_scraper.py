@@ -21,8 +21,10 @@ import urllib
 import urlparse
 import kodi
 import log_utils  # @UnusedImport
+import requests
 import dom_parser
 import dom_parser2
+from deaths_lib import cfscrape
 from deaths_lib.utils2 import i18n
 from deaths_lib import scraper_utils
 from deaths_lib.constants import FORCE_NO_MATCH
@@ -44,7 +46,6 @@ class TVReleaseNet_Scraper(scraper.Scraper):
         self.timeout = timeout
         self.base_url = kodi.get_setting('%s-base_url' % (self.get_name()))
         self.search_link = '/?s='
-        self.goog = 'https://www.google.co.uk'
 
     @classmethod
     def provides(cls):
@@ -61,6 +62,7 @@ class TVReleaseNet_Scraper(scraper.Scraper):
         return '[%s] %s' % (item['quality'], item['host'])
 
     def get_sources(self, video):
+        scraper = cfscrape.create_scraper()
         source_url = self.get_url(video)
         hosters = []
         if source_url and source_url != FORCE_NO_MATCH:
@@ -107,22 +109,18 @@ class TVReleaseNet_Scraper(scraper.Scraper):
 
     def search(self, video_type, title, year, season=''):
         scrape = title.lower().replace(' ','+').replace(':', '')
-        search_url = urlparse.urljoin(self.base_url, '/?s=')
+        search_url = urlparse.urljoin(self.base_url, '?s=%s')
         search_url += urllib.quote(title)
         if video_type == VIDEO_TYPES.EPISODE:
             search_url += '&cat=TV-XviD,TV-Mp4,TV-720p,TV-480p,'
         else:
             search_url += '&cat=Movies-XviD,Movies-720,Movies-480p'
-        html = self._http_get(search_url, cache_limit=.25)
+        html = requests.get(search_url, cache_limit=.25)
         tables = dom_parser.parse_dom(html, 'table', {'class': 'posts_table'})
         if tables:
-            del tables[0]
-            html = ''.join(self.base_url)
+            html = ''.join(tables)
             pattern = "<a[^>]+>(?P<quality>[^<]+).*?href='(?P<url>[^']+)'>(?P<post_title>[^<]+).*?(?P<date>[^>]+)</td></tr>"
             date_format = '%Y-%m-%d %H:%M:%S'
             return self._blog_proc_results(html, pattern, date_format, video_type, title, year)
         else:
             return []
-
-    def _http_get(self, url, cache_limit=8):
-        return self._cached_http_get(url, self.base_url, self.timeout, cache_limit=cache_limit)

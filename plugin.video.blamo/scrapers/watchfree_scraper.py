@@ -26,7 +26,7 @@ from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 QUALITY_MAP = {'HD': QUALITIES.HIGH, 'LOW': QUALITIES.LOW}
-BASE_URL = 'http://putlockers.gy'
+BASE_URL = 'https://www.gowatchfreemovies.com'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

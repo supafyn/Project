@@ -85,7 +85,7 @@ class Scraper(scraper.Scraper):
     
     def search(self, video_type, title, year, season=''):  # @UnusedVariable
         results = []
-        search_url = scraper_utils.urljoin(self.base_url, '/show/search-shows-json')
+        search_url = scraper_utils.urljoin(self.base_url, 'http://dwatchseries.to/search/%s')
         headers = {'Referer': self.base_url}
         headers.update(XHR)
         params = {'ajax': 1, 's': title, 'type': 'TVShows'}

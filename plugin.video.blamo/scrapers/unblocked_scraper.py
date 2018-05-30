@@ -27,7 +27,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import XHR
 import scraper
 
-BASE_URL = 'http://www.watchepisodeseries.com'
+BASE_URL = 'http://www.watchepisodeseries.com/'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL
@@ -110,7 +110,7 @@ class Scraper(scraper.Scraper):
 
     def search(self, video_type, title, year, season=''):  # @UnusedVariable
         results = []
-        search_url = scraper_utils.urljoin(self.base_url, '/show/search-shows-json')
+        search_url = scraper_utils.urljoin(self.base_url, '/show/search-series-json')
         html = self._http_get(search_url, params={'q': title}, headers=XHR, cache_limit=1)
         js_result = scraper_utils.parse_json(html, search_url)
         match_year = ''

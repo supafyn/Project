@@ -22,7 +22,6 @@ import urlparse
 import log_utils  # @UnusedImport
 import kodi
 import dom_parser2
-from deaths_lib import debrid
 from deaths_lib import scraper_utils
 from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import SHORT_MONS
@@ -30,9 +29,9 @@ from deaths_lib.constants import VIDEO_TYPES
 from deaths_lib.utils2 import i18n
 import scraper
 
-BASE_URL = 'http://www.ddlvalley.me'
+BASE_URL = 'http://www.ddlvalley.cool'
 CATEGORIES = {VIDEO_TYPES.MOVIE: '/category/movies/', VIDEO_TYPES.TVSHOW: '/category/tv-shows/'}
-LOCAL_UA = 'Death Streams for Kodi/%s' % (kodi.get_version())
+LOCAL_UA = 'REMNANT for Kodi/%s' % (kodi.get_version())
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

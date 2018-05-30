@@ -1,6 +1,6 @@
 """
     Death Streams Addon
-    Copyright (C) 2014 tknorris
+    Copyright (C) 2017 Mr Blamo
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -16,17 +16,12 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import re
-import urllib
-import json
 import urlparse
 import time
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
 from deaths_lib import scraper_utils
-from deaths_lib import client
-from deaths_lib import directstream
-from deaths_lib import cfscrape
 from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import VIDEO_TYPES
 from deaths_lib.constants import QUALITIES
@@ -34,7 +29,7 @@ from deaths_lib.constants import XHR
 import scraper
 
 logger = log_utils.Logger.get_logger(__name__)
-BASE_URL = 'https://xmovies8.es'
+BASE_URL = 'http://xmovies8.cloud'
 PLAYER_URL = '/ajax/movie/load_player_v3'
 
 class Scraper(scraper.Scraper):
