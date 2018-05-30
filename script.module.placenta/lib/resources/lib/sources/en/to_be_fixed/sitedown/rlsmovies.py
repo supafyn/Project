@@ -24,14 +24,36 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['go.myvideolinks.net','newmyvideolink.xyz', 'beta.myvideolinks.xyz', 'videolinks.ga', 'myvideolinks.ga', 'ezfile.xyz', 'dl.myvideolinks.net']
-        self.base_link = 'http://dl.myvideolinks.net/'
-        self.search_link = '/?s=%s'
+        self.domains = ['rls-movies.com']
+        self.base_link = 'http://www.rls-movies.com'
+        self.search_link = '/search/%s/feed/rss2/'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
             url = {'imdb': imdb, 'title': title, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
+
+
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
+        try:
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
+
+
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        try:
+            if url == None: return
+
+            url = urlparse.parse_qs(url)
+            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
             url = urllib.urlencode(url)
             return url
         except:
@@ -56,26 +78,12 @@ class source:
             query = '%s S%02dE%02d' % (data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (data['title'], data['year'])
             query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
 
-            s = client.request(self.base_link)
-            s = re.findall('\'(http.+?)\'', s) + re.findall('\"(http.+?)\"', s)
-            s = [i for i in s if urlparse.urlparse(self.base_link).netloc in i and len(i.strip('/').split('/')) > 3]
-            s = s[0] if s else urlparse.urljoin(self.base_link, 'posts')
-            s = s.strip('/')
-
-            url = s + self.search_link % urllib.quote_plus(query)
+            url = self.search_link % urllib.quote_plus(query)
+            url = urlparse.urljoin(self.base_link, url)
 
             r = client.request(url)
 
-            r = client.parseDOM(r, 'h2', attrs = {'class': 'post-title'})
-            r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a', ret='title'))
-            r = [(i[0], i[1], re.sub('(\.|\(|\[|\s)(\d{4}|3D)(\.|\)|\]|\s|)(.+|)', '', i[1]), re.findall('[\.|\(|\[|\s](\d{4}|)([\.|\)|\]|\s|].+)', i[1])) for i in r]
-            r = [(i[0], i[1], i[2], i[3][0][0], i[3][0][1]) for i in r if i[3]]
-            r = [(i[0], i[1], i[2], i[3], re.split('\.|\(|\)|\[|\]|\s|\-', i[4])) for i in r]
-            r = [i for i in r if cleantitle.get(title) == cleantitle.get(i[2]) and data['year'] == i[3]]
-            r = [i for i in r if not any(x in i[4] for x in ['HDCAM', 'CAM', 'DVDR', 'DVDRip', 'DVDSCR', 'HDTS', 'TS', '3D'])]
-            r = [i for i in r if '1080p' in i[4]][:1] + [i for i in r if '720p' in i[4]][:1]
-
-            posts = [(i[1], i[0]) for i in r]
+            posts = client.parseDOM(r, 'item')
 
             hostDict = hostprDict + hostDict
 
@@ -83,14 +91,13 @@ class source:
 
             for post in posts:
                 try:
-                    t = post[0]
+                    t = client.parseDOM(post, 'title')[0]
+                    u = client.parseDOM(post, 'enclosure', ret='url', attrs={'type': 'video.+?'})
 
-                    u = client.request(post[1])
-                    u = re.findall('\'(http.+?)\'', u) + re.findall('\"(http.+?)\"', u)
-                    u = [i for i in u if not '/embed/' in i]
-                    u = [i for i in u if not 'youtube' in i]
+                    s = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+) (?:GiB|MiB))', post)
+                    s = s[0] if s else '0'
 
-                    items += [(t, i) for i in u]
+                    items += [(t, i, s) for i in u]
                 except:
                     pass
 
@@ -125,8 +132,8 @@ class source:
                     if '3d' in fmt: info.append('3D')
 
                     try:
-                        size = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+) (?:GB|GiB|MB|MiB))', item[2])[-1]
-                        div = 1 if size.endswith(('GB', 'GiB')) else 1024
+                        size = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+) (?:GiB|MiB))', item[2])[-1]
+                        div = 1 if size.endswith('GiB') else 1024
                         size = float(re.sub('[^0-9|/.|/,]', '', size))/div
                         size = '%.2f GB' % size
                         info.append(size)

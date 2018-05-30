@@ -28,7 +28,7 @@ class source:
         self.language = ['en']
         self.domains = ['filmxy.cc,filmxy.me']
         self.base_link = 'https://www.filmxy.me/'
-        self.search_link = '%s/wp-json/wp/v2/posts?search=%s'
+        self.search_link = '/%s/wp-json/wp/v2/posts?search=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

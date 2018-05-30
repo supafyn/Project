@@ -14,19 +14,21 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import re,traceback,urllib,urlparse,json
+
+import re,urllib,urlparse,json
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
-from resources.lib.modules import log_utils
+from resources.lib.modules import directstream
+
 
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['xmovies8.tv', 'xmovies8.ru', 'xmovies8.cloud']
-        self.base_link = 'http://xmovies8.cloud/'
-        self.search_link = 'https://search.' + self.domains[2] +'/?q=%s&page=1'
+        self.domains = ['xmovies8.tv', 'xmovies8.ru']
+        self.base_link = 'https://xmovies8.es'
+        self.search_link = '/movies/search?s=%s'
 
     def matchAlias(self, title, aliases):
         try:
@@ -43,8 +45,6 @@ class source:
             url = urllib.urlencode(url)
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
@@ -54,9 +54,8 @@ class source:
             url = urllib.urlencode(url)
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return
+
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
@@ -67,58 +66,45 @@ class source:
             url = urllib.urlencode(url)
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return
 
     def searchShow(self, title, season, year, aliases, headers):
         try:
             title = cleantitle.normalize(title)
-
-            url = self.search_link % urllib.quote_plus('%s Season %01d' % (title, int(season)))
-            r = client.request(url)
-
-            r = client.parseDOM(r, 'div', attrs={'class': 'item_movie'})[0]
-
-            if r:
-                url = client.parseDOM(r, 'a', ret='href')[0]
-                url = re.sub(r'\/\/xmovies8\.es', '', url)
-            # if sr:
-            #     r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #     r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #     r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #     r = [(i[0], re.findall('(.+?)\s+-\s+S(\d+)', i[1])) for i in r]
-            #     r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #     r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
-            # else:
-            #     url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s Season %01d' % (title.replace('\'', '-'), int(season)))))
-            #     sr = client.request(url, headers=headers, timeout='10')
-            #     if sr:
-            #         r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #         r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #         r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #         r = [(i[0], re.findall('(.+?)\s+-\s+Season\s+(\d+)', i[1])) for i in r]
-            #         r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #         r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
-            #     else:
-            #         url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s %01d' % (title.replace('\'', '-'), int(year)))))
-            #         sr = client.request(url, headers=headers, timeout='10')
-            #         if sr:
-            #             r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #             r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #             r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #             r = [(i[0], re.findall('(.+?) \((\d{4})', i[1])) for i in r]
-            #             r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #             r = [i[0] for i in r if t == cleantitle.get(i[1]) and year == i[2]][0]
-            # url = re.findall('(?://.+?|)(/.+)', r)[0]
-            # url = client.replaceHTMLCodes(url)
-            #
-            # return url.encode('utf-8')
-
-            return url
+            t = cleantitle.get(title)
+            url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s S%02d' % (title.replace('\'', '-'), int(season)))))
+            sr = client.request(url, headers=headers, timeout='10')
+            if sr:
+                r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                r = [(i[0], re.findall('(.+?)\s+-\s+S(\d+)', i[1])) for i in r]
+                r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
+            else:
+                url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s Season %01d' % (title.replace('\'', '-'), int(season)))))
+                sr = client.request(url, headers=headers, timeout='10')
+                if sr:
+                    r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                    r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                    r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                    r = [(i[0], re.findall('(.+?)\s+-\s+Season\s+(\d+)', i[1])) for i in r]
+                    r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                    r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
+                else:
+                    url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s %01d' % (title.replace('\'', '-'), int(year)))))
+                    sr = client.request(url, headers=headers, timeout='10')
+                    if sr:
+                        r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                        r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                        r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                        r = [(i[0], re.findall('(.+?) \((\d{4})', i[1])) for i in r]
+                        r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                        r = [i[0] for i in r if t == cleantitle.get(i[1]) and year == i[2]][0]
+            url = re.findall('(?://.+?|)(/.+)', r)[0]
+            url = client.replaceHTMLCodes(url)
+            return url.encode('utf-8')
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return
 
     def searchMovie(self, title, year, aliases, headers):
@@ -140,9 +126,8 @@ class source:
             url = client.replaceHTMLCodes(url)
             return url.encode('utf-8')
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return
+
 
     def sources(self, url, hostDict, hostprDict):
         try:
@@ -166,45 +151,57 @@ class source:
             url = re.sub('/watching.html$', '', url.strip('/'))
             url = url + '/watching.html'
 
-            p = client.request(url)
+            p = client.request(url, headers=headers, timeout='10')
 
             if episode > 0:
                 r = client.parseDOM(p, 'div', attrs={'class': 'ep_link.+?'})[0]
                 r = zip(client.parseDOM(r, 'a', ret='href'), client.parseDOM(r, 'a'))
                 r = [(i[0], re.findall('Episode\s+(\d+)', i[1])) for i in r]
                 r = [(i[0], i[1][0]) for i in r]
-                url = [i[0] for i in r if int(i[1]) == episode][0]
-                p = client.request(url, headers=headers, timeout='10')
+                r = [i[0] for i in r if int(i[1]) == episode][0]
+                p = client.request(r, headers=headers, timeout='10')
 
             referer = url
-
             id = re.findall('load_player\(.+?(\d+)', p)[0]
             r = urlparse.urljoin(self.base_link, '/ajax/movie/load_player_v3?id=%s' % id)
-            r = client.request(r, referer=referer, XHR=True)
-
+            r = client.request(r, headers=headers, referer=referer, XHR=True, timeout='10')
             url = json.loads(r)['value']
 
             if (url.startswith('//')):
                 url = 'https:' + url
 
-            r = client.request(url, referer=referer, XHR=True)
+            url = client.request(url, headers=headers, XHR=True, output='geturl', timeout='10')
 
-            headers = {
-                'User-Agent': client.randomagent(),
-                'Referer': referer
-            }
+            if 'openload.io' in url or 'openload.co' in url or 'oload.tv' in url:
+                sources.append({'source': 'openload.co', 'quality': 'HD', 'language': 'en', 'url': url, 'direct': False,'debridonly': False})
+                raise Exception()
 
-            headers = '|' + urllib.urlencode(headers)
+            r = client.request(url, headers=headers, XHR=True, timeout='10')
 
-            source = str(json.loads(r)['playlist'][0]['file']) + headers
-
-            sources.append({'source': 'CDN', 'quality': 'HD', 'language': 'en', 'url': source, 'direct': True, 'debridonly': False})
+            try:
+                src = json.loads(r)['playlist'][0]['sources']
+                links = [i['file'] for i in src if 'file' in i]
+                for i in links:
+                    try:
+                        sources.append(
+                            {'source': 'gvideo', 'quality': directstream.googletag(i)[0]['quality'], 'language': 'en',
+                             'url': i, 'direct': True, 'debridonly': False})
+                    except:
+                        pass
+            except:
+                pass
 
             return sources
         except:
-            failure = traceback.format_exc()
-            log_utils.log('XMovies - Exception: \n' + str(failure))
             return sources
 
+
     def resolve(self, url):
-        return url
+        try:
+            for i in range(3):
+                u = directstream.googlepass(url)
+                if not u == None: break
+
+            return u
+        except:
+            return

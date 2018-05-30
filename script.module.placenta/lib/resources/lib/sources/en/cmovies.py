@@ -28,7 +28,7 @@ class source:
         self.language = ['en']
         self.domains = ['cmovieshd.net']
         self.base_link = 'http://cmovieshd.net/'
-        self.search_link = 'search/?q=%s'
+        self.search_link = '/search/?q=%s'
 
     def matchAlias(self, title, aliases):
         try:
