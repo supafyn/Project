@@ -536,9 +536,6 @@
          <setting id="TVOnline-enable" type="bool" label="TVOnline Enabled" default="true" visible="true"/>
          <setting id="TVOnline-base_url" type="text" label="    Base Url" default="http://opentuner.is" visible="eq(-1,true)"/>
          <setting id="TVOnline-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
-         <setting id="TVOnline-enable" type="bool" label="TVOnline Enabled" default="true" visible="true"/>
-         <setting id="TVOnline-base_url" type="text" label="    Base Url" default="http://opentuner.is" visible="eq(-1,true)"/>
-         <setting id="TVOnline-sub_check" type="bool" label="    Include in Page Existence checks?" default="true" visible="eq(-2,true)"/>
          <setting id="TVRelease-enable" type="bool" label="TVRelease Enabled" default="true" visible="true"/>
          <setting id="TVRelease-base_url" type="text" label="    Base Url" default="http://tv-release.pw" visible="eq(-1,true)"/>
          <setting id="TVRelease-sub_check" type="bool" label="    Include in Page Existence checks?" default="false" visible="eq(-2,true)"/>
