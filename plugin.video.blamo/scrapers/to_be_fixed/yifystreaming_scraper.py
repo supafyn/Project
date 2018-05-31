@@ -32,7 +32,7 @@ import scraper
 
 logger = log_utils.Logger.get_logger()
 
-BASE_URL = 'https://ymovies.tv'
+BASE_URL = 'http://yifymovies.tv'
 CATEGORIES = {VIDEO_TYPES.MOVIE: 'category-movies', VIDEO_TYPES.EPISODE: 'category-tv-series'}
 
 class YifyStreaming_Scraper(scraper.Scraper):
