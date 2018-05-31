@@ -145,7 +145,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.aragon" name=" [COLOR gold][B]A[COLOR lime]RAGON [COLOR gold][B]L[COLOR lime]IVE[/B][/COLOR]" version="1.0.2" provider-name="RACC/Gandelf">
+<addon id="plugin.video.aragon" name=" [COLOR gold][B]A[COLOR lime]RAGON [COLOR gold][B]L[COLOR lime]IVE[/B][/COLOR]" version="1.0.3" provider-name="RACC/Gandelf">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -156,7 +156,7 @@
         <import addon="script.module.xmltodict" version="0.9.0" />
         <!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
-        <import addon="script.module.aragon" version="1.0" />
+        <import addon="script.module.mobdro" version="11" />
         <import addon="script.module.aragon.net" version="1.0" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -747,30 +747,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.aragon" name="Aragon Live" version="1.2" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Aragon Live  Dependency</summary>
-    <description lang="en_gb">Aragon Live  Dependency</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
 <addon id="script.module.aragon.net" name="Aragon Live Net" version="1.2" provider-name="RACC">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -895,6 +871,30 @@ This is a Non-profit resource, organized solely for educational purposes which i
     <language></language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.mobdro" name="Mobdro" version="11" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Mobdro</summary>
+    <description lang="en_gb">Mobdro</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
     <forum></forum>
     <website></website>
     <email></email>

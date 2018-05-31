@@ -40,7 +40,7 @@ class CachedSession(OriginalSession):
                            e.g ``cache.sqlite``
 
                            for ``mongodb``: it's used as database name
-                           
+
                            for ``redis``: it's used as the namespace. This means all keys
                            are prefixed with ``'cache_name:'``
         :param backend: cache backend name e.g ``'sqlite'``, ``'mongodb'``, ``'redis'``, ``'memory'``.
@@ -55,7 +55,7 @@ class CachedSession(OriginalSession):
         :param allowable_methods: cache only requests of this methods (default: 'GET')
         :type allowable_methods: tuple
         :kwarg backend_options: options for chosen backend. See corresponding
-                                :ref:`sqlite <backends_sqlite>`, :ref:`mongo <backends_mongo>` 
+                                :ref:`sqlite <backends_sqlite>`, :ref:`mongo <backends_mongo>`
                                 and :ref:`redis <backends_redis>` backends API documentation
         :param include_get_headers: If `True` headers will be part of cache key.
                                     E.g. after get('some_link', headers={'Accept':'application/json'})
@@ -89,7 +89,8 @@ class CachedSession(OriginalSession):
 
         def send_request_and_cache_response():
             response = super(CachedSession, self).send(request, **kwargs)
-            if response.status_code in self._cache_allowable_codes:
+            if response.status_code in self._cache_allowable_codes \
+                and len(response.content.strip()) > 5 :
                 self.cache.save_response(cache_key, response)
             response.from_cache = False
             return response
@@ -109,7 +110,8 @@ class CachedSession(OriginalSession):
                 except Exception:
                     return response
                 else:
-                    if new_response.status_code not in self._cache_allowable_codes:
+                    if new_response.status_code not in self._cache_allowable_codes \
+                        or len(new_response.content.strip()) < 5:
                         return response
                     return new_response
 
