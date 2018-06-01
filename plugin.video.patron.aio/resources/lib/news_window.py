@@ -20,7 +20,7 @@ from koding import Download
 from koding import route, Run 
 
 
-message_xml_url = "http://YOUR_URL.co.uk/message.xml"
+message_xml_url = "https://raw.githubusercontent.com/m3rc3/Patron-2/master/message.xml"
 
 @route(mode="dialog_example")
 def Dialog_Example():
@@ -30,6 +30,6 @@ def Dialog_Example():
     
     main_text = mytext
     my_buttons = ['Close']
-    my_choice = koding.Custom_Dialog(main_content=main_text,pos='center',size='900x600',buttons=my_buttons,transparency=90,highlight_color='yellow',header='Latest News')
+    my_choice = koding.Custom_Dialog(main_content=main_text,pos='center',size='900x600',buttons=my_buttons,transparency=90,highlight_color='yellow',header='Ultimas Noticias')
     if my_choice ==0: 
         root()

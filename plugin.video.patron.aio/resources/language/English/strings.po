@@ -1,5 +1,5 @@
-# Addon Name: Patron Peliculas
-# Addon id: plugin.video.patron
+# Addon Name: Patron AIO
+# Addon id: plugin.video.patron.aio
 # Addon Provider: EPB
 msgid ""
 msgstr ""

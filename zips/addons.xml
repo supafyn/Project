@@ -468,7 +468,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.patron.aio" name="Patron AIO" version="0.0.1" provider-name="EPB, Mr.Blamo">
+<addon id="plugin.video.patron.aio" name="Patron [COLOR red]A[COLOR snow]I[COLOR green]O[/COLOR]" version="0.0.2" provider-name="EPB, Mr.Blamo">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
