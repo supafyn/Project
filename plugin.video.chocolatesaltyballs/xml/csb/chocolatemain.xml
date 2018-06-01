@@ -30,6 +30,10 @@
     <link>file://csb/oneclick.xml</link>
 </dir>
 
+<dir>
+    <name>[B][COLORblue]Music[/COLOR][/B]</name>
+    <link>file://csb/music.xml</link>
+</dir>
 
 <dir>
     <name>[B][COLORlimegreen]South Park[/COLOR][/B]</name>
