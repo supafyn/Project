@@ -29,7 +29,7 @@ class source:
         self.language = ['en']
         self.domains = ['www.timetowatch.video']
         self.base_link = 'https://www.timetowatch.video'
-        self.search_link = '/?s=%s'
+        self.search_link = '%s/wp-json/wp/v2/posts?search=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
