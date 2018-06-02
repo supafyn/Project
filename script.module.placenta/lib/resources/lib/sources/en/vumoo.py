@@ -12,9 +12,12 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import urlparse, urllib, json, base64, hashlib, re, xbmc
+import urlparse,urllib,json,base64,hashlib,re,xbmc
 
-from resources.lib.modules import client, cleantitle, source_utils, directstream
+from resources.lib.modules import client
+from resources.lib.modules import cleantitle
+from resources.lib.modules import source_utils
+from resources.lib.modules import directstream
 from resources.lib.modules import pyaes
 
 class source:

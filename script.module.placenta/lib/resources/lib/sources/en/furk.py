@@ -12,10 +12,10 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.blamo
 
-import requests, json, sys
-from resources.lib.modules import source_utils, cleantitle, control
-
-
+import re,traceback,urllib,urlparse,requests,json,sys
+from resources.lib.modules import source_utils
+from resources.lib.modules import cleantitle
+from resources.lib.modules import control
 
 class source:
     def __init__(self):

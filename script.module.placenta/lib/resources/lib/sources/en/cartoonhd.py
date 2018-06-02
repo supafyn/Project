@@ -22,10 +22,10 @@ from resources.lib.modules import source_utils
 
 class source:
     def __init__(self):
-        self.priority = 0
+        self.priority = 1
         self.language = ['en']
-        self.domains = ['putlocker.systems', 'cartoonhd.website', 'cartoonhd.online', 'cartoonhd.cc', 'cartoonhd.life', 'cartoonhd.online', 'cartoonhd.systems']
-        self.base_link = 'https://cartoonhd.systems'
+        self.domains = ['putlocker.systems', 'cartoonhd.website', 'cartoonhd.online', 'cartoonhd.cc', 'cartoonhd.life', 'cartoonhd.online', 'cartoonhd.io']
+        self.base_link = 'https://cartoonhd.io'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:

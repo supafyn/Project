@@ -1,22 +1,18 @@
-# -*- coding: utf-8 -*-
-''' 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+# -*- coding: UTF-8 -*-
+#######################################################################
+ # ----------------------------------------------------------------------------
+ # "THE BEER-WARE LICENSE" (Revision 42):
+ # @tantrumdev wrote this file.  As long as you retain this notice you
+ # can do whatever you want with this stuff. If we meet some day, and you think
+ # this stuff is worth it, you can buy me a beer in return. - Muad'Dib
+ # ----------------------------------------------------------------------------
+#######################################################################
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+# Addon Name: Placenta
+# Addon id: plugin.video.placenta
+# Addon Provider: K1ept0
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-	Scraper for Placenta: plugin.video.placenta
-	Author: K1ept0
-'''
-import re,urllib,urlparse
+import re,traceback,urllib,urlparse,json
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
@@ -29,7 +25,7 @@ class source:
         self.language = ['en']
         self.domains = ['www.timetowatch.video']
         self.base_link = 'https://www.timetowatch.video'
-        self.search_link = '%s/wp-json/wp/v2/posts?search=%s'
+        self.search_link = '/?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
@@ -47,7 +43,7 @@ class source:
             return
         except:
             failure = traceback.format_exc()
-            log_utils.log('K1ept0 - Movie - Exception: \n' + str(failure))
+            log_utils.log('Timewatch - Movie - Exception: \n' + str(failure))
             return
 
     def sources(self, url, hostDict, hostprDict):
@@ -64,7 +60,7 @@ class source:
             return sources
         except:
             failure = traceback.format_exc()
-            log_utils.log('K1ept0 - Sources - Exception: \n' + str(failure))
+            log_utils.log('Timewatch - Sources - Exception: \n' + str(failure))
             return sources
 
     def resolve(self, url):

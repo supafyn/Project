@@ -28,7 +28,7 @@ class source:
         self.domains = ['movie25.ph', 'movie25.hk', 'tinklepad.is', 'tinklepad.ag', 'movie25.ag','5movies.to','movie25.unblocked.tv']
         self.base_link = 'http://5movies.to'
         self.search_link = '/search.php?q=%s'
-        self.search_link_2 = 'aHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vY3VzdG9tc2VhcmNoL3YxZWxlbWVudD9rZXk9QUl6YVN5Q1ZBWGlVelJZc01MMVB2NlJ3U0cxZ3VubU1pa1R6UXFZJnJzej1maWx0ZXJlZF9jc2UmbnVtPTEwJmhsPWVuJmN4PTAwODQ5Mjc2ODA5NjE4MzM5MDAwMzowdWd1c2phYm5scSZnb29nbGVob3N0PXd3dy5nb29nbGUuY29tJnE9JXM='
+        self.search_link_2 = 'https://www.googleapis.com/customsearch/v1element?key=AIzaSyCVAXiUzRYsML1Pv6RwSG1gunmMikTzQqY&rsz=filtered_cse&num=10&hl=en&cx=008492768096183390003:0ugusjabnlq&googlehost=www.google.com&q=%s'
         self.video_link = '/getlink.php?Action=get&lk=%s'
 
     def matchAlias(self, title, aliases):
@@ -57,7 +57,6 @@ class source:
         except:
             return
 
-
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
             if url == None: return
@@ -80,8 +79,6 @@ class source:
             return url
         except:
             pass
-
-
 
     def sources(self, url, hostDict, hostprDict):
         try:
@@ -142,7 +139,6 @@ class source:
             return sources
         except:
             return sources
-
 
     def resolve(self, url):
         if 'google' in url:

@@ -12,7 +12,7 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import re, urlparse, urllib
+import re,urlparse,urllib
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client

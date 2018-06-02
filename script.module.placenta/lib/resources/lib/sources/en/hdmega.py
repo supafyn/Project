@@ -22,7 +22,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['hdmega.net']
-        self.base_link = 'http://hdmega.net/'
+        self.base_link = 'http://hdmega.net'
         self.search_link = '/search-movies/%s.html'
 
 

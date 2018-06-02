@@ -27,21 +27,21 @@ class source:
         self.domains = ['putlockertv.to','putlocker.se']
         self.base_link = 'https://putlockertv.se'
         self.movie_search_path = ('search?keyword=%s')
-        self.episode_search_path = ('/filter?keyword=%s&sort=post_date:Adesc&type[]=series')
+        self.episode_search_path = ('/filter?keyword=%s&sort=post_date:Adesc'
         self.ajax_search_path = '/ajax/film/search?ts=%s&_=%s&sort=year:desc&keyword=%s'
         self.film_path = '/watch/%s'
-        self.info_path = '/ajax/episode/info?ts=%s&_=%s&id=%s&server=%s&update=0'
-        self.grabber_path = '/grabber-api/?ts=%s&_=%s&id=%s&token=%s&mobile=0'
-        self.film_url = ''
+        self.info_path = '/ajax/episode/info?ts=%s&_=%s&id=%s&server=28&update=0'
+        self.grabber_path = '/grabber-api/?ts=%s&id=%s&token=%s&mobile=0'
+        self.tooltip_path = '/ajax/film/tooltip/%s'
         
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
             clean_title = cleantitle.geturl(title)
             search_title = cleantitle.getsearch(title).replace(' ','+')
-            query = (self.movie_search_path % (search_title))
+            query = (self.movie_search_path % (clean_title))
             url = urlparse.urljoin(self.base_link, query)
             for r in range(1,3):
-                search_response = client.request(url, timeout=10)
+                search_response = client.request(url)
                 if search_response != None: break
             results_list = client.parseDOM(search_response, 'div', attrs={'class': 'item'})            
             for result in results_list:
@@ -49,7 +49,7 @@ class source:
                 url = urlparse.urljoin(self.base_link, tip)
                 tip_response = client.request(url, timeout=10)
                 if year in tip_response:
-                    film_id = re.findall('(\/watch\/)([^\"]*)', result)[0][1]
+                    film_id = re.findall('(\/watch\/)([^\"]*)', results_list)[0][1]
                     break
             query = (self.film_path % film_id)
             url = urlparse.urljoin(self.base_link, query)
@@ -59,7 +59,8 @@ class source:
                 if film_response != None: break
             ts = re.findall('(data-ts=\")(.*?)(\">)', film_response)[0][1]
             server_ids = client.parseDOM(film_response, 'div', ret='data-id', attrs={'class': 'server row'})
-            sources_dom_list = client.parseDOM(film_response, 'ul', attrs={'class': 'episodes range active'})
+            sources_dom_list = client.parseDOM(
+                film_response, 'ul', attrs={'class': 'episodes range active'})
             sources_list = []
             for i in sources_dom_list:
                 source_id = re.findall('([\/])(.{0,6})(\">)', i)[0][1]
@@ -71,7 +72,8 @@ class source:
                 'localtitle': localtitle,
                 'year': year,
                 'ts': ts,
-                'sources': sources_list
+                'sources': sources_list,
+                'id': film_id
             }
             url = urllib.urlencode(data)
             return url
@@ -145,7 +147,8 @@ class source:
                 'season': season,
                 'episode': episode,
                 'ts': ts,
-                'sources': sources_list
+                'sources': sources_list,
+                'id': film_id		 
             })
             url = urllib.urlencode(data)
             return url
@@ -157,12 +160,12 @@ class source:
     def sources(self, url, hostDict, hostprDict):
         sources = []
         try:
-            data = urlparse.parse_qs(url)            
-            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
-            data_sources = eval(data['sources'])
-            for i,s in data_sources:
-                token = str(self.___token(
-                    {'id': i, 'server': s, 'update': 0, 'ts': data['ts']}, 'iQDWcsGqN'))
+            data = urlparse.parse_qs(url)
+            data = dict((i, data[i][0]) if data[i] else (i, '') for i in data)
+            data['sources'] = re.findall("[^', u\]\[]+", data['sources'])
+            for i,s in data['sources']:
+                token = str(self.__token(
+                    {'id': i, 'server': 28, 'update': 0, 'ts': data['ts']}, 'iQDWcsGqN'))
                 query = (self.info_path % (data['ts'], token, i, s))
                 url = urlparse.urljoin(self.base_link, query)
                 for r in range(1,3):
@@ -173,7 +176,7 @@ class source:
                     if grabber_dict['type'] == 'direct':
                         token64 = grabber_dict['params']['token']
                         randint = random.randint(1000000,2000000)
-                        query = (self.grabber_path % (data['ts'], randint, i, token64))
+                        query = (self.grabber_path % (data['ts'], i, token64))
                         url = urlparse.urljoin(self.base_link, query)
                         for r in range(1,3):
                             response = client.request(url, XHR=True, timeout=10)
@@ -184,7 +187,7 @@ class source:
                             quality = source_utils.label_to_quality(quality)
                             urls = None
                             if 'googleapis' in j['file']:
-                                sources.append({'source': 'gvideo', 'quality': quality, 'language': 'en', 'url': j['file'], 'direct': True, 'debridonly': False})
+                                sources.append({'source': 'GVIDEO', 'quality': quality, 'language': 'en', 'url': j['file'], 'direct': True, 'debridonly': False})
                                 continue
                             if 'lh3.googleusercontent' in j['file'] or 'bp.blogspot' in j['file']:
                                 try:
