@@ -1,5 +1,14 @@
 <dir>
-  <title>Def Leppard - Hysteria</title>
-  <link>file://csb/music/hysteria.xml</link>
+  <title>Def Leppard</title>
+  <link>file://csb/music/deflep/def.xml</link>
+</dir>
+
+<dir>
+<title>Iron Maiden</title>
+      <meta>
+   <content>album<content>
+      </meta>
+  <link>file://csb/music/maiden/ironm.xml</link>
+  <thumbnail>https://lastfm-img2.akamaized.net/i/u/300x300/b2cf018fb80147428b698452b2512996.png</thumbnail>
 </dir>
 
