@@ -1143,9 +1143,13 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="skin.estuary_killzone" version="1.4.6" name="Estuary KillZone MOD" provider-name="phil65, Piers, SchisM, MR Blamo">
+<addon id="skin.estuary_killzone" version="1.4.7" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+		<import addon="script.grab.fanart" />
+		<import addon="script.skinshortcuts" />
+		<import addon="service.library.data.provider" version="0.0.7"/>
+		<import addon="resource.images.studios.white" />
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />

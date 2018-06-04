@@ -1,4 +1,9 @@
 [B]0.8.5[/B]
+• Major Update
+• Added a few things
+• Some edits and fixes
+
+[B]0.8.5[/B]
 • Updated language files from Transifex
 
 [B]0.8.3[/B]

@@ -14,7 +14,7 @@
 		<label></label>
 		<align>left</align>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<selectedcolor>selected</selectedcolor>
 		<scroll>false</scroll>
@@ -23,14 +23,14 @@
 	<default type="fadelabel">
 		<align>left</align>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 	</default>
 	<default type="button">
 		<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
@@ -41,14 +41,14 @@
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		<alttexturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</alttexturefocus>
 		<alttexturenofocus border="40">buttons/button-nofo.png</alttexturenofocus>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<font>font13</font>
 		<disabledcolor>disabled</disabledcolor>
 		<pulseonselect>no</pulseonselect>
 	</default>
 	<default type="textbox">
 		<align>left</align>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<font>font13</font>
 	</default>
 	<default type="progress">
@@ -70,7 +70,7 @@
 		<height>33</height>
 		<font>font13</font>
 		<reverse>yes</reverse>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<subtype>text</subtype>
 		<textoffsetx>-5</textoffsetx>
@@ -89,7 +89,7 @@
 		<textureupdisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-up.png</textureupdisabled>
 		<texturedowndisabled colordiffuse="disabled">buttons/spinctrl/arrow-light-down.png</texturedowndisabled>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<textoffsetx>7</textoffsetx>
 		<aligny>center</aligny>
@@ -108,7 +108,7 @@
 		<texturefocus border="40" colordiffuse="button_focus">buttons/button-fo.png</texturefocus>
 		<texturenofocus border="40">buttons/button-nofo.png</texturenofocus>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<textoffsetx>7</textoffsetx>
 		<align>left</align>
@@ -145,7 +145,7 @@
 		<textureslidernib>buttons/slider-nib.png</textureslidernib>
 		<textureslidernibfocus colordiffuse="button_focus">buttons/slider-nib.png</textureslidernibfocus>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 	</default>
 	<default type="mover">
@@ -160,7 +160,7 @@
 		<texturefocus border="40" colordiffuse="button_focus">buttons/dialogbutton-fo.png</texturefocus>
 		<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
 		<font>font13</font>
-		<textcolor>white</textcolor>
+		<textcolor>FF78F0F0</textcolor>
 		<disabledcolor>disabled</disabledcolor>
 		<invalidcolor>invalid</invalidcolor>
 		<textoffsetx>7</textoffsetx>
