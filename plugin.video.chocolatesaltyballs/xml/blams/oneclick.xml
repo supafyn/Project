@@ -1,4 +1,14 @@
 <item>
+<title>[COLOR=limegreen]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+<heading></heading>
+</item>
+
+<item>
+	<title>[COLOR=red]***************************[/COLOR]</title>
+<heading></heading>
+</item>
+
+<item>
 	<title>[B][COLORlimegreen]Black Panther 4K HDR[/COLOR][/B]</title>
 	<meta>
 		<imdb>tt1825683</imdb>
@@ -29,6 +39,24 @@
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//2yjSvEDuM3rLDng40erLsWkQRfn.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w1280//e9dVo1OXZL6sWinc9uIS0Foo4QG.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR purple]Jumanji[/COLOR] [COLOR blue]Welcome to the Jungle[/COLOR]</title>
+	<meta>
+		<imdb>tt2283362</imdb>
+		<content>movie</content>
+		<title>Jumanji: Welcome to the Jungle</title>
+		<year>2017</year>
+	</meta>
+	<link>
+		<sublink>https://rapidgator.net/file/74fbca7ee75c1056c0fa7d1b601e747d/jumanji.welcome.to.the.jungle.2017.bdrip.x264-sparks.mkv.html(RD)</sublink>
+	    <sublink>https://loadvid.online/embed/5ae0d7048f745</sublink>
+		<sublink>https://c-flamingo.betterstream.co/playback/59/82/e398b7bdda147cbf837d7ee266b683686b1063bdb8d543c93b659ce45fac8e5d1abf84366d5bf8ce72f11b2caf9e9768238cd74457bf17697f1540d2be559f1225a32643e125eb57aace8b4a97610642/Jumanji.Welcome.to.the.Jungle.2017.720p.BluRay.H264.AAC-RARBG.mp4?q=720</sublink>
+		<sublink>search</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//bXrZ5iHBEjH7WMidbUDQ0U2xbmr.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//rz3TAyd5kmiJmozp3GUbYeB5Kep.jpg</fanart>
 </item>
 
 <item>
@@ -323,6 +351,7 @@
 	<link>
 		<sublink>http://nitroflare.com/view/A327A175C58A765/S.A.S.W.S.2018.PROPER.720p.HDCAM.ENG-1XBET.mp4(RD)</sublink>
 		<sublink>https://1fichier.com/?08nj8j10s4(RD)</sublink>
+		<sublink>https://openload.co/embed/IOp-7kOS--o/5movies.to-Solo.A_Star_Wars_Story.2018.720p.HDCAM.ENG.NO.WATERMARK.mp4</sublink>
 		<sublink>search</sublink>
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//4oD6VEccFkorEBTEDXtpLAaz0Rl.jpg</thumbnail>
@@ -372,7 +401,7 @@
 		<tvshowtitle>Cobra Kai</tvshowtitle>
 		<year>2018</year>
 	</meta>
-	<link>file://csb/cobrakai.xml</link>
+	<link>file://blams/cobrakai.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//5qMupAz4A9EN5Rutrkmov45mNXZ.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w1280//x7QOl4QEVMOp6V4wsp3Kte3NLDY.jpg</fanart>
 </dir>

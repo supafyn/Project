@@ -1,0 +1,13 @@
+<plugin>
+<title>[B][COLORorange]Joe Cartoon - All Videos[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/channel/UCLY_sKr2uiTq8iTrE1QUR-Q/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
+
+<plugin>
+<title>[B][COLORorange]Joe Cartoon - Playlists[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/channel/UCLY_sKr2uiTq8iTrE1QUR-Q/playlists/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>

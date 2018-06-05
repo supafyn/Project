@@ -42,9 +42,9 @@ ownAddon   = xbmcaddon.Addon(id=addon_id)
 
 #######################################################################
 # My New Settings
-current_version             = '1' # increase this when you want the service to update the below settings
-enable_notification         = True
-updated_root_xml            = 'file://csb/chocolatemain.xml'
+current_version             = '2' # increase this when you want the service to update the below settings
+enable_notification         = False
+updated_root_xml            = 'file://chocolatemain.xml'
 updated_tvdb_api_key        = '98E369C1B7A19577'
 updated_tmdb_api_key        = 'e486e657ead95f7655afe9ab35d5131c'
 updated_trakt_api_id        = 'fd1b6017573565b41fb0d8d422195476f4f6595db62fc9ed62d5594a9de7467e'

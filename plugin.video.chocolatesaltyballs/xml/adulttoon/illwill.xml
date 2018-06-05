@@ -1,0 +1,13 @@
+<plugin>
+<title>[B][COLORorange]iLL WiLL PrEss - All Videos[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/channel/UC19RiHSy28vMxg_dC1AI_fA/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
+
+<plugin>
+<title>[B][COLORorange]iLL WiLL PrEss - Playlists[/COLOR][/B]</title>
+<link>plugin://plugin.video.youtube/channel/UC19RiHSy28vMxg_dC1AI_fA/playlists/</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>

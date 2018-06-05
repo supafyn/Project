@@ -3,7 +3,7 @@
     <category label="Customization">
         <setting label="32507" type="lsep"/>
         <setting label="30717" type="bool" id="metadata" default="false"/>
-        <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="false"/>
+        <setting label="Disable metadata Dialog" type="bool" id="disable_metadata_dialog" default="true"/>
         <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
         <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
         <setting label="32510" type="lsep" visible="false"/>
@@ -76,7 +76,7 @@
     <!-- login - future features for playlisters -->
     <category label="30770">
         <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
-        <setting id="root_xml" type="text" label="30060" option="hidden" default="file://csb/chocolatemain.xml" visible="false"/>
+        <setting id="root_xml" type="text" label="30060" option="hidden" default="file://chocolatemain.xml" visible="false"/>
         <setting id="search_db_location" type="text" label="30061" option="hidden" default="" visible="false"/>
     </category>
 

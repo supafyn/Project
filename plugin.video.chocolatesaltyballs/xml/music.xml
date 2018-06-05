@@ -1,6 +1,6 @@
 <dir>
   <title>Def Leppard</title>
-  <link>file://csb/music/deflep/def.xml</link>
+  <link>file://music/deflep/def.xml</link>
 </dir>
 
 <dir>
@@ -8,7 +8,7 @@
       <meta>
    <content>album<content>
       </meta>
-  <link>file://csb/music/maiden/ironm.xml</link>
+  <link>file://music/maiden/ironm.xml</link>
   <thumbnail>https://lastfm-img2.akamaized.net/i/u/300x300/b2cf018fb80147428b698452b2512996.png</thumbnail>
 </dir>
 
