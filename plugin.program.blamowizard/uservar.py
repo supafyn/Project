@@ -82,7 +82,7 @@ CONTACTFANART  = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = 'https://ia601504.us.archive.org/9/items/autobuilds_20180606/autobuilds.txt'
+WIZARDFILE     = ''
 #########################################################
 
 #########################################################
