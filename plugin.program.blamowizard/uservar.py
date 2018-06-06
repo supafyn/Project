@@ -104,9 +104,9 @@ REPOZIPURL     = ''
 # Enable Notification screen Yes or No
 ENABLE         = 'No'
 # Url to notification file
-NOTIFICATION   = 'https://raw.githubusercontent.com/MrBlamo420/wizard_files/master/notify.txt'
+NOTIFICATION   = ''
 # Use either 'Text' or 'Image'
-HEADERTYPE     = 'Text'
+HEADERTYPE     = ''
 HEADERMESSAGE  = ''
 # url to image if using Image 424x180
 HEADERIMAGE    = ''
