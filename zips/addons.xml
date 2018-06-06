@@ -43,6 +43,21 @@
     </extension>
 </addon>
 
+<addon id="plugin.program.blamowizard" name="69 Death Wizard" version="0.1" provider-name="Mr.Blamo">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">69 Death Wizard</summary>
+    <description lang="en">Blamo's Wizard allows access to Blamo's Builds</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.Kodivegas" name="Kodi Vegas" version="1.5" provider-name="Kodi Vegas">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
