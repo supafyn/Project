@@ -7,7 +7,7 @@ ADDON_ID       = xbmcaddon.Addon().getAddonInfo('id')
 ADDONTITLE     = '69 Death Wizard'
 EXCLUDES       = [ADDON_ID]
 # Text File with build info in it.
-BUILDFILE      = 'https://raw.githubusercontent.com/MrBlamo420/wizard_files/blob/master/autobuilds.txt'
+BUILDFILE      = 'https://raw.githubusercontent.com/MrBlamo420/wizard_files/master/autobuilds.txt'
 # How often you would list it to check for build updates in days
 # 0 being every startup of kodi
 UPDATECHECK    = 0
@@ -82,7 +82,7 @@ CONTACTFANART  = 'http://'
 # Enable Auto Update 'Yes' or 'No'
 AUTOUPDATE     = 'Yes'
 # Url to wizard version
-WIZARDFILE     = 'https://raw.githubusercontent.com/MrBlamo420/wizard_files/blob/master/autobuilds.txt'
+WIZARDFILE     = 'https://raw.githubusercontent.com/MrBlamo420/wizard_files/master/autobuilds.txt'
 #########################################################
 
 #########################################################
