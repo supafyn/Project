@@ -711,7 +711,7 @@ def youtubeMenu(url=None):
 
 def maintMenu(view=None):
 	on = '[B][COLOR green]ON[/COLOR][/B]'; off = '[B][COLOR red]OFF[/COLOR][/B]'
-	autoclean   = 'false' if AUTOCLEANUP    == 'false' else 'false'
+	autoclean   = 'true' if AUTOCLEANUP    == 'true' else 'false'
 	cache       = 'true' if AUTOCACHE      == 'true' else 'false'
 	packages    = 'true' if AUTOPACKAGES   == 'true' else 'false'
 	thumbs      = 'true' if AUTOTHUMBS     == 'true' else 'false'

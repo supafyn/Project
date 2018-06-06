@@ -401,7 +401,7 @@ if KEEPLOGIN == 'true':
 else: wiz.log("[Login Data] Not Enabled", xbmc.LOGNOTICE)
 
 wiz.log("[Auto Clean Up] Started", xbmc.LOGNOTICE)
-if AUTOCLEANUP == 'false':
+if AUTOCLEANUP == 'true':
 	service = False
 	days = [TODAY, TOMORROW, THREEDAYS, ONEWEEK]
 	feq = int(float(AUTOFEQ))
