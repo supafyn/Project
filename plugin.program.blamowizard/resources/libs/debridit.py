@@ -48,7 +48,7 @@ KEEPTRAKT      = wiz.getS('keepdebrid')
 REALSAVE       = wiz.getS('debridlastsave')
 COLOR1         = uservar.COLOR1
 COLOR2         = uservar.COLOR2
-ORDER          = ['placenta', 'blamo', 'dsrdplus', 'neptune', 'url', 'resolveurl']
+ORDER          = ['placenta', 'blamo', 'neptune', 'resolveurl', 'url']
 
 DEBRIDID = { 
 	'placenta': {
@@ -75,18 +75,6 @@ DEBRIDID = {
 		'default'  : 'realdebrid_client_id',
 		'data'     : ['realdebrid_auth', 'realdebrid_token', 'realdebrid_refresh', 'realdebrid_client_id', 'realdebrid_client_secret'],
 		'activate' : 'RunPlugin(plugin://plugin.video.blamo/?action=realdebridauth)'},
-	'dsrdplus': {
-		'name'     : 'Death Streams RD',
-		'plugin'   : 'plugin.video.dsrdplus',
-		'saved'    : 'realdsrdplus',
-		'path'     : os.path.join(ADDONS, 'plugin.video.dsrdplus'),
-		'icon'     : os.path.join(ADDONS, 'plugin.video.dsrdplus', 'icon.png'),
-		'fanart'   : os.path.join(ADDONS, 'plugin.video.dsrdplus', 'fanart.jpg'),
-		'file'     : os.path.join(REALFOLD, 'dsrdplus_debrid'),
-		'settings' : os.path.join(ADDOND, 'plugin.video.dsrdplus', 'settings.xml'),
-		'default'  : 'realdebrid_client_id',
-		'data'     : ['realdebrid_auth', 'realdebrid_token', 'realdebrid_refresh', 'realdebrid_client_id', 'realdebrid_client_secret'],
-		'activate' : 'RunPlugin(plugin://plugin.video.dsrdplus/?action=realdebridauth)'},
 	'neptune': {
 		'name'     : 'Neptune',
 		'plugin'   : 'plugin.video.neptune',
@@ -100,12 +88,12 @@ DEBRIDID = {
 		'data'     : ['realdebrid_auth', 'realdebrid_token', 'realdebrid_refresh', 'realdebrid_client_id', 'realdebrid_client_secret'],
 		'activate' : 'RunPlugin(plugin://plugin.video.neptune/?action=realdebridauth)'},
 	'resolveurl': {
-		'name'     : 'ResolveURL',
-		'plugin'   : 'plugin.video.resolveurl',
+		'name'     : 'Resolve URL',
+		'plugin'   : 'script.module.resolveurl',
 		'saved'    : 'resolveurl',
-		'path'     : os.path.join(ADDONS, 'plugin.video.resolveurl'),
-		'icon'     : os.path.join(ADDONS, 'plugin.video.resolveurl', 'icon.png'),
-		'fanart'   : os.path.join(ADDONS, 'plugin.video.resolveurl', 'fanart.jpg'),
+		'path'     : os.path.join(ADDONS, 'script.module.resolveurl'),
+		'icon'     : os.path.join(ADDONS, 'script.module.resolveurl', 'icon.png'),
+		'fanart'   : os.path.join(ADDONS, 'script.module.resolveurl', 'fanart.jpg'),
 		'file'     : os.path.join(REALFOLD, 'resolveurl_debrid'),
 		'settings' : os.path.join(ADDOND, 'script.module.resolveurl', 'settings.xml'),
 		'default'  : 'RealDebridResolver_client_id',
