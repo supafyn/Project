@@ -1051,9 +1051,9 @@
 					<orientation>horizontal</orientation>
 					<itemgap>0</itemgap>
 					<left>-8</left>
-					<width>480</width>
-					<height>110</height>
-					<top>0</top>
+					<width>490</width>
+					<height>120</height>
+					<top>20</top>
 					<onup>SetFocus(9000)</onup>
 					<onup>PageDown</onup>
 					<onup>PageDown</onup>
