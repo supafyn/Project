@@ -43,7 +43,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.blamowizard" name="69 Death Wizard" version="0.9" provider-name="Mr.Blamo">
+<addon id="plugin.program.blamowizard" name="69 Death Wizard" version="1.0" provider-name="Mr.Blamo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -1158,7 +1158,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="skin.estuary_killzone" version="1.4.7" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
+<addon id="skin.estuary_killzone" version="1.4.8" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" />
