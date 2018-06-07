@@ -111,6 +111,8 @@
         <setting id="provider.icouchtuner" type="bool" label="ICOUCHTUNER" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="false" />
+        <setting id="provider.m4u" type="bool" label="M4U" default="false" />
+        <setting id="provider.movieon" type="bool" label="MOVIEON" default="false" />
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />
         <setting id="provider.plocker" type="bool" label="PLOCKER" default="true" />
         <setting id="provider.popcorn" type="bool" label="POPCORN" default="true" />
@@ -130,6 +132,7 @@
         <setting id="provider.wrzcraft" type="bool" label="WRZCRAFT" default="true" />
         <setting id="provider.xmovies" type="bool" label="XMOVIES" default="true" />
         <setting id="provider.xwatchseries" type="bool" label="XWATCHSERIES" default="true" />
+        <setting id="provider.yvid" type="bool" label="YVID" default="true" />
         <setting label="Italian" type="lsep" />
         <setting id="provider.pronit" type="bool" label="PRON" default="true" />
         <setting label="German" type="lsep" />
