@@ -74,7 +74,7 @@
         <setting type="lsep" label="32343" />
         <setting id="bookmarks" type="bool" label="32344" default="true" />
         <setting type="lsep" label="32372" />
-        <setting id="crefresh" type="bool" label="32373" default="false" />
+        <setting id="crefresh" type="bool" label="32373" default="true" />
     </category>
     <category label="32345">
         <setting label="English" type="lsep" />
@@ -85,7 +85,6 @@
         <setting id="provider.1080P" type="bool" label="1080P" default="true" />
         <setting id="provider.afdah" type="bool" label="AFDAH" default="true" />
         <setting id="provider.allrls" type="bool" label="ALLRLS" default="true" />
-        <setting id="provider.civi" type="bool" label="CIVI" default="true" />
         <setting id="provider.pronen" type="bool" label="PRONEN" default="false" />
         <setting id="provider.bmoviez" type="bool" label="BMOVIEZ" default="true" />
         <setting id="provider.bnwmovies" type="bool" label="BNWMOVIES" default="true" />
@@ -93,7 +92,9 @@
         <setting id="provider.bobp" type="bool" label="BOBP" default="true" />
         <setting id="provider.cartoonhd" type="bool" label="CARTOONHD" default="true" />
         <setting id="provider.cinemamega" type="bool" label="CINEMAMEGA" default="true" />
+        <setting id="provider.civi" type="bool" label="CIVI" default="true" />
         <setting id="provider.cmovies" type="bool" label="CMOVIES" default="true" />
+        <setting id="provider.cmovie" type="bool" label="CUMOVIE" default="true" />
         <setting id="provider.coolmoviezone" type="bool" label="COOLMOVIEZONE" default="true" />
         <setting id="provider.cooltv" type="bool" label="COOLTV" default="true" />
         <setting id="provider.divxcrawler" type="bool" label="DIVXCRAWLER" default="true" />
@@ -111,8 +112,10 @@
         <setting id="provider.icouchtuner" type="bool" label="ICOUCHTUNER" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="false" />
-        <setting id="provider.m4u" type="bool" label="M4U" default="false" />
         <setting id="provider.movieon" type="bool" label="MOVIEON" default="false" />
+        <setting id="provider.m4u" type="bool" label="M4U" default="true" />
+        <setting id="provider.megahd" type="bool" label="MEGAHD" default="true" />
+        <setting id="provider.monm" type="bool" label="MONMN" default="false" />
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />
         <setting id="provider.plocker" type="bool" label="PLOCKER" default="true" />
         <setting id="provider.popcorn" type="bool" label="POPCORN" default="true" />
