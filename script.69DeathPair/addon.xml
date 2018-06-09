@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.69DeathPair" name="[COLOR purple]69 Death [COLOR orange]Pairing Tool[/COLOR]" version="1.0" provider-name="[B][I][COLOR cyan]Klepto[/COLOR][/I][/B]">
+<addon id="script.69DeathPair" name="[COLOR purple]69 Death [COLOR orange]Pairing Tool[/COLOR]" version="1.1" provider-name="[B][I][COLOR cyan]Klepto[/COLOR][/I][/B]">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
