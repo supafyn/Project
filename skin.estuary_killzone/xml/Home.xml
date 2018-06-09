@@ -149,7 +149,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/movie.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -212,7 +212,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -281,7 +281,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(music,files)"/>
@@ -350,7 +350,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
@@ -387,7 +387,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31105]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>
@@ -458,7 +458,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
@@ -528,7 +528,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
-						<param name="image_path" value="special://skin/extras/home-images/tv.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31143]" />
 						<param name="button_label" value="$LOCALIZE[31144]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser,addons://user/xbmc.pvrclient,return)"/>
@@ -579,7 +579,7 @@
 						<content>favourites://</content>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/add-ons.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31025]" />
 						<param name="button_label" value="$LOCALIZE[31116]" />
 						<param name="button_onclick" value=""/>
@@ -676,7 +676,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/weather.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31120]" />
 						<param name="button_label" value="$LOCALIZE[31121]" />
 						<param name="button_onclick" value="ActivateWindow(servicesettings,weather)"/>
@@ -744,7 +744,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/music.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
 						<param name="text_label" value="$LOCALIZE[31104]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,files,return)"/>
@@ -777,7 +777,7 @@
 				</include>
 				<control type="fixedlist" id="9000">
 					<left>0</left>
-					<top>150</top>
+					<top>225</top>
 					<width>462</width>
 					<bottom>-10</bottom>
 					<movement>6</movement>
@@ -957,7 +957,7 @@
 
 				<control type="fixedlist" id="9001">
 					<left>-500</left>
-					<top>150</top>
+					<top>225</top>
 					<width>462</width>
 					<bottom>-10</bottom>
 					<movement>6</movement>
@@ -1053,7 +1053,7 @@
 					<left>-8</left>
 					<width>490</width>
 					<height>120</height>
-					<top>20</top>
+					<top>100</top>
 					<onup>SetFocus(9000)</onup>
 					<onup>PageDown</onup>
 					<onup>PageDown</onup>
@@ -1109,11 +1109,11 @@
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<top>30</top>
 				<left>90</left>
-<!-- 				<control type="image">
+ 				<control type="image">
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
-					<texture colordiffuse="button_focus">icons/logo.png</texture>
+					<texture>icons/logo.png</texture>
 				</control>
 				<control type="image">
 					<left>40</left>
@@ -1122,7 +1122,7 @@
 					<width>192</width>
 					<height>36</height>
 					<texture>icons/logo-text.png</texture>
-				</control> -->
+				</control>
 			</control>
 			<control type="group">
 				<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>

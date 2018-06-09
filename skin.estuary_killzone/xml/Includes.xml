@@ -1050,7 +1050,7 @@
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
-			<texture colordiffuse="primary_background">special://skin/extras/backgrounds/primary.jpg</texture>
+			<texture colordiffuse="primary_background">special://skin/extras/home-images/SKINDEFAULT.jpg</texture>
 		</control>
 		<control type="image">
 			<visible>Skin.HasSetting(Enable_colored_bg)</visible>
@@ -1092,7 +1092,7 @@
 						<depth>DepthBackground</depth>
 						<description>Normal Default Background Image (Original)</description>
 						<aspectratio>scale</aspectratio>
-						<texture>special://skin/backgrounds/SKINDEFAULT.jpg</texture>
+						<texture>special://skin/extras/home-images/SKINDEFAULT.jpg</texture>
 						<visible>![Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))]</visible>
 						
 					</control>
