@@ -65,9 +65,6 @@ class navigator:
         if self.getMenuEnabled('navi.podcasts') == True:
             self.addDirectoryItem(32620, 'podcastNavigator', 'podcast.png', 'DefaultVideoPlaylists.png')
 
-        if self.getMenuEnabled('navi.channels') == True:
-            self.addDirectoryItem(32007, 'channels', 'channels.png', 'DefaultMovies.png')
-
         self.addDirectoryItem(32008, 'toolNavigator', 'tools.png', 'DefaultAddonProgram.png')
 
         downloads = True if control.setting('downloads') == 'true' and (len(control.listDir(control.setting('movie.download.path'))[0]) > 0 or len(control.listDir(control.setting('tv.download.path'))[0]) > 0) else False

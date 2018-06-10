@@ -204,10 +204,6 @@ elif action == 'movieUserlists':
     from resources.lib.indexers import movies
     movies.movies().userlists()
 
-elif action == 'channels':
-    from resources.lib.indexers import channels
-    channels.channels().get()
-
 elif action == 'tvshows':
     from resources.lib.indexers import tvshows
     tvshows.tvshows().get(url)
