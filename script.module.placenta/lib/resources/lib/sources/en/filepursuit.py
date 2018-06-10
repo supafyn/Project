@@ -12,7 +12,7 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import re,requests,sys,json
+import re,requests,sys,json,traceback,urllib,urlparse
 
 from bs4 import BeautifulSoup
 from resources.lib.modules import cleantitle
@@ -25,7 +25,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domain = 'filepursuit.com'
-        self.search_link = 'https://filepursuit.com/search2/'
+        self.base_link = 'https://filepursuit.com/'
+        self.search_link = '/search.php'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:

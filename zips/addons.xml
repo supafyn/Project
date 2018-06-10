@@ -1010,7 +1010,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.placenta" name="Placenta Module" version="1.4.1" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.4.2" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>

@@ -22,7 +22,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['123movies.as']
-        self.base_link = 'https://www0.123movies.as'
+        self.base_link = 'https://123movies.ph/'
         self.source_link = 'https://putstream.win'
         self.episode_path = '/episodes/%s-%sx%s/'
         self.movie_path = '/movies/%s-watch-online-free-123movies/'

@@ -12,7 +12,7 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import urlparse,urllib,re,json,xbmc
+import urlparse,traceback,urllib,re,json,xbmc
 
 from resources.lib.modules import client
 from resources.lib.modules import cleantitle
@@ -24,7 +24,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['123movies.as']
+        self.domains = ['123movies.ph']
         self.base_link = 'https://123movies.ph/'
         self.source_link = 'https://putstream.win'
         self.episode_path = '/episodes/%s-%sx%s/'

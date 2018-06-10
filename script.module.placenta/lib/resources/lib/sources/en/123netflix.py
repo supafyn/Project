@@ -25,7 +25,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['123netflix.com']
-        self.base_link = 'http://123netflix.unblockall.org'
+        self.base_link = 'https://123netflix.pro/'
         self.search_link = '/search-movies/%s.html'
 
 

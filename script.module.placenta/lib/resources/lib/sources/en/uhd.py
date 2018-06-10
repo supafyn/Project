@@ -12,20 +12,19 @@
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-import re, traceback, urlparse, urllib, base64
+import re,traceback,urlparse,urllib,base64
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import cache
 from resources.lib.modules import dom_parser2
 
-
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['755jj.com']
-        self.base_link = 'http://755jj.com'
+        self.domains = ['hdmega.unblckd.cc']
+        self.base_link = 'http://hdmega.unblckd.cc'
         self.search_link = '/search-movies/%s.html'
 
 

@@ -23,7 +23,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['azmovies.ws', 'azmovies.xyz']
-        self.base_link = 'https://azmovies.xyz'
+        self.base_link = 'https://azmovies.xyz/'
         self.search_link = '/search.php?q=%s'
         self.scrape_type = 0 #0 = Movies, 1 = TV Shows
 
