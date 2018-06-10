@@ -309,7 +309,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="3.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="3.9" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" />
@@ -1084,6 +1084,30 @@ This is a Non-profit resource, organized solely for educational purposes which i
 		<description lang="en">Collection of modules used by Elysium</description>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 	</extension>
+</addon>
+
+<addon id="script.module.swiftstreamz" name="Swift Streamz" version="8" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">SwiftStreamz APK</summary>
+    <description lang="en_gb">SwiftStreamz APK</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
 </addon>
 
 <addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.0.0" provider-name="Team Universal">
