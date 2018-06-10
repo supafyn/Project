@@ -309,7 +309,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="3.6" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="3.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" />
@@ -317,8 +317,8 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <import addon="script.module.beautifulsoup" version="3.2.1" />
         <import addon="script.module.requests" version="2.9.1" />
         <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.swiftstreamz" />
         <import addon="script.module.xmltodict" version="0.9.0" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
@@ -1174,7 +1174,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="skin.estuary_killzone" version="1.5.2" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
+<addon id="skin.estuary_killzone" version="1.5.3" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" />
@@ -1214,8 +1214,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
 				<screenshot>resources/screenshot-02.jpg</screenshot>
 				<screenshot>resources/screenshot-03.jpg</screenshot>
 				<screenshot>resources/screenshot-04.jpg</screenshot>
-				<screenshot>resources/screenshot-05.jpg</screenshot>
-				<screenshot>resources/screenshot-06.jpg</screenshot>
 			</assets>
 	</extension>
 </addon>
