@@ -9,68 +9,86 @@
 <heading></heading>
 </item>
 
+<plugin>
+    <name>[COLOR darkmagenta]Authorize Real Debrid[/COLOR]</name>
+    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
+    <thumbnail>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/icon.png</thumbnail>
+    <fanart>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+	<name>[COLOR darkmagenta]Click Here to Pair[/COLOR]</name>
+   <link>plugin://script.69DeathPair</link>
+   <thumbnail>https://ia601509.us.archive.org/25/items/fanart_20180611/icon.png</thumbnail>
+   <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
+</plugin>
+
 <item>
-	<title>[COLOR=red]***************************[/COLOR]</title>
-<heading></heading>
+    <title>Settings</title>
+    <mysettings>0/0</mysettings>
+    <thumbnail></thumbnail>
+    <info>Open the Settings for the addon</info>
 </item>
 
 <dir>
     <name>[COLOR darkmagenta]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
     <link>file://blams/oneclick.xml</link>
+    <thumbnail>https://ia601508.us.archive.org/12/items/mrblamo420_gmail_Icon/icon.png</thumbnail>
+</dir>
+
+<dir>
+<title>[COLOR orange]24/7 TV Shows[/COLOR]</title>
+<arconaitv2>shows</arconaitv2>
 </dir>
 
 <dir>
 <name>[COLOR darkmagenta]Swift Streamz[/COLOR]</name>
 <link>plugin://script.module.swiftstreamz</link>
+<thumbnail>special://home/addons/script.module.swiftstreamz/icon.png</thumbnail>
 <summary>Swift Streamz</summary>
 </dir>
 
 <dir>
-    <title>[B][COLORwhite]Latest Releases[/COLOR][/B]</title>
+    <title>[COLOR white]Latest Release Cartoons[/COLOR]</title>
     <wctoon>wcdaily-updates</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORwhite]Popular Series[/COLOR][/B]</title>
+    <title>[COLOR white]Popular Series[/COLOR]</title>
     <wctoon>popular-list</wctoon>
 </dir>
 
 <dir>
-<title>[B][COLORwhite]24/7 TV Shows[/COLOR][/B]</title>
-<arconaitv2>shows</arconaitv2>
-</dir>
-
-<dir>
-    <name>[B][COLORorange]Adult Toons[/COLOR][/B] [COLOR red]Scrapers[/COLOR]</name>
+    <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
     <link>file://adulttoon/adulttoon.xml</link>
 </dir>
 
 <dir>
-    <name>[B][COLORorange]Kids Toons[/COLOR][/B] [COLOR red]Scrapers[/COLOR]</name>
+    <name>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
     <link>file://kidstoon/kidtoon.xml</link>
 </dir>
 
 <dir>
-<title>[B][COLORwhite]Search[/COLOR][/B]</title>
+<title>[COLOR white]Search[/COLOR]</title>
 <tmdb>search</tmdb>
 <thumbnail>https://i.imgur.com/hEDobPJ.png</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-    <title>[B][COLORred]Trakt Portal[/COLOR][/B]</title>
+    <title>[COLOR red]Trakt Portal[/COLOR]</title>
     <link>file://blams/traktportal.xml</link>
     <thumbnail>https://trakt.tv/assets/logos/white-bg@2x-e72b5e4a638b069fe26118c563f89613.png</thumbnail>
     <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
 </dir>
 
 <dir>
-    <name>[B][COLORblue]Music[/COLOR][/B]</name>
+    <name>[COLOR blue]Music[/COLOR]</name>
     <link>file://music.xml</link>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]User Requests[/COLOR][/B]</title>
+    <title>[COLORlimegreen]User Requests[/COLOR]</title>
     <link>file://requests.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
     <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
