@@ -800,7 +800,7 @@
 								<top>0</top>
 								<width>462</width>
 								<height>95</height>
-								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<texture>lists/focus.png</texture>
 								<animation effect="fade" start="100" end="0" time="0" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] | System.HasModalDialog">Conditional</animation>
 							</control>
 							<control type="image">
@@ -979,7 +979,7 @@
 								<top>0</top>
 								<width>462</width>
 								<height>95</height>
-								<texture colordiffuse="button_focus">lists/focus.png</texture>
+								<texture>lists/focus.png</texture>
 								<animation effect="fade" start="100" end="0" time="0" condition="[!Control.HasFocus(9001) + !ControlGroup(700).HasFocus] | System.HasModalDialog">Conditional</animation>
 							</control>
 							<control type="image">
@@ -1107,20 +1107,21 @@
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>30</top>
-				<left>90</left>
+				<top>0</top>
+				<left>0</left>
  				<control type="image">
 					<aspectratio>keep</aspectratio>
-					<width>56</width>
-					<height>56</height>
+					<top>10</top>
+					<width>460</width>
+					<height>100</height>
 					<texture>icons/logo.png</texture>
 				</control>
 				<control type="image">
-					<left>40</left>
-					<top>10</top>
-					<aspectratio>keep</aspectratio>
-					<width>192</width>
-					<height>36</height>
+					<left>0</left>
+					<top>0</top>
+
+					<width>460</width>
+					<height>276</height>
 					<texture>icons/logo-text.png</texture>
 				</control>
 			</control>
