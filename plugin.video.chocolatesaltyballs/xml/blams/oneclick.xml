@@ -3,10 +3,38 @@
 <heading></heading>
 </item>
 
-<item>
-	<title>[COLOR=red]***************************[/COLOR]</title>
-<heading></heading>
-</item>
+<plugin>
+    <name>[COLOR darkmagenta]Authorize Real Debrid[/COLOR]</name>
+    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
+    <thumbnail>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/icon.png</thumbnail>
+    <fanart>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/fanart.jpg</fanart>
+</plugin>
+
+<plugin>
+	<name>[COLOR darkmagenta]Click Here to Pair[/COLOR]</name>
+   <link>plugin://script.69DeathPair</link>
+   <thumbnail>https://ia601509.us.archive.org/25/items/fanart_20180611/icon.png</thumbnail>
+   <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
+</plugin>
+
+<dir>
+	<title>[COLOR red]Cobra Kai[/COLOR][COLOR lawngreen](First links 4K)[/COLOR]</title>
+	<meta>
+		<imdb>tt7221388</imdb>
+		<content>tvshow</content>
+		<tvshowtitle>Cobra Kai</tvshowtitle>
+		<year>2018</year>
+	</meta>
+	<link>file://blams/cobrakai.xml</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//5qMupAz4A9EN5Rutrkmov45mNXZ.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//x7QOl4QEVMOp6V4wsp3Kte3NLDY.jpg</fanart>
+</dir>
+
+<dir>
+	<title>[COLOR=darkmagenta]CopyKatz[/COLOR]</title>
+	<thumbnail></thumbnail>
+	<link>file://blams/cpastas.xml</link>
+</dir>
 
 <item>
 	<title>[B][COLORlimegreen]Black Panther 4K HDR[/COLOR][/B]</title>
@@ -75,7 +103,7 @@
 </item>
 
 <item>
-	<title>[COLOR purple]Jumanji[/COLOR] [COLOR blue]Welcome to the Jungle[/COLOR]</title>
+	<title>[COLOR darkmagenta]Jumanji[/COLOR] [COLOR blue]Welcome to the Jungle[/COLOR]</title>
 	<meta>
 		<imdb>tt2283362</imdb>
 		<content>movie</content>
@@ -86,6 +114,7 @@
 		<sublink>https://rapidgator.net/file/74fbca7ee75c1056c0fa7d1b601e747d/jumanji.welcome.to.the.jungle.2017.bdrip.x264-sparks.mkv.html(RD)</sublink>
 	    <sublink>https://loadvid.online/embed/5ae0d7048f745</sublink>
 		<sublink>https://c-flamingo.betterstream.co/playback/59/82/e398b7bdda147cbf837d7ee266b683686b1063bdb8d543c93b659ce45fac8e5d1abf84366d5bf8ce72f11b2caf9e9768238cd74457bf17697f1540d2be559f1225a32643e125eb57aace8b4a97610642/Jumanji.Welcome.to.the.Jungle.2017.720p.BluRay.H264.AAC-RARBG.mp4?q=720</sublink>
+		<sublink>https://streamango.com/f/tmnpfdfoaerffrmn/jwttj_2017_720p_bluray_x264-sparks_mkv_mp4</sublink>
 		<sublink>search</sublink>
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//bXrZ5iHBEjH7WMidbUDQ0U2xbmr.jpg</thumbnail>
@@ -244,6 +273,7 @@
 		<sublink>http://bit.ly/2GuGc10</sublink>
 		<sublink>https://1fichier.com/?sgenivden5(RD)</sublink>
 		<sublink>https://1fichier.com/?8vi503jolu(RD)</sublink>
+		<sublink>https://streamango.com/f/dkntedtfqclcmeca/E_M_2018_1080p_READNFO_HDRip_X264_AC3-EVO_mkv_mp4</sublink>
 		<sublink>search</sublink>
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//hXukFwTKOe7izDsf3ZOdeYikRxF.jpg</thumbnail>
@@ -426,18 +456,38 @@
 	<fanart>https://image.tmdb.org/t/p/w1280//xfZZ0Dk2bOxOz1C8T8OQVRGGGIq.jpg</fanart>
 </item>
 
-<dir>
-	<title>[B][COLORred]Cobra Kai[/COLOR][/B][B][COLORlawngreen](First links 4K)[/COLOR][/B] </title>
+<item>
+	<title>[COLOR darkmagenta]12 Strong[/COLOR]</title>
 	<meta>
-		<imdb>tt7221388</imdb>
-		<content>tvshow</content>
-		<tvshowtitle>Cobra Kai</tvshowtitle>
+		<content>movie</content>
+		<imdb>tt1413492</imdb>
+		<title>12 Strong</title>
 		<year>2018</year>
 	</meta>
-	<link>file://blams/cobrakai.xml</link>
-	<thumbnail>https://image.tmdb.org/t/p/w1280//5qMupAz4A9EN5Rutrkmov45mNXZ.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/w1280//x7QOl4QEVMOp6V4wsp3Kte3NLDY.jpg</fanart>
-</dir>
+	<link>
+
+		<sublink>https://streamango.com/embed/mbocmrbaokmamsrn</sublink>
+		<sublink>search</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w600_and_h900_bestv2/j18021qCeRi3yUBtqd2UFj1c0RQ.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/wacEk5YSNE41QeKseilyytksXmv.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR green]A Dog's Purpose (2017)[/COLOR]</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt1753383</imdb>
+		<title>A Dog's Purpose</title>
+		<year>2017</year>
+	</meta>
+	<link>
+		<sublink>https://streamango.com/f/pcdlaeocesknelsf/A_Dogs_Purpose_2017_720p_BluRay_MkvCage_mkv_mp4</sublink>
+		<sublink>search</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w600_and_h900_bestv2/3jcNvhtVQe5Neoffdic39fRactM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/4dob55emCfHT6y5GxtAfEfmY1Za.jpg</fanart>
+</item>
 
 <item>
 	<title>[COLOR=white]-------------------------[/COLOR]</title>
