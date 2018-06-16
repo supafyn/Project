@@ -199,8 +199,6 @@
         <import addon="script.module.xmltodict" version="0.9.0" />
         <import addon="script.module.resolveurl" />
         <import addon="plugin.video.youtube" />
-        <import addon="plugin.video.dailymotion_com" />
-        <import addon="plugin.video.vimeo" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
