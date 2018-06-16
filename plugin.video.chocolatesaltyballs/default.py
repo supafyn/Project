@@ -63,7 +63,7 @@ content_type = "files"
 def root():
     """root menu of the addon"""
     if enable_newswin == 'true':
-        koding.Add_Dir(name='[COLORlimegreen]Latest News And Updates[/COLOR]', url='{"my_text":"Latest News[CR]!!!","my_desc":""}', mode='dialog_example', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
+        koding.Add_Dir(name='[COLORlimegreen]Latest News And Updates[/COLOR]', url='{"my_text":"Latest News[CR]!!!","my_desc":""}', mode='dialog_example', folder=False, icon=os.path.join(art_path,'news.jpg'), fanart=os.path.join(art_path,'fanart.jpg'))
     if not get_list(root_xml_url):
         koding.Add_Dir(
             name=_("Message"),

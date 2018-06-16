@@ -1,7 +1,7 @@
 <item>
 <title>[COLOR=snow]Follow me on Twitter:[/COLOR] [COLOR=darkmagenta]@Daddy_Blamo[/COLOR]</title>
 <heading></heading>
-<thumbnail>https://pbs.twimg.com/profile_images/1001879000560611328/eEG9l3zh_400x400.jpg</thumbnail>
+<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/twitter.jpg</thumbnail>
 </item>
 
 <item>
@@ -10,35 +10,35 @@
 </item>
 
 <plugin>
-    <name>[COLOR darkmagenta]Authorize Real Debrid[/COLOR]</name>
-    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
-    <thumbnail>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/icon.png</thumbnail>
-    <fanart>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-	<name>[COLOR darkmagenta]Click Here to Pair[/COLOR]</name>
+	<name>[COLOR darkmagenta]Pair and Auth RD[/COLOR]</name>
    <link>plugin://script.69DeathPair</link>
-   <thumbnail>https://ia601509.us.archive.org/25/items/fanart_20180611/icon.png</thumbnail>
+   <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
    <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
 </plugin>
 
 <item>
     <title>Settings</title>
     <mysettings>0/0</mysettings>
-    <thumbnail></thumbnail>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/settings.png</thumbnail>
     <info>Open the Settings for the addon</info>
 </item>
 
 <dir>
     <name>[COLOR darkmagenta]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
     <link>file://blams/oneclick.xml</link>
-    <thumbnail>https://ia601508.us.archive.org/12/items/mrblamo420_gmail_Icon/icon.png</thumbnail>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
 </dir>
 
 <dir>
-<title>[COLOR orange]24/7 TV Shows[/COLOR]</title>
-<arconaitv2>shows</arconaitv2>
+    <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
+    <link>file://adulttoon/adulttoon.xml</link>
+   <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/adults.jpg</thumbnail>
+</dir>
+
+<dir>
+    <name>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
+    <link>file://kidstoon/kidtoon.xml</link>
+   <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kids.jpg</thumbnail>
 </dir>
 
 <dir>
@@ -46,6 +46,12 @@
 <link>plugin://script.module.swiftstreamz</link>
 <thumbnail>special://home/addons/script.module.swiftstreamz/icon.png</thumbnail>
 <summary>Swift Streamz</summary>
+</dir>
+
+<dir>
+<title>[COLOR orange]24/7 TV Shows[/COLOR]</title>
+<arconaitv2>shows</arconaitv2>
+<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/24shows.jpg</thumbnail>
 </dir>
 
 <dir>
@@ -59,26 +65,15 @@
 </dir>
 
 <dir>
-    <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
-    <link>file://adulttoon/adulttoon.xml</link>
-</dir>
-
-<dir>
-    <name>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
-    <link>file://kidstoon/kidtoon.xml</link>
-</dir>
-
-<dir>
 <title>[COLOR white]Search[/COLOR]</title>
 <tmdb>search</tmdb>
-<thumbnail>https://i.imgur.com/hEDobPJ.png</thumbnail>
-<fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
+<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/search.png</thumbnail>
 </dir>
 
 <dir>
     <title>[COLOR red]Trakt Portal[/COLOR]</title>
     <link>file://blams/traktportal.xml</link>
-    <thumbnail>https://trakt.tv/assets/logos/white-bg@2x-e72b5e4a638b069fe26118c563f89613.png</thumbnail>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/trakt-logo.png</thumbnail>
     <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
 </dir>
 

@@ -4,18 +4,17 @@
 </item>
 
 <plugin>
-    <name>[COLOR darkmagenta]Authorize Real Debrid[/COLOR]</name>
-    <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
-    <thumbnail>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/icon.png</thumbnail>
-    <fanart>https://ia601501.us.archive.org/29/items/fanart_20180611_0517/fanart.jpg</fanart>
-</plugin>
-
-<plugin>
-	<name>[COLOR darkmagenta]Click Here to Pair[/COLOR]</name>
+	<name>[COLOR darkmagenta]Pair and Auth RD[/COLOR]</name>
    <link>plugin://script.69DeathPair</link>
-   <thumbnail>https://ia601509.us.archive.org/25/items/fanart_20180611/icon.png</thumbnail>
+   <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
    <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
 </plugin>
+
+<dir>
+	<title>[COLOR=darkmagenta]CopyKatz[/COLOR]</title>
+	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
+	<link>file://blams/cpastas.xml</link>
+</dir>
 
 <dir>
 	<title>[COLOR red]Cobra Kai[/COLOR][COLOR lawngreen](First links 4K)[/COLOR]</title>
@@ -28,12 +27,6 @@
 	<link>file://blams/cobrakai.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//5qMupAz4A9EN5Rutrkmov45mNXZ.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w1280//x7QOl4QEVMOp6V4wsp3Kte3NLDY.jpg</fanart>
-</dir>
-
-<dir>
-	<title>[COLOR=darkmagenta]CopyKatz[/COLOR]</title>
-	<thumbnail></thumbnail>
-	<link>file://blams/cpastas.xml</link>
 </dir>
 
 <item>
