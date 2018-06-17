@@ -27,8 +27,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['tunemovie.com', 'tunemovie.tv', 'tunemovie.win']
-        self.base_link = 'http://tunemovie.win'
-        self.search_link = '/search/%s.html'
+        self.base_link = 'http://tunemovie.win/'
+        self.search_link = '/?s=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):
