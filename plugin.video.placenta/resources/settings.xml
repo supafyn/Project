@@ -110,12 +110,15 @@
         <setting id="provider.huluplus" type="bool" label="HULUPLUS" default="true" />
         <setting id="provider.icefilms" type="bool" label="ICEFILMS" default="true" />
         <setting id="provider.icouchtuner" type="bool" label="ICOUCHTUNER" default="true" />
+        <setting id="provider.katru" type="bool" label="KATRU" default="false" />
+        <setting id="provider.ktube" type="bool" label="KTUBE" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="false" />
-        <setting id="provider.movieon" type="bool" label="MOVIEON" default="false" />
+        <setting id="provider.movie4korg" type="bool" label="MOVIE4K" default="true" />
+        <setting id="provider.movieon" type="bool" label="MOVIEON" default="true" />
         <setting id="provider.m4u" type="bool" label="M4U" default="true" />
         <setting id="provider.megahd" type="bool" label="MEGAHD" default="true" />
-        <setting id="provider.monm" type="bool" label="MONMN" default="false" />
+        <setting id="provider.monm" type="bool" label="MONMN" default="true" />
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />
         <setting id="provider.plocker" type="bool" label="PLOCKER" default="true" />
         <setting id="provider.popcorn" type="bool" label="POPCORN" default="true" />
