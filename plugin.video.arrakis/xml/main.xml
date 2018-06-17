@@ -91,6 +91,16 @@
         </dir>
 
         <dir>
+            <title>Loud and Proud</title>
+            <meta>
+                <title>Loud and Proud</title>
+                <summary>A massive collection of music that makes use of Universal Scrapers for the sources</summary>
+            </meta>
+            <link>file://musicwtf/main.xml</link>
+            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/loudandproud.png</thumbnail>
+        </dir>
+
+        <dir>
             <title>The Spice Room</title>
             <meta>
                 <title>The Spice Room</title>

@@ -2,6 +2,9 @@
 
     Copyright (C) 2018, TonyH
 
+    --June 16 2018, Added Hesgoal time to the top of the page.
+    Added racing section--
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -17,16 +20,12 @@
 
     -------------------------------------------------------------
 
-    <<< Usage Examples >>>
+    Usage Examples:
 
-	
-	### Sports Games ###
-	
-	** Returns Sports Games from the http://www.hesgoal.com website
-    <dir>
-      <title>HesGoal Games</title>
-      <hesgoal>games</hesgoal>
-    </dir>
+<dir>
+<title>HesGoal Games</title>
+<hesgoal>games</hesgoal>
+</dir>
 
 """    
 
@@ -39,6 +38,7 @@ from resources.lib.plugin import Plugin
 from resources.lib.util.context import get_context_items
 from resources.lib.util.xml import JenItem, JenList, display_list
 from unidecode import unidecode
+from time import gmtime, strftime
 
 CACHE_TIME = 3600  # change to wanted cache time in seconds
 
@@ -57,7 +57,7 @@ class HesGoal(Plugin):
                     'label': item["title"],
                     'icon': item.get("thumbnail", addon_icon),
                     'fanart': item.get("fanart", addon_fanart),
-                    'mode': "get_games",
+                    'mode': "get_hesgoal_games",
                     'url': item.get("hesgoal", ""),
                     'folder': True,
                     'imdb': "0",
@@ -76,29 +76,69 @@ class HesGoal(Plugin):
                 return result_item
 
 
-@route(mode='get_games', args=["url"])
+@route(mode='get_hesgoal_games', args=["url"])
 def get_game(url):
     xml = ""
     try:    
         url = "http://www.hesgoal.com/"        
         headers = {'User_Agent':User_Agent}
         html = requests.get(url,headers=headers).content
-        block = re.compile('<div id="main_contents">(.+?)<div id="footer">',re.DOTALL).findall(html)
-        match = re.compile('<a href="(.+?)".+?src="(.+?)".+?alt="(.+?)".+?href=.+?<p>(.+?)</p>',re.DOTALL).findall(str(block))
-        for link, image, name,time in match:
+        block1 = re.compile('<h2>Football News</h2>(.+?)<a href="http://www.hesgoal.com/league/11/Football_News">More Football News</a>',re.DOTALL).findall(html)
+        site_hour = strftime("%H", gmtime())
+        site_hour2 = int(site_hour)+2
+        if site_hour2 == 25:
+            site_hour2 = 1
+        if site_hour2 == 26:
+            site_hour2 = 2
+        if site_hour2 == 27:
+            site_hour2 = 3                         
+        site_hour3 = str(site_hour2)
+        site_minute = strftime("%M", gmtime())
+        site_time = site_hour3+":"+site_minute
+        xml += "<item>"\
+               "<title>[COLOR blue]Hesgoal Time GMT+2 = (%s)[/COLOR]</title>"\
+               "<thumbnail>http://www.logotypes101.com/logos/997/AD71A2CC84DD8DDE7932F9BC585926E1/Sports.png</thumbnail>"\
+               "<fanart>http://sportz4you.com/blog/wp-content/uploads/2016/01/0b46b20.jpg</fanart>"\
+               "<link></link>"\
+               "</item>" % (site_time)         
+        match1 = re.compile('<a href="(.+?)".+?src="(.+?)".+?alt="(.+?)".+?href=.+?<p>(.+?)</p>',re.DOTALL).findall(str(block1))
+        for link, image, name,time in match1:
+            if "Djorkaeff" in name:
+                break
             html2=requests.get(link,headers=headers).content
             match2 = re.compile('<center><iframe.+?src="(.+?)"',re.DOTALL).findall(html2)
             for url2 in match2:
                 url2 = "http:"+url2
-                html3 = requests.get(url2,headers=headers).content
-                match3 = re.compile('source:(.+?),',re.DOTALL).findall(html3)
-                for url3 in match3:
-                    url3 = url3.replace("'http","http").replace(".m3u8'",".m3u8").replace(".m3u'",".m3u").replace(".ts'",".ts").lstrip().strip()
-                    xml += "<item>"\
-                           "<title>%s : %s</title>"\
-                           "<thumbnail>%s</thumbnail>"\
-                           "<link>%s</link>"\
-                           "</item>" % (name,time,image,url3)
+                url3 = "plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url="+url2+"|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+                xml += "<plugin>"\
+                       "<title>%s : %s</title>"\
+                       "<thumbnail>%s</thumbnail>"\
+                       "<fanart>http://sportz4you.com/blog/wp-content/uploads/2016/01/0b46b20.jpg</fanart>"\
+                       "<link>%s</link>"\
+                       "</plugin>" % (name,time,image,url3)
+        block2 = re.compile('<h2>Racing News</h2>(.+?)<a href="http://www.hesgoal.com/league/12/Racing_News">More Racing News</a>',re.DOTALL).findall(html)
+        match2 = re.compile('<a href="(.+?)".+?src="(.+?)".+?alt="(.+?)".+?href=.+?<p>(.+?)</p>',re.DOTALL).findall(str(block2))
+        for link, image, name,time in match2:
+            if "Hamilton leaves" in name:
+                break
+            html3=requests.get(link,headers=headers).content
+            match3 = re.compile('<center><iframe.+?src="(.+?)"',re.DOTALL).findall(html3)
+            for url4 in match3:
+                url4 = "http:"+url4
+                url5 = "plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url="+url4+"|User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36"
+                xml += "<plugin>"\
+                       "<title>%s : %s</title>"\
+                       "<thumbnail>%s</thumbnail>"\
+                       "<fanart>http://sportz4you.com/blog/wp-content/uploads/2016/01/0b46b20.jpg</fanart>"\
+                       "<link>%s</link>"\
+                       "</plugin>" % (name,time,image,url5)                                       
+        if not xml:
+            xml += "<item>"\
+                   "<title>[B]----No Games at this time----[/B]</title>"\
+                   "<thumbnail></thumbnail>"\
+                   "<fanart>http://sportz4you.com/blog/wp-content/uploads/2016/01/0b46b20.jpg</fanart>"\
+                   "<link></link>"\
+                   "</item>"                                
     except:
         pass
     jenlist = JenList(xml)

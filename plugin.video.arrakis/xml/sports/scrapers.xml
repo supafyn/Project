@@ -1,6 +1,14 @@
 <arrakis>
     <livesports>
         <dir>
+            <title>Sports Channels (Jen Live Team)</title>
+            <meta>
+                <summary>Live Feeds via the Airtable maintained by the Jen Live Team</summary>
+            </meta>
+            <Airtable>sports_channels</Airtable>
+        </dir>
+
+        <dir>
             <title>HesGoal Live Feeds</title>
             <meta>
                 <title>HesGoal Live Feeds</title>

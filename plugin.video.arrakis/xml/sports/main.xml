@@ -1,9 +1,8 @@
 <arrakis>
     <sportsmain>
         <dir>
-            <title>Live Sports</title>
+            <title>[ Live Sports ]</title>
             <meta>
-                <title>Live Sports</title>
                 <summary>Live Sports Events and Sports Channels. If you can't find it here, you won't find it.</summary>
             </meta>
             <link>file://sports/scrapers.xml</link>
@@ -11,9 +10,17 @@
         </dir>
 
         <dir>
-            <title>MLB Archive</title>
+            <title>[ Highlights ]</title>
             <meta>
-                <title>MLB Archive</title>
+                <summary>North American Sports Highlights</summary>
+            </meta>
+            <link>file://sports/highlights.xml</link>
+            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/sports.png</thumbnail>
+        </dir>
+
+        <dir>
+            <title>[ MLB Archive ]</title>
+            <meta>
                 <summary>Major League Baseball Replays</summary>
             </meta>
             <link>file://sports/mlb_archive.xml</link>
@@ -21,9 +28,8 @@
         </dir>
 
         <dir>
-            <title>NBA Archive</title>
+            <title>[ NBA Archive ]</title>
             <meta>
-                <title>NBA Archive</title>
                 <summary>National Basketball Association Replays</summary>
             </meta>
             <link>file://sports/nba_archive.xml</link>
@@ -31,9 +37,8 @@
         </dir>
 
         <dir>
-            <title>NFL Archive</title>
+            <title>[ NFL Archive ]</title>
             <meta>
-                <title>NFL Archive</title>
                 <summary>National Football League Replays</summary>
             </meta>
             <link>file://sports/nfl_archive.xml</link>
@@ -41,9 +46,8 @@
         </dir>
 
         <dir>
-            <title>NHL Archive</title>
+            <title>[ NHL Archive ]</title>
             <meta>
-                <title>NHL Archive</title>
                 <summary>National Hockey League Replays</summary>
             </meta>
             <link>file://sports/nhl_archive.xml</link>
@@ -51,9 +55,8 @@
         </dir>
 
         <dir>
-            <title>Motor Archive</title>
+            <title>[ Motor Archive ]</title>
             <meta>
-                <title>Motor Archive</title>
                 <summary>Replays for various motor sport organizations</summary>
             </meta>
             <link>file://sports/moto_archive.xml</link>
