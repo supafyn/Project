@@ -30,6 +30,18 @@
 </dir>
 
 <dir>
+	<title>[COLOR=darkmagenta]CopyKatz[/COLOR]</title>
+	<link>file://blams/cpastas.xml</link>
+	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
+</dir>
+
+<dir>
+    <name>[COLOR darkmagenta]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</name>
+    <link>file://blams/realdebrid.xml</link>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
+</dir>
+
+<dir>
     <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
     <link>file://adulttoon/adulttoon.xml</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/adults.jpg</thumbnail>

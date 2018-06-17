@@ -14,20 +14,19 @@ class zoocinema(Scraper):
     def __init__(self):
         self.base_link = 'http://zoocine.net/'
         self.scraper = cfscrape.create_scraper()
-        if dev_log=='true':
-            self.start_time = time.time() 
         self.sources = []
 
     def scrape_movie(self, title, year, imdb, debrid=False):
         try:
+            start_time = time.time()
             name = clean_search(title.lower())
             
-            headers = {'User_Agent':User_Agent,'Referer':self.base_link}
-            grab_token = self.scraper.get(self.base_link,headers=headers, timeout=3).content
-            token = re.compile('name="goku" value="(.+?)"',re.DOTALL).findall(grab_token)[0]
+            headers = {'User_Agent':User_Agent,'Referer':self.base_link+'home.html'}
+            grab_token = self.scraper.get(self.base_link+'home.html',headers=headers, timeout=3).content
+            token = re.compile('name="gohu" value="(.+?)"',re.DOTALL).findall(grab_token)[0]
             #print 'zooTOKEN '+token
             
-            search = {'do':'search', 'subaction':'search','goku':token, 'story':name}
+            search = {'do':'search', 'subaction':'search','gohu':token, 'story':name}
             link = self.scraper.post(self.base_link, data=search,headers=headers, timeout=3).content
             #print 'ZOOO post '+link
             links = link.split('-in">')[1:]
@@ -42,28 +41,30 @@ class zoocinema(Scraper):
                     if year in media_title:
                         #print '###########zoo#####################'+str(media_url)
             
-                        self.get_source(media_url)
+                        self.get_source(media_url,title,year,'','',start_time)
                 
             return self.sources
         except Exception, argument:        
             if dev_log == 'true':
-                error_log(self.name,'Check Search')
+                error_log(self.name,argument)
             return self.sources
 
     def scrape_episode(self,title, show_year, year, season, episode, imdb, tvdb, debrid = False):
         try:
+            if dev_log=='true':
+                start_time = time.time()
             name = clean_search(title.lower())
             
             season_pull = '0%s' %season if len(season) <2 else season
             episode_pull = '0%s' %episode if len(episode) <2 else episode
             sep = 'S%sE%s' %(season_pull,episode_pull)
 
-            headers = {'User_Agent':User_Agent,'Referer':self.base_link}
-            grab_token = self.scraper.get(self.base_link,headers=headers, timeout=3).content
-            token = re.compile('name="goku" value="(.+?)"',re.DOTALL).findall(grab_token)[0]
+            headers = {'User_Agent':User_Agent,'Referer':self.base_link+'home.html'}
+            grab_token = self.scraper.get(self.base_link+'home.html',headers=headers, timeout=3).content
+            token = re.compile('name="gohu" value="(.+?)"',re.DOTALL).findall(grab_token)[0]
             #print 'zooTOKEN '+token
                        
-            search = {'do':'search', 'subaction':'search','goku':token, 'story':'%s %s' %(name,sep)}            
+            search = {'do':'search', 'subaction':'search','gohu':token, 'story':'%s %s' %(name,sep)}            
 
             link = self.scraper.post(self.base_link, data=search,headers=headers, timeout=3).content
             
@@ -79,15 +80,15 @@ class zoocinema(Scraper):
                 if name in clean_search(media_title).lower():
                     if sep.lower() in media_title.lower():
                         #print '###########zoo#####################'+str(media_url)
-                        self.get_source(media_url)
+                        self.get_source(media_url,title,year,season,episode,start_time)
                 
             return self.sources
         except Exception, argument:        
             if dev_log == 'true':
-                error_log(self.name,'Check Search')
+                error_log(self.name,argument)
             return self.sources
 
-    def get_source(self,movie_url):
+    def get_source(self,movie_url, title, year, season, episode, start_time):
         try:
             #print ':::::::::::::::::::::::'+movie_url
             count = 0
@@ -125,8 +126,8 @@ class zoocinema(Scraper):
                                 count +=1
                                 self.sources.append({'source': host,'quality': res,'scraper': self.name,'url': iframe_url,'direct': False})
                 if dev_log=='true':
-                    end_time = time.time() - self.start_time
-                    send_log(self.name,end_time,count) 
+                    end_time = time.time() - start_time
+                    send_log(self.name,end_time,count,title,year, season=season,episode=episode) 
             except:pass
 
             try:
@@ -163,8 +164,8 @@ class zoocinema(Scraper):
                             count +=1
                             self.sources.append({'source': host,'quality': res,'scraper': self.name,'url': a,'direct': False})
                 if dev_log=='true':
-                    end_time = time.time() - self.start_time
-                    send_log(self.name,end_time,count) 
+                    end_time = time.time() - start_time
+                    send_log(self.name,end_time,count,title,year, season=season,episode=episode) 
             except:pass
        
         except:
