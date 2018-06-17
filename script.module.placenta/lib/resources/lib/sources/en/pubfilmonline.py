@@ -25,8 +25,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['http://openloadmovies.tv/','getmypopcornnow.xyz']
-        self.base_link = 'http://pubfilmonline.net/'
+        self.domains = ['openloadmovies.tv','getmypopcornnow.xyz']
+        self.base_link = 'http://openloadmovies.tv/'
         self.ajax_link = '/wp-admin/admin-ajax.php'
         self.search_link = '/?s=%s'
         self.scraper = cfscrape.create_scraper()

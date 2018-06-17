@@ -22,8 +22,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['megashare.vc']
-        self.base_link = 'http://www1.megashare.vc/'
+        self.domains = ['megashare.bz']
+        self.base_link = 'http://megashare.bz/'
         self.search_link = '/watch/%s-%s-.html'
         
     def movie(self, imdb, title, localtitle, aliases, year):
