@@ -74,7 +74,7 @@
         <setting type="lsep" label="32343" />
         <setting id="bookmarks" type="bool" label="32344" default="true" />
         <setting type="lsep" label="32372" />
-        <setting id="crefresh" type="bool" label="32373" default="true" />
+        <setting id="crefresh" type="bool" label="32373" default="false" />
     </category>
     <category label="32345">
         <setting label="English" type="lsep" />
@@ -109,9 +109,6 @@
         <setting id="provider.hdmega" type="bool" label="HDMEGA" default="true" />
         <setting id="provider.huluplus" type="bool" label="HULUPLUS" default="true" />
         <setting id="provider.icefilms" type="bool" label="ICEFILMS" default="true" />
-        <setting id="provider.icouchtuner" type="bool" label="ICOUCHTUNER" default="true" />
-        <setting id="provider.katru" type="bool" label="KATRU" default="false" />
-        <setting id="provider.ktube" type="bool" label="KTUBE" default="true" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="false" />
         <setting id="provider.movie4korg" type="bool" label="MOVIE4K" default="true" />
@@ -126,7 +123,6 @@
         <setting id="provider.rlsbb" type="bool" label="RLSBB" default="true" />
         <setting id="provider.scenerls" type="bool" label="SCENERLS" default="true" />
         <setting id="provider.series9" type="bool" label="SERIES9" default="true" />
-        <setting id="provider.showbox" type="bool" label="SHOWBOX" default="true" />
         <setting id="provider.solarmoviez" type="bool" label="SOLARMOVIEZ" default="true" />
         <setting id="provider.timewatch" type="bool" label="TIMEWATCH" default="true" />
         <setting id="provider.tvrelease" type="bool" label="TVRELEASE" default="true" />
