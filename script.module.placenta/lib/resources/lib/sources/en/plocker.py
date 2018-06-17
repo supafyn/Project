@@ -28,7 +28,7 @@ class source:
         self.base_link = 'https://www2.putlockertv.to/'
         self.movie_search_path = ('search?keyword=%s')
         self.episode_search_path = ('/filter?keyword=%s&sort=post_date:Adesc'
-        self.ajax_search_path = '/ajax/film/search?ts=%s&_=%s&sort=year:desc&keyword=%s'
+        self.ajax_search_path = '/ajax/film/search?ts=%s'
         self.film_path = '/watch/%s'
         self.info_path = '/ajax/episode/info?ts=%s&_=%s&id=%s&server=28&update=0'
         self.grabber_path = '/grabber-api/?ts=%s&id=%s&token=%s&mobile=0'

@@ -26,8 +26,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['tunemovie.com', 'tunemovie.tv']
-        self.base_link = 'https://tunemovie.com'
+        self.domains = ['tunemovie.com', 'tunemovie.tv', 'tunemovie.win']
+        self.base_link = 'http://tunemovie.win'
         self.search_link = '/search/%s.html'
 
 

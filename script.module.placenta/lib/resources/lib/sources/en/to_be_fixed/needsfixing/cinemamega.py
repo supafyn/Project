@@ -80,7 +80,7 @@ class source:
             data = zip(client.parseDOM(data, 'a'), client.parseDOM(data, 'a', ret='href'))
             url = [(i[0], i[1]) for i in data if i[0] == str(int(episode))]
 
-            return url[0][1]
+            return url[0][0]
         except:
             failure = traceback.format_exc()
             log_utils.log('CinemaMega - Exception: \n' + str(failure))

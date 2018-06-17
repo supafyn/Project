@@ -13,23 +13,23 @@
 # Addon Provider: Mr.Blamo
 
 
-import re,traceback,urllib,urlparse,base64,xbmc
+import re,urllib,urlparse,base64
 
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import proxy
-from resources.lib.modules import log_utils
 from resources.lib.modules import source_utils
 
 class source:
     def __init__(self):
-        self.priority = 1
+        self.priority = 0
         self.language = ['en']
-        self.domains = ['primewire.life']
+        self.domains = ['primewire.is']
         self.base_link = 'https://www.primewire.life/'
         self.key_link = '/index.php?search'
         self.moviesearch_link = '/index.php?search_keywords=%s&key=%s&search_section=1'
         self.tvsearch_link = '/index.php?search_keywords=%s&key=%s&search_section=2'
+
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
@@ -74,16 +74,14 @@ class source:
             url = url.encode('utf-8')
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('Primewire - Exception: \n' + str(failure))
             return
+
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
             key = urlparse.urljoin(self.base_link, self.key_link)
             key = proxy.request(key, 'main_body')
             key = client.parseDOM(key, 'input', ret='value', attrs = {'name': 'key'})[0]
-
             query = self.tvsearch_link % (urllib.quote_plus(cleantitle.query(tvshowtitle)), key)
             query = urlparse.urljoin(self.base_link, query)
 
@@ -121,9 +119,8 @@ class source:
             url = url.encode('utf-8')
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('Primewire - Exception: \n' + str(failure))
             return
+
 
     def episode(self, url, imdb, tvdb, title, premiered, season, episode):
         try:
@@ -152,9 +149,8 @@ class source:
             url = url.encode('utf-8')
             return url
         except:
-            failure = traceback.format_exc()
-            log_utils.log('Primewire - Exception: \n' + str(failure))
             return
+
 
     def sources(self, url, hostDict, hostprDict):
         try:
@@ -184,15 +180,16 @@ class source:
                     quality = client.parseDOM(i, 'span', ret='class')[0]
                     quality,info = source_utils.get_release_quality(quality, url)
 
-                    sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': False})
+                    sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': url, 'direct': False, 'debridonly': False})
                 except:
                     pass
 
             return sources
         except:
-            failure = traceback.format_exc()
-            log_utils.log('Primewire - Exception: \n' + str(failure))
             return sources
+
 
     def resolve(self, url):
         return url
+
+

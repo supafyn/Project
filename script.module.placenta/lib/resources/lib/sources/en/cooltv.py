@@ -49,7 +49,7 @@ class source:
             start_url = self.show_link  % (self.base_link,tvshowtitle,season)
 
             html = client.request(start_url)
-            container = client.parseDOM(html, 'div', attrs={'class':'dwn-box'})[0]
+            container = client.parseDOM(html, 'div', attrs={'class':'dwn-box'})[1]
             Links = client.parseDOM(container, 'a', ret='href')
 
             for epi_url in Links:
