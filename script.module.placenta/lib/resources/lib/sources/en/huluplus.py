@@ -25,7 +25,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['hulutv.net']
-        self.base_link = 'http://hulutv.net'
+        self.base_link = 'http://hulutv.net/'
         self.search_link = '/search-movies/%s.html'
 
 
