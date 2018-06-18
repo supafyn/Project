@@ -21,7 +21,6 @@ import xbmcaddon
 
 # CONFIGURATION VARIABLES
 # -----------------------
-# Moved to Settings.xml via the Resources folder
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 ownAddon = xbmcaddon.Addon(id=addon_id)
 enable_installa = ownAddon.getSetting('dlimage')
@@ -64,7 +63,7 @@ content_type = "files"
 def root():
     """root menu of the addon"""
     if enable_newswin == 'true':
-        koding.Add_Dir(name='<<< Ultimas Noticias >>>', url='{"my_text":"ULtimas Noticias[CR]!!!","my_desc":""}', mode='dialog_example', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
+        koding.Add_Dir(name='<<< Ultimas Noticias / Latest News >>>', url='{"my_text":"ULtimas Noticias / Latest News[CR]!!!","my_desc":""}', mode='dialog_example', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
     if not get_list(root_xml_url):
         koding.Add_Dir(
             name=_("Message"),
