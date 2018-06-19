@@ -16,7 +16,7 @@
         <setting label="Display" type="lsep"/>
         <setting label="Enable Settings Context item" type="bool" id="settings_context" default="true"/>
         <setting label="Enable Trailer Context item" type="bool" id="trailer_context" default="true"/>
-        <setting label="Hide Help Videos" type="bool" id="hide_help" default="false" visible="false"/>
+        <setting label="Hide Help Videos" type="bool" id="hide_help" default="true" visible="false"/>
         <setting label="32505" type="lsep" visible="true"/>
         <setting label="32506" type="select"
                values="system|bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh"
@@ -35,8 +35,8 @@
         <setting label="30733" type="lsep"/>
         <setting label="30734" type="action" option="close"
                action="RunPlugin(plugin://plugin.video.chocolatesaltyballs/?mode=ScraperSettings)"/>
-        <setting id="use_link_dialog" label="30744" type="bool" default="true" />
-        <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,true)"/>
+        <setting id="use_link_dialog" label="30744" type="bool" default="false" />
+        <setting id="link_fallthrough" label="30745" type="bool"	default="false" visible="eq(-1,true)"/>
     </category>
     <category label="Resolvers">
         <setting label="30741" type="lsep"/>
@@ -46,9 +46,9 @@
         <!-- filtering settings -->
         <setting label="30735" type="lsep"/>
         <setting id="allow_debrid" label="30743" type="bool" default="false"/>
-        <setting id="allow_openload" label="30736" type="bool" default="false"/>
-        <setting id="allow_the_video_me" label="30737" type="bool" default="false"/>
-        <setting id="allow_vidup_me" label="30738" type="bool" default="false"/>
+        <setting id="allow_openload" label="30736" type="bool" default="true"/>
+        <setting id="allow_the_video_me" label="30737" type="bool" default="true"/>
+        <setting id="allow_vidup_me" label="30738" type="bool" default="true"/>
         <setting label="30760" type="lsep" visible="false"/>
         <setting id="disable_messages" label="30767" type="bool" default="false" visible="false"/>
         <setting id="enable_offensive" label="30761" type="bool" default="false" enable="eq(-1,false)" visible="false"/>

@@ -36,6 +36,12 @@
 </dir>
 
 <dir>
+	<title>[COLOR=darkmagenta]Action Movies[/COLOR]</title>
+	<link>file://blams/greatm/greatesta.xml</link>
+	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
+</dir>
+
+<dir>
     <name>[COLOR darkmagenta]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</name>
     <link>file://blams/realdebrid.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
