@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.androidbboy" name="[COLOR orange]Androidbboy[/COLOR]" version="1.1" provider-name="Jay Price">
+<addon id="repository.venom" name="[COLOR red]Venom Repository[/COLOR]" version="1.1" provider-name="Android B boy">
 	<extension point="xbmc.addon.repository" name="Silent Hunter">
 		<dir>
 			<info compressed="false">https://ironhide.000webhostapp.com/plugins/addons.xml</info>
