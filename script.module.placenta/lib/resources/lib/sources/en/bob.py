@@ -24,7 +24,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['bobmovies.net','bobmovies.online']
-        self.base_link = 'https://bobmovies.online' #'https://bobmovies.mrunlock.trade' # 'https://bobmovies.mrunlock.trade' # https://mrunlock.bid/ # https://mrunlock.stream/ # http://gomov.download/ # MRUNLOCK.INFO
+        self.base_link = 'https://bobmovies.online/' #'https://bobmovies.mrunlock.trade' # 'https://bobmovies.mrunlock.trade' # https://mrunlock.bid/ # https://mrunlock.stream/ # http://gomov.download/ # MRUNLOCK.INFO
         self.goog = 'https://www.google.com/search?q=bobmovies.online+'
         
 

@@ -24,35 +24,13 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['watchonline.tube']
-        self.base_link = 'http://watchonline.tube'
+        self.domains = ['https://www.moviesprimeonline.net/']
+        self.base_link = '/?s=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
             url = {'imdb': imdb, 'title': title, 'year': year}
-            url = urllib.urlencode(url)
-            return url
-        except:
-            return
-
-
-    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
-        try:
-            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-            url = urllib.urlencode(url)
-            return url
-        except:
-            return
-
-
-    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
-        try:
-            if url == None: return
-
-            url = urlparse.parse_qs(url)
-            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
-            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
             url = urllib.urlencode(url)
             return url
         except:
@@ -70,27 +48,14 @@ class source:
                 data = urlparse.parse_qs(url)
                 data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
-                if 'tvshowtitle' in data:
-                    url = '%s/episode/%s-s%02de%02d/' % (self.base_link, cleantitle.geturl(data['tvshowtitle']), int(data['season']), int(data['episode']))
-                    year = re.findall('(\d{4})', data['premiered'])[0]
 
-                    url = client.request(url, output='geturl')
-                    if url == None: raise Exception()
+             
+		url = '%s/%s-%s/' % (self.base_link, cleantitle.geturl(data['title']), data['year'])
 
-                    r = client.request(url)
+                url = client.request(url, output='geturl')
+                if url == None: raise Exception()
 
-                    y = client.parseDOM(r, 'span', attrs = {'class': 'date'})
-                    y += [i for i in client.parseDOM(r, 'div', attrs = {'class': 'metadatac'}) if 'date' in i]
-                    y = re.findall('(\d{4})', y[0])[0]
-                    if not y == year: raise Exception()
-
-                else:
-                    url = '%s/movie/%s-%s/' % (self.base_link, cleantitle.geturl(data['title']), data['year'])
-
-                    url = client.request(url, output='geturl')
-                    if url == None: raise Exception()
-
-                    r = client.request(url)
+                r = client.request(url)
 
             else:
                 url = urlparse.urljoin(self.base_link, url)

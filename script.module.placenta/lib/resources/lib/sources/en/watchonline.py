@@ -1,5 +1,3 @@
-# NEEDS FIXING
-
 # -*- coding: UTF-8 -*-
 #######################################################################
  # ----------------------------------------------------------------------------
@@ -19,14 +17,15 @@ import re,urllib,urlparse
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import directstream
+from resources.lib.modules import source_utils
 
 
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['onlinemovies.tube', 'watchonline.pro']
-        self.base_link = 'http://watchonline.pro'
+        self.domains = ['movietube.online']
+        self.base_link = 'https://movietube.online/'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):
@@ -86,8 +85,7 @@ class source:
                     if not y == year: raise Exception()
 
                 else:
-                    #url = '%s/watch/%s-%s/' % (self.base_link, cleantitle.geturl(data['title']), data['year'])
-                    url = '%s/%s-%s/' % (self.base_link, cleantitle.geturl(data['title']), data['year'])
+                    url = '%s/movie/%s-%s/' % (self.base_link, cleantitle.geturl(data['title']), data['year'])
 
                     url = client.request(url, output='geturl')
                     if url == None: raise Exception()
@@ -99,40 +97,26 @@ class source:
 
                 r = client.request(url)
 
-
             links = client.parseDOM(r, 'iframe', ret='src')
 
             for link in links:
-                try:
-                    url = link.replace('\/', '/')
-                    url = client.replaceHTMLCodes(url)
-                    url = 'http:' + url if url.startswith('//') else url
-                    url = url.encode('utf-8')
-
-                    if not '.php' in url: raise Exception()
-
-                    r = client.request(url, timeout='10')
-
-                    s = re.compile('<script>(.+?)</script>', re.DOTALL).findall(r)
-
-                    for i in s:
-                        try: r += jsunpack.unpack(i)
-                        except: pass
-
-                    r = re.findall('file\s*:\s*(?:\"|\')(.+?)(?:\"|\')', r)
-
-                    for i in r:
-                        try: sources.append({'source': 'gvideo', 'quality': directstream.googletag(i)[0]['quality'], 'language': 'en', 'url': i, 'direct': True, 'debridonly': False})
-                        except: pass
+                try:                    
+                    valid, hoster = source_utils.is_host_valid(link, hostDict)
+                    if not valid: continue
+                    urls, host, direct = source_utils.check_directstreams(link, hoster)
+                    for x in urls:
+                         if x['quality'] == 'SD':
+                             try:                                 
+                                 if 'HDTV' in x['url'] or '720' in  x['url']: x['quality'] = 'HD'
+                                 if '1080' in  x['url']: x['quality'] = '1080p'
+                             except:
+                                 pass
+                    sources.append({'source': host, 'quality': x['quality'], 'language': 'en', 'url': x['url'], 'direct': direct, 'debridonly': False})
                 except:
                     pass
-
             return sources
         except:
             return sources
 
-
     def resolve(self, url):
-        return directstream.googlepass(url)
-
-
+        return url

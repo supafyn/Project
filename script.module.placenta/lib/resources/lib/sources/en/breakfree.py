@@ -27,7 +27,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['breakfreemovies.biz']
-        self.base_link = 'https://www.breakfreemovies.biz/'
+        self.base_link = 'https://alphareign.lol/'
         self.search_link = '/movies.php?list=search&search=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):

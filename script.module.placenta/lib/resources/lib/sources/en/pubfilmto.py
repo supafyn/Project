@@ -26,7 +26,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['pubfilm.to']
+        self.domains = ['pubfilm.to', 'pubfilms.tv']
         self.base_link = 'http://www.pubfilms.tv/'
 
         self.tvsearch_link = '?c=movie&m=quickSearch&keyword=%s'

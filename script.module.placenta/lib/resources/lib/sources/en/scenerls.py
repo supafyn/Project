@@ -25,7 +25,7 @@ class source:
         self.language = ['en']
         self.domains = ['scene-rls.com','scene-rls.net']
         self.base_link = 'http://scene-rls.net/'
-        self.search_link = '/search/%s/feed/rss2/'
+        self.search_link = '/?s=%s'
         self.search_link_2 = '/?s=%s&submit=Find'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
