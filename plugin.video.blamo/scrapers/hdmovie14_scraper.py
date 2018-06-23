@@ -29,7 +29,7 @@ import scraper
 
 
 BASE_URL = 'http://movieocean.net'
-SEARCH_URL = '/search/'
+SEARCH_URL = '/?s=%s'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

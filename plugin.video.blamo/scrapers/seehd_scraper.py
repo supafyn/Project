@@ -28,7 +28,7 @@ from deaths_lib.constants import Q_ORDER
 import scraper
 
 
-BASE_URL = 'https://seehd.uno'
+BASE_URL = 'http://www.seehd.pl/'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

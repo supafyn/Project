@@ -115,7 +115,7 @@ class TVReleaseNet_Scraper(scraper.Scraper):
             search_url += '&cat=TV-XviD,TV-Mp4,TV-720p,TV-480p,'
         else:
             search_url += '&cat=Movies-XviD,Movies-720,Movies-480p'
-        html = requests.get(search_url, cache_limit=.25)
+        html = requests.get(search_url)
         tables = dom_parser.parse_dom(html, 'table', {'class': 'posts_table'})
         if tables:
             html = ''.join(tables)

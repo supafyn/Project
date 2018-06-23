@@ -24,7 +24,7 @@ from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
-BASE_URL = 'http://dl.my-film.in/Movie/BluRay1080p/'
+BASE_URL = 'http://sv4avadl.uploadt.com/hamed/250Top/'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL
