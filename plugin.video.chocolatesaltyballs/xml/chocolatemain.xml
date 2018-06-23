@@ -24,6 +24,13 @@
 </item>
 
 <dir>
+    <title>[COLORlimegreen]User Requests[/COLOR]</title>
+    <link>file://requests.xml</link>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
+    <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
+</dir>
+
+<dir>
     <name>[COLOR darkmagenta]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
     <link>file://blams/oneclick.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
@@ -98,11 +105,4 @@
 <dir>
     <name>[COLOR blue]Music[/COLOR]</name>
     <link>file://music.xml</link>
-</dir>
-
-<dir>
-    <title>[COLORlimegreen]User Requests[/COLOR]</title>
-    <link>file://requests.xml</link>
-    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
-    <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
 </dir>

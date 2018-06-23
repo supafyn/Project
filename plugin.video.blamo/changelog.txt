@@ -1,3 +1,9 @@
+[B]Version 2.6.0[/B]]
+-Few scraper fixed
+- Tweaks to code
+- Updated settings
+- Removed a few imports
+- Fixed a few bugs
 [B]Version 2.5.8[/B]]
 - Fixed a error
 [B]Version 2.5.7[/B]]

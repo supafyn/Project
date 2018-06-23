@@ -215,7 +215,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.blamo" version="2.5.9" name="Death Streams" provider-name="Mr.Blamo">
+<addon id="plugin.video.blamo" version="2.6.0" name="Death Streams" provider-name="Mr.Blamo">
     <requires>
 		<import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.pyxbmct"/>
@@ -336,7 +336,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="4.9" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="5.0" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" />
@@ -704,7 +704,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-    <addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.1.4" provider-name="Mr Blamo">
+    <addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.1.5" provider-name="Mr Blamo">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -888,7 +888,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.8" provider-name="Mr.Blamo">
+<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.9" provider-name="Mr.Blamo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 	</requires>
