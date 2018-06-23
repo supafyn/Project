@@ -509,6 +509,14 @@ class sources:
         except:
             pass
 
+    def createProgressDialog(self,header,items=None,i=None):
+        progressDialog = control.progressDialog if control.setting('progress.dialog') == '0' else control.progressDialogBG
+        progressDialog.create(header, '')
+        if items != None and i != None:
+            progressDialog.update(int((100 / float(len(items))) * i), str(items[i]['label']), str(' '))
+        else:
+            progressDialog.update(0)
+        return progressDialog
 
     def downloadItem(self, name, image, source):
         try:
