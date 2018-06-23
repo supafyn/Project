@@ -704,7 +704,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
     </extension>
 </addon>
 
-    <addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.1.5" provider-name="Mr Blamo">
+    <addon id="repository.blamo" name="[COLOR red]Blamo Repo[/COLOR]" version="0.1.6" provider-name="Mr Blamo">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
