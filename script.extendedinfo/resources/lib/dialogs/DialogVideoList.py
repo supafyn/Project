@@ -573,6 +573,22 @@ def get_tmdb_window(window_type):
                                 "total_results": 0}
                     url = "guest_session/%s/rated_movies?language=%s&" % (session_id, SETTING("LanguageID"))
                 self.filter_label = rated
+            elif self.mode == 'incinemas':
+                url = "movie/now_playing?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'upcoming':
+                url = "movie/upcoming?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'popularmovies':
+                url = "movie/popular?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'topratedmovies':
+                url = "movie/top_rated?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'populartvshows':
+                url = "tv/popular?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'topratedtvshows':
+                url = "tv/top_rated?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'onairtvshows':
+                url = "tv/on_the_air?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
+            elif self.mode == 'airingtodaytvshows':
+                url = "tv/airing_today?language=%s&page=%i&" % (SETTING("LanguageID"), int(self.page))
             else:
                 self.set_filter_url()
                 self.set_filter_label()
