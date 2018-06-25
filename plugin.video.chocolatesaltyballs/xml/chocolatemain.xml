@@ -55,6 +55,12 @@
 </dir>
 
 <dir>
+    <name>[COLOR red]Direct Kids[/COLOR] [COLOR orange]Movies[/COLOR]</name>
+    <link>file://blams/kidsmo.xml</link>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/</thumbnail>
+</dir>
+
+<dir>
     <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
     <link>file://adulttoon/adulttoon.xml</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/adults.jpg</thumbnail>

@@ -15,22 +15,6 @@
 </item>
 
 <item>
-	<title>[COLOR red]Incredibles 2[/COLOR]</title>
-	<meta>
-		<imdb>tt3606756</imdb>
-		<content>movie</content>
-		<title>Incredibles 2</title>
-		<year>2018</year>
-	</meta>
-	<link>
-		<sublink>searchhd</sublink>
-		<sublink>search</sublink>
-	</link>
-	<thumbnail>https://image.tmdb.org/t/p/w1280//hL9Uz2vq93vi20oxZEBBaSs4w8U.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/w1280//mabuNsGJgRuCTuGqjFkWe1xdu19.jpg</fanart>
-</item>
-
-<item>
 <title>[COLOR darkmagenta]12th Man[/COLOR]</title>
 	<meta>
 		<content>movie</content>
@@ -308,24 +292,6 @@
 	<fanart>https://image.tmdb.org/t/p/original/b48yqgYlaA9EZdCjh1EAtPe12fY.jpg</fanart>
 </item>
 
-
-<item>
-	<title>[COLOR darkmagenta]12 Strong (2018)[/COLOR]</title>
-	<meta>
-		<content>movie</content>
-		<imdb>tt1413492</imdb>
-		<title>12 Strong</title>
-		<year>2018</year>
-	</meta>
-	<link>
-
-		<sublink>https://streamango.com/embed/mbocmrbaokmamsrn</sublink>
-		<sublink>search</sublink>
-	</link>
-	<thumbnail>https://image.tmdb.org/t/p/w600_and_h900_bestv2/j18021qCeRi3yUBtqd2UFj1c0RQ.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/original/wacEk5YSNE41QeKseilyytksXmv.jpg</fanart>
-</item>
-
 <item>
 	<title>[COLOR darkmagenta]Austin Powers: International Man of Mystery (1997)[/COLOR]</title>
 	<meta>
@@ -569,19 +535,6 @@
 		<sublink>search</sublink>
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w600_and_h900_bestv2/xUqimeu4KzFeqTvblNLvG8Y1DAo.jpg</thumbnail>
-</item>
-
-<item>
-	<title>[COLOR darkmagenta]Blow (2001)[/COLOR]</title>
-	<meta>
-		<content>movie</content>
-		<imdb>tt0221027</imdb>
-	</meta>
-	<link>
-		<sublink>https://streamango.com/f/drnkspmorserclbt/Blow_mp4</sublink>
-		<sublink>search</sublink>
-	</link>
-	<thumbnail>https://image.tmdb.org/t/p/w600_and_h900_bestv2/yCLLbZzAa7jreGus7pvjZmL0bj7.jpg</thumbnail>
 </item>
 
 <item>
