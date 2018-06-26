@@ -1,3 +1,15 @@
+v0.0.3
+    - Added Maintenance check to Arrakis TV plugin, so shows up as down
+        for maintenance instead of empty results
+    - Added Caching to the Anime Plugin Menus (Cache lasts for 3 hours)
+    - Replaced Air Table plugin with Arraki Air
+    - Added Jen Team's Air Tables for additional content
+    - Colorized Sports Hub main menu
+    - New Submenu icons for Arrakis for the upcoming Dune Build - More to come
+    - Fixed some typos in menu items
+    - Sports Hub section revamped started (more to come)
+    - WWE Archive added
+
 v0.0.2
     - Loud and Proud Music Section Added
     - Kids Tube section expanded, with many thanks to d. twigwood

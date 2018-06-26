@@ -14,6 +14,12 @@
         Drop this PY in the plugins folder, and use whatever tools below you want.
 
     Version:
+        2018.6.23
+            - Updated pairing link for The Video Me
+
+        2018.6.14
+            - Fix for pairing on Mac OSX
+
         2018.6.8
             - Added Streamango and Streamcherry pairing sites
             - Added <adult> tag to hide menu items unless an addon setting enabled it (see code for setting id to use
@@ -101,7 +107,7 @@ addon_path   = xbmcaddon.Addon().getAddonInfo('path')
 PAIR_LIST = [ ("openload", "https://olpair.com/pair"),
         ("streamango", "https://streamango.com/pair"),
         ("streamcherry", "https://streamcherry.com/pair"),
-        ("the_video_me", "https://thevideo.us/pair"),
+        ("the_video_me", "https://vev.io/pair"),
         ("vid_up_me", "https://vidup.me/pair"),
         ("vshare", "http://vshare.eu/pair"),
         ("flashx", "https://www.flashx.tv/?op=login&redirect=https://www.flashx.tv/pairing.php") ]
@@ -324,7 +330,7 @@ def pairing_handler(url):
         if check_os == 'android': 
             spam_time = xbmc.executebuiltin('StartAndroidActivity(,android.intent.action.VIEW,,%s)' % (site))
         elif check_os == 'osx':
-           os.system("open -a /Applications/Safari.app %s") % (site)
+           os.system("open " + site)
         else:
             spam_time = webbrowser.open(site)
     except:

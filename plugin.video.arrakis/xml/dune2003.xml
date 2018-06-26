@@ -8,7 +8,7 @@
                 <year>2003</year>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/3.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/kids.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/kids.png</thumbnail>
         </item>
 
         <item>
@@ -20,7 +20,7 @@
                 <year>2003</year>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/4.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/kids.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/kids.png</thumbnail>
         </item>
 
         <item>
@@ -32,7 +32,7 @@
                 <year>2003</year>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/5.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/kids.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/kids.png</thumbnail>
         </item>
 
 </dune2003></arrakis>

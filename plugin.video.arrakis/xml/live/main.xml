@@ -7,7 +7,7 @@
                 <summary>Live Spain TV Feeds</summary>
             </meta>
             <swift>swiftcategory/58</swift>
-            <thumbnail>http://swiftstreamz.com/SwiftLive/images/thumbs/72898_Spain.jpg</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/spaintv.png</thumbnail>
         </dir>
 
         <dir>
@@ -17,7 +17,7 @@
                 <summary>Live UK TV Feeds</summary>
             </meta>
             <swift>swiftcategory/42</swift>
-            <thumbnail>http://swiftstreamz.com/SwiftLive/images/thumbs/22488_UK.jpg</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/uktv.png</thumbnail>
         </dir>
 
         <dir>
@@ -27,17 +27,7 @@
                 <summary>Live United States TV Feeds</summary>
             </meta>
             <swift>swiftcategory/41</swift>
-            <thumbnail>http://swiftstreamz.com/SwiftLive/images/thumbs/74909_USA.jpg</thumbnail>
-        </dir>
-
-        <dir>
-            <title>Punjabi VOD</title>
-            <meta>
-                <title>Punjabi VOD</title>
-                <summary>Punjabi Video On Demand</summary>
-            </meta>
-            <swift>swiftcategory/72</swift>
-            <thumbnail>http://swiftstreamz.com/SwiftLive/images/thumbs/53276_PUNJABIMOVIES.jpg</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/ustv.png</thumbnail>
         </dir>
 
         <dir>
@@ -47,7 +37,7 @@
                 <summary>All Live TV Categories for various countries and themes</summary>
             </meta>
             <swift>allthespice</swift>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/livetv.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/247/247-tvshows.png</thumbnail>
         </dir>
     </livetv>
 </arrakis>

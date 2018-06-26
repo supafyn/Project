@@ -3,21 +3,28 @@
         <dir>
             <title>Messiah</title>
             <meta>
-                <title>Messiah</title>
                 <summary>Discover what Arrakis (Dune) is about. From the original motion picture, to the story that lead to it, to Sy-Fy's take on the 2 prominent novels.</summary>
             </meta>
             <link>file://dune.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/messiah.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/messiah.png</thumbnail>
         </dir>
         
         <dir>
             <title>24/7 Movies and TV Shows</title>
             <meta>
-                <title>24/7 Movies and TV Shows</title>
                 <summary>Find streams for Movies, TV Shows, and Channels that are, as the title suggests, 24/7</summary>
             </meta>
             <link>file://arconai.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/247.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/247.png</thumbnail>
+        </dir>
+
+        <dir>
+            <title>4K Movies and TV Shows</title>
+            <meta>
+                <summary>One Click Play Movies and TV Shows in 4K</summary>
+            </meta>
+            <link>file://4k.xml</link>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/4k.png</thumbnail>
         </dir>
 
         <dir>
@@ -27,7 +34,7 @@
                 <summary>Live TV in standard and high definition</summary>
             </meta>
             <link>file://live/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/livetv.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv.png</thumbnail>
         </dir>
 
         <dir>
@@ -37,7 +44,7 @@
                 <summary>Themed movie and tv show sections that make use of the Universal Scrapers</summary>
             </meta>
             <link>file://moviemania/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/movies.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/movies.png</thumbnail>
         </dir>
 
         <dir>
@@ -47,7 +54,7 @@
                 <summary>One Click Play section for the Anime and Toon fix you need</summary>
             </meta>
             <link>file://anime.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime.png</thumbnail>
         </dir>
 
         <dir>
@@ -57,7 +64,7 @@
                 <summary>Countless documentaries from multiple sources to keep you informed</summary>
             </meta>
             <link>file://documented/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/docu.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/docu.png</thumbnail>
         </dir>
 
         <dir>
@@ -67,7 +74,7 @@
                 <summary>Sports addons are always a work in progress, and this is no exception. Archives and Live Feeds will grow and improve over time</summary>
             </meta>
             <link>file://sports/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/sports.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/sports.png</thumbnail>
         </dir>
 
         <dir>
@@ -77,7 +84,7 @@
                 <summary>Curated content just for the kids. From Youtube, to One Click Play, to scraper sections, we aim to source what the young ones will enjoy</summary>
             </meta>
             <link>file://kids.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/kids.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/kids.png</thumbnail>
         </dir>
 
         <dir>
@@ -87,7 +94,7 @@
                 <summary>A massive collection of live concerts for bands from around the world</summary>
             </meta>
             <link>file://concerts.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/liveandloud.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/liveandloud.png</thumbnail>
         </dir>
 
         <dir>
@@ -97,7 +104,7 @@
                 <summary>A massive collection of music that makes use of Universal Scrapers for the sources</summary>
             </meta>
             <link>file://musicwtf/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/loudandproud.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/loudandproud.png</thumbnail>
         </dir>
 
         <dir>
@@ -107,7 +114,7 @@
                 <summary>This content is only for 18+, and as such is disabled by default. Once enabled, you will need the password to gain access</summary>
             </meta>
             <adult>QXJyYWtpUG9ybnxmaWxlOi8vYWR1bHQvbWFpbi54bWw=</adult>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/spiceroom.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/spiceroom.png</thumbnail>
         </dir>
 
         <dir>
@@ -117,7 +124,7 @@
                 <summary>Find your tv shows based on the network channel they air on</summary>
             </meta>
             <link>file://networks.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/networks.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/networks.png</thumbnail>
         </dir>
 
         <dir>
@@ -127,7 +134,7 @@
                 <summary>Did someone say Podcast?</summary>
             </meta>
             <link>file://podcasts/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/voices.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/voices.png</thumbnail>
         </dir>
 
         <dir>
@@ -137,7 +144,7 @@
                 <summary>Marvel and DC movies and tv shows supported by Universal Scrapers</summary>
             </meta>
             <link>file://dasupers.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/hero.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/hero.png</thumbnail>
         </dir>
 
         <dir>
@@ -147,7 +154,7 @@
                 <summary>Arrakis specific settings, scraper settings, pairing, and more</summary>
             </meta>
             <link>file://msettings.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </dir>
     </mainmenu>
 </arrakis>

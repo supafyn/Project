@@ -1,8 +1,8 @@
 <arrakis>
     <sportsmain>
-        <item>
-            <title>Work in Progress</title>
-            <heading></heading>
-        </item>
+        <dir>
+            <title>[COLOR yellow][ FM ][/COLOR] Archive</title>
+            <fullmatch>mlb_replay/1</fullmatch>
+        </dir>
     </sportsmain>
 </arrakis>

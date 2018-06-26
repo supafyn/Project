@@ -6,7 +6,7 @@
                 <summary>Open the Settings for the addon on the Customization tab</summary>
             </meta>
             <mysettings>0/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
 
         <plugin>
@@ -15,7 +15,7 @@
                 <summary>Open the Settings for the addon on the General tab</summary>
             </meta>
             <mysettings>1/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
 
         <plugin>
@@ -24,7 +24,7 @@
                 <summary>Open the Settings for the addon on the Sports tab</summary>
             </meta>
             <mysettings>2/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
         
         <plugin>
@@ -33,7 +33,7 @@
                 <summary>Open the Settings for the addon on the General tab</summary>
             </meta>
             <mysettings>3/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
 
         <plugin>
@@ -42,7 +42,7 @@
                 <summary>Open the Settings for the addon on the Resolvers tab</summary>
             </meta>
             <mysettings>4/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
         
         <plugin>
@@ -51,7 +51,7 @@
                 <summary>Open the API Settings if you wish to add your own API Keys to Arrakis</summary>
             </meta>
             <mysettings>5/0</mysettings>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
 
         <plugin>
@@ -60,7 +60,7 @@
                 <summary>(Re)Authorize Real-Debrid in the Resolve URL Addon</summary>
             </meta>
             <link>plugin://script.module.resolveurl/?mode=auth_rd</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </plugin>
 
         <item>
@@ -69,7 +69,7 @@
                 <summary>(Re)Authorize Real-Debrid in the Resolve URL Addon</summary>
             </meta>
             <pairwith>pairlist</pairwith>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/settings.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </item>
     </mysettings>
 </arrakis>

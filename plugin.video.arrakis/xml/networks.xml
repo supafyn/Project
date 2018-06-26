@@ -3,21 +3,19 @@
         <dir>
             <title>Canadian Networks</title>
             <meta>
-                <title>Canadian Networks</title>
                 <summary>Find shows from your favorite networks in Canada. Uses Universal Scrapers to find sources</summary>
             </meta>
             <tvmaze>country/Canada/1</tvmaze>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/networksub.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/canadiantv.png</thumbnail>
         </dir>
 
         <dir>
             <title>Ireland's Networks</title>
             <meta>
-                <title>Ireland's Networks</title>
                 <summary>Find shows from your favorite networks in Ireland. Uses Universal Scrapers to find sources</summary>
             </meta>
             <tvmaze>country/Ireland/1</tvmaze>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/networksub.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/irelandtv.png</thumbnail>
         </dir>
 
         <dir>
@@ -27,17 +25,16 @@
                 <summary>Find shows from your favorite networks in the UK. Uses Universal Scrapers to find sources</summary>
             </meta>
             <tvmaze>country/United Kingdom/1</tvmaze>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/networksub.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/uktv.png</thumbnail>
         </dir>
 
         <dir>
-            <title>Unites States Networks</title>
+            <title>United States Networks</title>
             <meta>
-                <title>Unites States Networks</title>
                 <summary>Find shows from your favorite networks in the states. Uses Universal Scrapers to find sources</summary>
             </meta>
             <tvmaze>country/United States/1</tvmaze>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/networksub.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/livetv/ustv.png</thumbnail>
         </dir>
     </networks>
 </arrakis>

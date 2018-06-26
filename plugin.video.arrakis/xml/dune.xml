@@ -1,23 +1,21 @@
 <arrakis>
     <dune>
         <dir>
-            <title>The Ultimate Guide to Dune</title>
             <meta>
                 <title>The Ultimate Guide to Dune</title>
                 <summary>The guide to the greatest Sci-Fi series ever written. Frank Herbert's Masterpiece spans over the course of five thousand years, contains dozens of main characters, and explores the human condition in a way that no novels before have nor likely ever will with this passion.</summary>
             </meta>
             <link>file://duneguide.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/dune1984.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/dune1984.png</thumbnail>
         </dir>
 
         <item>
-            <title>Dune (1984) Official Trailer</title>
             <meta>
                 <title>Dune (1984) Official Trailer</title>
                 <summary>The official trailer to the movie that started an evolution in space/sci-fi movies</summary>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/7.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/trailer.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/trailer.png</thumbnail>
         </item>
 
         <item>
@@ -29,7 +27,7 @@
                 <year>2013</year>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/2.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/jodorowsky.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/jodorowsky.png</thumbnail>
         </item>
 
         <item>
@@ -41,7 +39,7 @@
                 <year>1984</year>
             </meta>
             <link>https://my.mail.ru/bk/tantrumtv/video/dune/1.html</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/dune1984.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/dune1984.png</thumbnail>
         </item>
 
         <dir>
@@ -53,7 +51,7 @@
                 <year>2000</year>
             </meta>
             <link>file://dune2000.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/dune2000.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/dune2000.png</thumbnail>
         </dir>
 
         <dir>
@@ -65,7 +63,7 @@
                 <year>2003</year>
             </meta>
             <link>file://dune2003.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/kids.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/kids.png</thumbnail>
         </dir>
     </dune>
 </arrakis>

@@ -7,7 +7,7 @@
                 <summary>18+ content, and some of the best there is</summary>
             </meta>
             <link>file://adult/cobp/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/cobp.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/cobp.png</thumbnail>
         </dir>
 
         <dir>
@@ -17,7 +17,7 @@
                 <summary>The famous EPorner site, brought into your kodi</summary>
             </meta>
             <link>file://adult/eporner/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>
@@ -27,7 +27,7 @@
                 <summary>Full length XXX movies</summary>
             </meta>
             <link>file://adult/fxxxm/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/spiceroom.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/spiceroom.png</thumbnail>
         </dir>
 
         <dir>
@@ -37,7 +37,7 @@
                 <summary>Where the famous become infamous</summary>
             </meta>
             <link>file://adult/cnw/main.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/cnw.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/cnw.png</thumbnail>
         </dir>
     </naughtyroom>
 </arrakis>

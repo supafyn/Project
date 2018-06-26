@@ -4,6 +4,19 @@ CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
  
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
 
+[B][COLOR red]2018/06/19[/COLOR][/B]
+[COLOR lime]ver 0.0.3[/COLOR]
+    - Added Maintenance check to Arrakis TV plugin, so shows up as down
+        for maintenance instead of empty results
+    - Added Caching to the Anime Plugin Menus (Cache lasts for 3 hours)
+    - Replaced Air Table plugin with Arraki Air
+    - Added Jen Team's Air Tables for additional content
+    - Colorized Sports Hub main menu
+    - New Submenu icons for Arrakis for the upcoming Dune Build - More to come
+    - Fixed some typos in menu items
+    - Sports Hub section revamped started (more to come)
+    - WWE Archive added
+
 [B][COLOR red]2018/06/17[/COLOR][/B]
 [COLOR lime]ver 0.0.2[/COLOR]
     - Loud and Proud Music Section Added
@@ -16,3 +29,4 @@ CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
 [COLOR lime]ver 0.0.1[/COLOR]
     - Initial Release
  
+
