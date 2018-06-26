@@ -11,6 +11,22 @@
 </plugin>
 
 <item>
+	<title>[COLOR orange]A Doggone Adventure[/COLOR]</title>
+	<meta>
+		<imdb>tt6912990</imdb>
+		<content>movie</content>
+		<title>A Doggone Adventure</title>
+		<year>2018</year>
+	</meta>
+	<link>
+		<sublink>https://streamcherry.com/embed/fntsaqflcemqpdbt (HD AC3 X264)</sublink>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//xzDzDOVQnsUtLdg3ZjNp1iQZCaX.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//tffNLDEjXv1hZIgjPb3xPTnZhCD.jpg</fanart>
+</item>
+
+<item>
 	<title>[COLOR darkmagenta]The Stolen Princess[/COLOR]</title>
 	<meta>
 		<imdb>tt5378092</imdb>
@@ -19,8 +35,9 @@
 		<year>2018</year>
 	</meta>
 	<link>
-		<sublink>http://dl7.film2movie.us/film/Th.e.Sto.len.Prin.cess.2018.1080p.wb-dl.x265.HEVC.Film2Movie_US.mkv (HEVC X265)</sublink>
-		<sublink>http://dl7.film2movie.us/film/Th.e.Sto.len.Prin.cess.2018.1080p.wb-dl.Film2Movie_US.mkv (1080)</sublink>
+		<sublink>http://dl7.film2movie.us/film/Th.e.Sto.len.Prin.cess.2018.1080p.wb-dl.x265.HEVC.Film2Movie_US.mkv (1080P HEVC X265)</sublink>
+		<sublink>http://dl7.film2movie.us/film/Th.e.Sto.len.Prin.cess.2018.1080p.wb-dl.Film2Movie_US.mkv (1080P)</sublink>
+		<sublink>https://streamcherry.com/embed/ttmteqfddopdstsk (720p HD X264)</sublink>
 		<sublink>search</sublink>
 	</link>
 	<thumbnail>https://image.tmdb.org/t/p/w1280//s4IQMbi1owf8X2buyKNAkjFuZ9g.jpg</thumbnail>

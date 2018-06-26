@@ -3,12 +3,39 @@
 <heading></heading>
 </item>
 
-<plugin>
-	<name>[COLOR darkmagenta]Pair and Auth RD[/COLOR]</name>
-   <link>plugin://script.69DeathPair</link>
-   <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
-   <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
-</plugin>
+<item>
+	<title>[COLOR red]Death Race 4: Beyond Anarchy[/COLOR]</title>
+	<meta>
+		<imdb>tt3807900</imdb>
+		<content>movie</content>
+		<title>Death Race 4: Beyond Anarchy</title>
+		<year>2018</year>
+	</meta>
+	<link>
+		<sublink>https://streamcherry.com/embed/flfqnqektlbkneat (HD)</sublink>
+		<sublink>https://openload.co/embed/b9xBw6ol5e0 (HD)</sublink>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//h4CrVSJO8G2xRFgkxjPX8LCLzCk.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//W8V8d9bjLZURgEGbIB5TC70yaj.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR orange]Every Day[/COLOR]</title>
+	<meta>
+		<imdb>tt7026672</imdb>
+		<content>movie</content>
+		<title>Every Day</title>
+		<year>2018</year>
+	</meta>
+	<link>
+		<sublink>http://dl7.film2movie.us/film/Eve.ry.Da.y.2018.1080p.b.lu.ry.Film2Movie_US.mkv (1080p Bluray X264)</sublink>
+		<sublink>https://streamcherry.com/embed/nsnpdnnldnesnedr (720p HDRip H264.AC3)</sublink>
+		<sublink>https://streamcherry.com/embed/edmlkdtrcsafrasl (H264 AC3)</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//4UnME3icxSspwL0UoGZNSyyp7Xs.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//hcoeD3oLP7t2dwMK7mnRAUkUxWS.jpg</fanart>
+</item>
 
 <item>
 	<title>[COLOR darkmagenta]12 Strong[/COLOR]</title>
@@ -29,7 +56,7 @@
 </item>
 
 <item>
-	<title>[COLOR green]A Dog's Purpose (2017)[/COLOR]</title>
+	<title>[COLOR orange]A Dog's Purpose (2017)[/COLOR]</title>
 	<meta>
 		<content>movie</content>
 		<imdb>tt1753383</imdb>
@@ -131,8 +158,8 @@
 		<year>2018</year>
 	</meta>
 	<link>
-		<sublink>https://streamango.com/embed/bcnbqaaebkcoknan</sublink>
-		<sublink>https://openload.co/embed/oN7fyn6MGek/</sublink>
+		<sublink>https://streamango.com/embed/slmoqsoaobccdcto</sublink>
+		<sublink>https://streamango.com/embed/nplpnmqcecnelamc</sublink>
 		<sublink>https://openload.co/embed/6scyEnlHvpw/tfpdl.com-ep2h1872br.mkv.mp4</sublink>
 		<sublink>searchhd</sublink>
 	</link>
@@ -236,8 +263,6 @@
 	</meta>
 	<link>
 		<sublink>https://1fichier.com/?08nj8j10s4(RD)</sublink>
-		<sublink>https://openload.co/embed/IOp-7kOS--o/5movies.to-Solo.A_Star_Wars_Story.2018.720p.HDCAM.ENG.NO.WATERMARK.mp4</sublink>
-		<sublink>https://d3.downace.com/2PHl4?download_token=1343deaed979a77a7313b020a310d7932ecc3781b1fde6d6b6a5572ac4395437</sublink>
 		<sublink>https://openload.co/embed/28uX2iz78Io</sublink>
 		<sublink>search</sublink>
 	</link>

@@ -1,16 +1,16 @@
 <item>
-<title>[COLOR=snow]Follow me on Twitter:[/COLOR] [COLOR=darkmagenta]@Daddy_Blamo[/COLOR]</title>
+<title>[COLOR=snow]Follow me on Twitter:[/COLOR] [COLOR=red]@Daddy_Blamo[/COLOR]</title>
 <heading></heading>
 <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/twitter.jpg</thumbnail>
 </item>
 
 <item>
-<title>[COLOR=darkmagenta]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+<title>[COLOR=red]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
 <heading></heading>
 </item>
 
 <plugin>
-	<name>[COLOR darkmagenta]Pair and Auth RD[/COLOR]</name>
+	<name>[COLOR red]Pair and Auth RD[/COLOR]</name>
    <link>plugin://script.69DeathPair</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
    <fanart>https://ia601509.us.archive.org/25/items/fanart_20180611/fanart.jpg</fanart>
@@ -31,25 +31,25 @@
 </dir>
 
 <dir>
-    <name>[COLOR darkmagenta]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
+    <name>[COLOR red]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
     <link>file://blams/oneclick.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
 </dir>
 
 <dir>
-	<title>[COLOR=darkmagenta]CopyKatz[/COLOR]</title>
+	<title>[COLOR=orange]CopyKatz[/COLOR]</title>
 	<link>file://blams/cpastas.xml</link>
 	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
 </dir>
 
 <dir>
-	<title>[COLOR=darkmagenta]Action Movies[/COLOR]</title>
+	<title>[COLOR=red]Action Movies[/COLOR]</title>
 	<link>file://blams/greatm/greatesta.xml</link>
 	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
 </dir>
 
 <dir>
-    <name>[COLOR darkmagenta]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</name>
+    <name>[COLOR orange]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</name>
     <link>file://blams/realdebrid.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
 </dir>
@@ -57,7 +57,7 @@
 <dir>
     <name>[COLOR red]Direct Kids[/COLOR] [COLOR orange]Movies[/COLOR]</name>
     <link>file://blams/kidsmo.xml</link>
-    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/</thumbnail>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kidsmo.jpg</thumbnail>
 </dir>
 
 <dir>
@@ -70,13 +70,6 @@
     <name>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
     <link>file://kidstoon/kidtoon.xml</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kids.jpg</thumbnail>
-</dir>
-
-<dir>
-<name>[COLOR darkmagenta]Swift Streamz[/COLOR]</name>
-<link>plugin://script.module.swiftstreamz</link>
-<thumbnail>special://home/addons/script.module.swiftstreamz/icon.png</thumbnail>
-<summary>Swift Streamz</summary>
 </dir>
 
 <dir>
