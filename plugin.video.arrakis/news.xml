@@ -1,10 +1,10 @@
 CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
  
-[COLOR red]Arrakis - Version 0.0.2[/COLOR]
+[COLOR red]Arrakis - Version 0.0.3[/COLOR]
  
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
 
-[B][COLOR red]2018/06/19[/COLOR][/B]
+[B][COLOR red]2018/06/26[/COLOR][/B]
 [COLOR lime]ver 0.0.3[/COLOR]
     - Added Maintenance check to Arrakis TV plugin, so shows up as down
         for maintenance instead of empty results
