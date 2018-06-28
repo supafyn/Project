@@ -1274,7 +1274,7 @@ def get_similar_tvshows(tvshow_id):
 def get_tmdb_shows(tvshow_type):
     '''
     return list with tv shows
-    available types: airing, on_the_air, top_rated, popular
+    available types: airing_today, on_the_air, top_rated, popular
     '''
     response = get_tmdb_data("tv/%s?language=%s&" % (tvshow_type, SETTING("LanguageID")), 0.3)
     if "results" in response:

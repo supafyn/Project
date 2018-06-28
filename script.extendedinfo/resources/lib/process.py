@@ -552,6 +552,9 @@ def start_info_actions(infos, params):
                     else:
                         xbmc.executebuiltin('ReplaceWindow(10025,plugin://plugin.program.super.favourites/?label=TotalSearch&mode=400&path=special://home/addons/script.extendedinfo/resources/extras/total/)')
                         xbmc.executebuiltin("Dialog.Close(all,true)")
+                elif params.get("mode", ""):
+                    wm.open_video_list(media_type=params.get("type", ""),
+                                       mode=params.get("mode", ""))
                 else:
                     wm.open_video_list(media_type=params.get("type", ""),
                                        mode="filter")
