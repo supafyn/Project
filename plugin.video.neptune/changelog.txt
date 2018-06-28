@@ -1,5 +1,3 @@
-[B]1.4.4[/B]
-- Updated lists
 [B]1.4.3[/B]
 - Down loader Fixed Should pop up successful window 
 [B]1.4.2[/B]
