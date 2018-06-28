@@ -3,7 +3,7 @@
         <dir>
             <title>[COLOR red][B]EPorner Allows 30 Views a Day[/B][/COLOR]</title>
             <heading></heading>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>
@@ -21,25 +21,25 @@
         <dir>
             <title>Currently Watched</title>
             <eporner>currently</eporner>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>
             <title>Top Rated</title>
             <eporner>top-rated</eporner>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>
             <title>Categories</title>
             <link>file://adult/eporner/cats.xml</link>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>
             <title>Pornstars</title>
             <eporner>pornstars</eporner>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/adult/eporner.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/adult/eporner.png</thumbnail>
         </dir>
 
         <dir>

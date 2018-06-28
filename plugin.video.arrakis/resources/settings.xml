@@ -40,6 +40,7 @@
         <setting label="NFL Replays Per Page" type="select" values="25|50|75|100" id="nfl_replay" default="25" visible="true"/>
         <setting label="NHL Replays Per Page" type="select" values="25|50|75|100" id="nhl_replay" default="25" visible="true"/>
         <setting label="Show NHL Tonight in Archives" type="bool" id="nhl_tonight" default="true" visible="true"/>
+        <setting label="WWE Replays Per Page" type="select" values="25|50|75|100" id="wwe_replay" default="25" visible="true"/>
     </category>
 
     <!-- scraper settings -->

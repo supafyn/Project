@@ -108,22 +108,32 @@ def get_swiftstreamz(url):
     try:
         headers = {'Authorization': 'Basic U3dpZnRTdHJlYW16OkBTd2lmdFN0cmVhbXpA', 'User-Agent': User_Agent}
         response = requests.get(base_api_url,headers=headers)
-        response = response.json(strict=False)
-        for a in response['LIVETV']:
-            try:
-                name = a['category_name']
-                id   = a['cid']
-                icon = base_ico_url % (a['category_image'])
-                xml += "<dir>"\
-                       "    <title>%s</title>"\
-                       "    <meta>"\
-                       "        <summary>%s</summary>"\
-                       "    </meta>"\
-                       "    <swift>swiftcategory/%s</swift>"\
-                       "    <thumbnail>%s</thumbnail>"\
-                       "</dir>" % (name,name,id,icon)
-            except:
-                pass
+        if 'Erreur 503' in response.content:
+            xml += "<dir>"\
+                   "    <title>[B]System down for maintenance[/B]</title>"\
+                   "    <meta>"\
+                   "        <summary>System down for maintenance</summary>"\
+                   "    </meta>"\
+                   "    <heading></heading>"\
+                   "    <thumbnail>%s</thumbnail>"\
+                   "</dir>" % (addon_icon)
+        else:
+            response = response.json(strict=False)
+            for a in response['LIVETV']:
+                try:
+                    name = a['category_name']
+                    id   = a['cid']
+                    icon = base_ico_url % (a['category_image'])
+                    xml += "<dir>"\
+                           "    <title>%s</title>"\
+                           "    <meta>"\
+                           "        <summary>%s</summary>"\
+                           "    </meta>"\
+                           "    <swift>swiftcategory/%s</swift>"\
+                           "    <thumbnail>%s</thumbnail>"\
+                           "</dir>" % (name,name,id,icon)
+                except:
+                    pass
     except:
         pass
 
@@ -139,22 +149,32 @@ def get_swiftstreamz_category(url):
         url = base_cat_url % (url)
         headers = {'Authorization': 'Basic QFN3aWZ0MTEjOkBTd2lmdDExIw', 'User-Agent': User_Agent}
         response = requests.get(url,headers=headers)
-        response = response.json(strict=False)
-        for a in response['LIVETV']:
-            if not 'm3u8' in a['channel_url']:
-                continue
-            name = a['channel_title']
-            url  = a['channel_url']
-            icon = base_ico_url % (a['channel_thumbnail'])
-            desc = a['channel_desc']
-            xml += "<item>"\
-                   "    <title>%s</title>"\
+        if 'Erreur 503' in response.content:
+            xml += "<dir>"\
+                   "    <title>[B]System down for maintenance[/B]</title>"\
                    "    <meta>"\
-                   "        <summary>%s</summary>"\
+                   "        <summary>System down for maintenance</summary>"\
                    "    </meta>"\
-                   "    <swift>swiftplay/%s</swift>"\
+                   "    <heading></heading>"\
                    "    <thumbnail>%s</thumbnail>"\
-                   "</item>" % (name,desc,url,icon)
+                   "</dir>" % (addon_icon)
+        else:
+            response = response.json(strict=False)
+            for a in response['LIVETV']:
+                if not 'm3u8' in a['channel_url']:
+                    continue
+                name = a['channel_title']
+                url  = a['channel_url']
+                icon = base_ico_url % (a['channel_thumbnail'])
+                desc = a['channel_desc']
+                xml += "<item>"\
+                       "    <title>%s</title>"\
+                       "    <meta>"\
+                       "        <summary>%s</summary>"\
+                       "    </meta>"\
+                       "    <swift>swiftplay/%s</swift>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</item>" % (name,desc,url,icon)
     except:
         pass
 

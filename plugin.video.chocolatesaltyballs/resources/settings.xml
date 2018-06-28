@@ -7,15 +7,15 @@
         <setting label="32508" type="select" values="Trakt|TMDB" id="movie_metadata_provider" default="Trakt"/>
         <setting label="32509" type="select" values="Trakt|TVDB" id="tv_metadata_provider" default="Trakt"/>
         <setting label="32510" type="lsep" visible="false"/>
-        <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH" visible="false"/>
+        <setting label="32511" type="select" values="BOTH|SD|HD" id="default_link" default="BOTH" visible="true"/>
         <setting label="32514" type="lsep" visible="false"/>
-        <setting label="32515" type="bool" id="enable_gifs" default="false" visible="false"/>
+        <setting label="32515" type="bool" id="enable_gifs" default="false" visible="true"/>
         <setting label="Cool Choices" type="lsep"/>
         <setting id="news_win" type="bool" label="Enable News Dialog" default="true" visible="true"/>
         <setting id="dlimage" type="bool" label="Enable Image Downloader" default="false" visible="true"/>
         <setting label="Display" type="lsep"/>
         <setting label="Enable Settings Context item" type="bool" id="settings_context" default="true"/>
-        <setting label="Enable Trailer Context item" type="bool" id="trailer_context" default="true"/>
+        <setting label="Enable Trailer Context item" type="bool" id="trailer_context" default="false"/>
         <setting label="Hide Help Videos" type="bool" id="hide_help" default="true" visible="false"/>
         <setting label="32505" type="lsep" visible="true"/>
         <setting label="32506" type="select"

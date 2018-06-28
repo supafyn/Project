@@ -7,7 +7,7 @@
                 <summary>50 Most Recent Releases</summary>
             </meta>
             <wctoon>topfifty/last-50-recent-release</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime1.png</thumbnail>
         </dir>
 
         <dir>
@@ -17,7 +17,7 @@
                 <summary>Most Popular Series On The Site</summary>
             </meta>
             <wctoon>main/sidebar-titles/0</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime2.png</thumbnail>
         </dir>
 
         <dir>
@@ -27,7 +27,7 @@
                 <summary>Most recent series updated</summary>
             </meta>
             <wctoon>main/recent-release-main/1</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime3.png</thumbnail>
         </dir>
 
         <dir>
@@ -37,7 +37,7 @@
                 <summary>Dubbed Anime titles</summary>
             </meta>
             <wctoon>category/dubbed-anime-list</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime4.png</thumbnail>
         </dir>
 
         <dir>
@@ -47,7 +47,7 @@
                 <summary>Subbed Anime titles</summary>
             </meta>
             <wctoon>category/subbed-anime-list</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime5.png</thumbnail>
         </dir>
 
         <dir>
@@ -57,7 +57,7 @@
                 <summary>Cartoons (not specifically anime)</summary>
             </meta>
             <wctoon>category/cartoon-list</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime6.png</thumbnail>
         </dir>
 
         <dir>
@@ -67,7 +67,7 @@
                 <summary>Anime and Cartoon Movies</summary>
             </meta>
             <wctoon>category/movie-list</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime7.png</thumbnail>
         </dir>
 
         <dir>
@@ -77,7 +77,7 @@
                 <summary>Ova Series</summary>
             </meta>
             <wctoon>category/ova-list</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime8.png</thumbnail>
         </dir>
 
         <dir>
@@ -87,7 +87,7 @@
                 <summary>Search for a specific movie, show, or episode</summary>
             </meta>
             <wctoon>wcsearch</wctoon>
-            <thumbnail>special://home/addons/plugin.video.arrakis/resources/media/anime.png</thumbnail>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/anime/anime9.png</thumbnail>
         </dir>
     </anime>
 </arrakis>

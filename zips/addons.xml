@@ -188,7 +188,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.arrakis" name="Arrakis" version="0.0.2" provider-name="69 Death Squad">
+<addon id="plugin.video.arrakis" name="Arrakis" version="0.0.3" provider-name="69 Death Squad">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -336,7 +336,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 	</extension>
 </addon>
 
-<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="5.0" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="5.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" />
@@ -344,7 +344,6 @@ This is a Non-profit resource, organized solely for educational purposes which i
         <import addon="script.module.beautifulsoup" version="3.2.1" />
         <import addon="script.module.requests" version="2.9.1" />
         <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.swiftstreamz" />
         <import addon="script.module.xmltodict" version="0.9.0" />
         <import addon="script.module.resolveurl" />
     </requires>
@@ -1018,7 +1017,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
   </extension>
 </addon>
 
-<addon id="script.module.placenta" name="Placenta Module" version="1.4.9" provider-name="Team Afterbirth">
+<addon id="script.module.placenta" name="Placenta Module" version="1.5.0" provider-name="Team Afterbirth">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>

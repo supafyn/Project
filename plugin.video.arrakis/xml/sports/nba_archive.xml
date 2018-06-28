@@ -1,12 +1,17 @@
 <arrakis>
     <sportsmain>
         <dir>
-            <title>Full Archive</title>
+            <title>[COLOR yellow][ FM ][/COLOR] Archive</title>
+            <fullmatch>nba_replay/1</fullmatch>
+        </dir>
+
+        <dir>
+            <title>[COLOR yellow][ NBAReplay ][/COLOR] Archive #1</title>
             <sportshub>sh_nba/6/1</sportshub>
         </dir>
 
         <dir>
-            <title>Playoffs Archive</title>
+            <title>[COLOR yellow][ NBAReplay ][/COLOR] Archive #2</title>
             <sportshub>sh_nba/43/1</sportshub>
         </dir>
     </sportsmain>
