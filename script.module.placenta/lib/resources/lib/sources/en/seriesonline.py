@@ -19,13 +19,12 @@ from resources.lib.modules import client
 from resources.lib.modules import directstream
 from resources.lib.modules import cache
 
-
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['seriesonline.io']
-        self.base_link = 'https://seriesonline8.co/'
+        self.domains = ['seriesonline8.co']
+        self.base_link = 'https://www1.seriesonline8.co/'
         self.search_link = '/movie/search/%s'
 
     def matchAlias(self, title, aliases):

@@ -83,37 +83,37 @@ class source:
             if r:
                 url = client.parseDOM(r, 'a', ret='href')[0]
                 url = re.sub(r'\/\/xmovies8\.es', '', url)
-            # if sr:
-            #     r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #     r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #     r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #     r = [(i[0], re.findall('(.+?)\s+-\s+S(\d+)', i[1])) for i in r]
-            #     r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #     r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
-            # else:
-            #     url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s Season %01d' % (title.replace('\'', '-'), int(season)))))
-            #     sr = client.request(url, headers=headers, timeout='10')
-            #     if sr:
-            #         r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #         r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #         r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #         r = [(i[0], re.findall('(.+?)\s+-\s+Season\s+(\d+)', i[1])) for i in r]
-            #         r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #         r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
-            #     else:
-            #         url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s %01d' % (title.replace('\'', '-'), int(year)))))
-            #         sr = client.request(url, headers=headers, timeout='10')
-            #         if sr:
-            #             r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
-            #             r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
-            #             r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
-            #             r = [(i[0], re.findall('(.+?) \((\d{4})', i[1])) for i in r]
-            #             r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
-            #             r = [i[0] for i in r if t == cleantitle.get(i[1]) and year == i[2]][0]
-            # url = re.findall('(?://.+?|)(/.+)', r)[0]
-            # url = client.replaceHTMLCodes(url)
-            #
-            # return url.encode('utf-8')
+            if sr:
+                r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                r = [(i[0], re.findall('(.+?)\s+-\s+S(\d+)', i[1])) for i in r]
+                r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
+            else:
+                url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s Season %01d' % (title.replace('\'', '-'), int(season)))))
+                sr = client.request(url, headers=headers, timeout='10')
+                if sr:
+                    r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                    r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                    r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                    r = [(i[0], re.findall('(.+?)\s+-\s+Season\s+(\d+)', i[1])) for i in r]
+                    r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                    r = [i[0] for i in r if t == cleantitle.get(i[1]) and int(season) == int(i[2])][0]
+                else:
+                    url = urlparse.urljoin(self.base_link, self.search_link % urllib.quote_plus(cleantitle.query('%s %01d' % (title.replace('\'', '-'), int(year)))))
+                    sr = client.request(url, headers=headers, timeout='10')
+                    if sr:
+                        r = client.parseDOM(sr, 'h2', attrs={'class': 'tit'})
+                        r = [(client.parseDOM(i, 'a', ret='href'), client.parseDOM(i, 'a', ret='title')) for i in r]
+                        r = [(i[0][0], i[1][0]) for i in r if len(i[0]) > 0 and len(i[1]) > 0]
+                        r = [(i[0], re.findall('(.+?) \((\d{4})', i[1])) for i in r]
+                        r = [(i[0], i[1][0][0], i[1][0][1]) for i in r if len(i[1]) > 0]
+                        r = [i[0] for i in r if t == cleantitle.get(i[1]) and year == i[2]][0]
+            url = re.findall('(?://.+?|)(/.+)', r)[0]
+            url = client.replaceHTMLCodes(url)
+            
+            return url.encode('utf-8')
 
             return url
         except:

@@ -17,12 +17,13 @@ import sys
 from bs4 import BeautifulSoup
 import re
 
+# Kudos to NIXGATES
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
         self.domain = 'soaptv.me'
-        self.base_link = 'https://soaptv.me'
+        self.base_link = 'https://soaptv.me/'
         self.search_link = 'https://soaptv.me/index.php?do=search'
         self.headers = {'referer':'https://soaptv.me'}
 

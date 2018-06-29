@@ -27,7 +27,7 @@ class source:
         self.language = ['en']
         self.domains = ['1movies.se','1movies.to','1movies.se']
         self.base_link = 'https://www2.1movies.se/'
-        self.search_link = '/search_all/%s/'
+        self.search_link = '/new_search/%s/'
         self.player_link = '/ajax/movie/load_player_v3'
 
     def movie(self, imdb, title, localtitle, aliases, year):

@@ -14,7 +14,8 @@
 
 
 import re,base64, requests, sys, urllib
-from resources.lib.modules import jsunpack, cleantitle
+from resources.lib.modules import jsunpack
+from resources.lib.modules import cleantitle
 from bs4 import BeautifulSoup
 
 from resources.lib.modules import cfscrape
@@ -61,11 +62,11 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['cmovieshd.net']
-        self.base_link = 'https://cmovieshd.net/'
-        self.tv_link = 'https://cmovieshd.net/tv-series/'
-        self.movie_link = 'https://cmovieshd.net/movie/'
-        self.search_link = 'https://cmovieshd.net/search/?q='
+        self.domains = ['cmovieshd.io']
+        self.base_link = 'https://www3.cmovies.io/'
+        self.tv_link = 'https://www3.cmovies.io/tv-series/'
+        self.movie_link = 'https://www3.cmovies.io/movie/'
+        self.search_link = 'https://www3.cmovies.io/search/?q='
 
     def movie(self, imdb, title, localtitle, aliases, year):
         url = []

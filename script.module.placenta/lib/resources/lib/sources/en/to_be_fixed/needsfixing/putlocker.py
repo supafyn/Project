@@ -21,14 +21,12 @@ from resources.lib.modules import cache
 from resources.lib.modules import directstream
 from resources.lib.modules import source_utils
 
-
-
 class source:
     def __init__(self):
-        self.priority = 0
+        self.priority = 1
         self.language = ['en']
-        self.domains = ['putlocker.systems', 'putlocker-movies.tv', 'cartoonhd.website', 'cartoonhd.online', 'cartoonhd.cc', 'cartoonhd.life']
-        self.base_link = 'https://cartoonhd.life'
+        self.domains = ['putlocker.systems', 'putlocker-movies.tv', 'cartoonhd.website', 'cartoonhd.online', 'cartoonhd.cc', 'cartoonhd.io']
+        self.base_link = 'https://cartoonhd.io/'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
