@@ -1,3 +1,13 @@
+[B]1.5.8[/B]
+- Added Add backgrounds to all menus (Main, Submenus )
+- Tweaked the skin shortcuts
+
+[B]1.5.5[/B]
+- Complete Overhaul
+- Tweaks to improve over all skin speed
+- Tweaks to imrpove skin
+- Re aranged some stuff
+
 [B]0.8.5[/B]
 • Major Update
 • Added a few things

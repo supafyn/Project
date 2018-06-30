@@ -249,14 +249,14 @@
                         <label>Set Icon</label>
 						<label2>$INFO[Container(211).ListItem.Icon]</label2>
                  </control>
-<!-- 				<control type="button" id="310">
+				 <control type="button" id="310">
                         <description>Browse for background</description>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
                         <label>$ADDON[script.skinshortcuts 32045]</label>
                         <label2>$VAR[Label_SkinSetting_Backgrounds]</label2>
 
-                    </control> -->
+                    </control>
                     <control type="button" id="3100">
                          <description>Browse for background</description>
                         <width>1256</width>
@@ -309,7 +309,7 @@
                         <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                        
                     </control>
- <!--                    <include content="Shortcuts_SetHub">
+                    <include content="Shortcuts_SetHub">
                         <param name="hubid" value="1114" />
                         <param name="buttonid1" value="1487" />
                     </include>
@@ -329,7 +329,7 @@
                         <param name="hubid" value="1118" />
                         <param name="buttonid1" value="1491" />
                     </include>          
- -->                    <control type="button" id="405">
+                    <control type="button" id="405">
                         <description>Edit submenu</description>
                         <width>1256</width>
                         <include>DefaultSettingButton</include>
