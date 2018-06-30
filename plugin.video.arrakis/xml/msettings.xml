@@ -71,5 +71,21 @@
             <pairwith>pairlist</pairwith>
             <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/settings.png</thumbnail>
         </item>
+
+        <item>
+            <title>YOUTUBE: Daily Limit Error Fix</title>
+            <meta>
+                <summary>Apply fix for YouTube Daily Limit Error</summary>
+            </meta>
+            <ytapi>Arrakis Daily Limit Fix/AIzaSyC7m0BfFiCgBcZTvynt22arZ238yQP-jI0/183165343244-r614ajldlb2fr0f6knvpp9h5devangou.apps.googleusercontent.com/9EXVjtJMJjcrMFiXcdycIZgo</ytapi>
+        </item>
+
+        <item>
+            <title>YOUTUBE: Live and CAMS Fix</title>
+            <meta>
+                <summary>Apply fix for YouTube Live playback issues and if you have problems with CAMS</summary>
+            </meta>
+            <ytdash></ytdash>
+        </item>
     </mysettings>
 </arrakis>

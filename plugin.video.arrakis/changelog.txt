@@ -1,3 +1,14 @@
+v0.0.4
+    - Rework and cleanup of FXXXMovies (Thanks to KritikTV)
+    - Added Caching to Collection of Best Porn, Celebrity Nude World, EPorner,
+        and Full XXX Movies
+    - Added Caching to Documentary Heaven, Top Docs, and Documentary Storm
+    - Added Caching to B98
+    - Added Caching to PodcastOne and Podbay
+    - Added Arrakis YouTube Daily Limit Fix to Settings Menu
+    - Added YouTube Live/Dash and CAMS Viewing Fix to Settings Menu
+    - TMDB Code update (Thanks to Klepto)
+
 v0.0.3
     - Added Maintenance check to Arrakis TV plugin, so shows up as down
         for maintenance instead of empty results

@@ -9,12 +9,17 @@
     this stuff is worth it, you can buy him a beer in return. - Muad'Dib
     ----------------------------------------------------------------------------
 
+    Changelog:
+        2018.6.29:
+            - Added caching to primary menus (Cache time is 3 hours)
+
 
 """
 
-import requests,re,json,os,urlparse
-import koding
 import __builtin__
+import base64,time
+import json,re,requests,os,traceback,urlparse
+import koding
 import xbmc,xbmcaddon,xbmcgui
 from koding import route
 from resources.lib.plugin import Plugin
@@ -23,7 +28,7 @@ from resources.lib.util.context import get_context_items
 from resources.lib.util.xml import JenItem, JenList, display_list
 from unidecode import unidecode
 
-CACHE_TIME = 3600  # change to wanted cache time in seconds
+CACHE_TIME = 10800  # change to wanted cache time in seconds
 
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
 addon_icon = xbmcaddon.Addon().getAddonInfo('icon')
@@ -145,46 +150,49 @@ class CNW(Plugin):
 
 @route(mode='CNW_Cat', args=["url"])
 def category_cnw(url):
-    xml = ""
     url = url.replace('category/', '')
-    try:
-        url = urlparse.urljoin('http://www.celebsnudeworld.com/', url)
-        headers = {'User_Agent':User_Agent}
-        html = requests.get(url,headers=headers).content
-        
-        cat_divs = dom_parser.parseDOM(html, 'ul', attrs={'class':'videos'})[0]
-        vid_entries = dom_parser.parseDOM(cat_divs, 'li')
-        for vid_section in vid_entries:
-            thumbnail = urlparse.urljoin('http://www.celebsnudeworld.com/', re.compile('src="(.+?)"',re.DOTALL).findall(str(vid_section))[0])
-            vid_page_url, title = re.compile('href="(.+?)"\stitle="(.+?)"',re.DOTALL).findall(str(vid_section))[0]
-            vid_page_url = urlparse.urljoin('http://www.celebsnudeworld.com/', vid_page_url)
-            xml += "<item>"\
-                   "    <title>%s</title>"\
-                   "    <meta>"\
-                   "        <summary>%s</summary>"\
-                   "    </meta>"\
-                   "    <cnw>%s</cnw>"\
-                   "    <thumbnail>%s</thumbnail>"\
-                   "</item>" % (title,title,vid_page_url,thumbnail)
+    url = urlparse.urljoin('http://www.celebsnudeworld.com/', url)
 
+    xml = fetch_from_db(url)
+    if not xml:
+        xml = ""
         try:
+            headers = {'User_Agent':User_Agent}
+            html = requests.get(url,headers=headers).content
+            
+            cat_divs = dom_parser.parseDOM(html, 'ul', attrs={'class':'videos'})[0]
+            vid_entries = dom_parser.parseDOM(cat_divs, 'li')
+            for vid_section in vid_entries:
+                thumbnail = urlparse.urljoin('http://www.celebsnudeworld.com/', re.compile('src="(.+?)"',re.DOTALL).findall(str(vid_section))[0])
+                vid_page_url, title = re.compile('href="(.+?)"\stitle="(.+?)"',re.DOTALL).findall(str(vid_section))[0]
+                vid_page_url = urlparse.urljoin('http://www.celebsnudeworld.com/', vid_page_url)
+                xml += "<item>"\
+                       "    <title>%s</title>"\
+                       "    <meta>"\
+                       "        <summary>%s</summary>"\
+                       "    </meta>"\
+                       "    <cnw>%s</cnw>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</item>" % (title,title,vid_page_url,thumbnail)
+
             try:
-                next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[1]
+                try:
+                    next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[1]
+                except:
+                    next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[0]
+                next_page = next_page.replace('/', '', 1)
+                xml += "<dir>"\
+                       "    <title>Next Page</title>"\
+                       "    <meta>"\
+                       "        <summary>Click here for more porn bitches!</summary>"\
+                       "    </meta>"\
+                       "    <cnw>category/%s</cnw>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</dir>" % (next_page,next_icon)
             except:
-                next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[0]
-            next_page = next_page.replace('/', '', 1)
-            xml += "<dir>"\
-                   "    <title>Next Page</title>"\
-                   "    <meta>"\
-                   "        <summary>Click here for more porn bitches!</summary>"\
-                   "    </meta>"\
-                   "    <cnw>category/%s</cnw>"\
-                   "    <thumbnail>%s</thumbnail>"\
-                   "</dir>" % (next_page,next_icon)
+                pass
         except:
             pass
-    except:
-        pass
 
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
@@ -192,54 +200,57 @@ def category_cnw(url):
 
 @route(mode='CNW_ShowStarVids', args=["url"])
 def pornstar_vids_cnw(url):
-    xml = ""
     url = url.replace('category/', '')
-    try:
-        xml += "<dir>"\
-               "    <title>Celebs Nude World Home</title>"\
-               "    <meta>"\
-               "        <summary>Go back to the CNW main menu</summary>"\
-               "    </meta>"\
-               "    <link>file://adult/cnw/main.xml</link>"\
-               "</dir>"
+    url = urlparse.urljoin('http://www.celebsnudeworld.com/', url)
 
-        url = urlparse.urljoin('http://www.celebsnudeworld.com/', url)
-        headers = {'User_Agent':User_Agent}
-        html = requests.get(url,headers=headers).content
-        
-        cat_divs = dom_parser.parseDOM(html, 'ul', attrs={'class':'videos'})[0]
-        vid_entries = dom_parser.parseDOM(cat_divs, 'li')
-        for vid_section in vid_entries:
-            thumbnail = urlparse.urljoin('http://www.celebsnudeworld.com/', re.compile('src="(.+?)"',re.DOTALL).findall(str(vid_section))[0])
-            vid_page_url, title = re.compile('href="(.+?)"\stitle="(.+?)"',re.DOTALL).findall(str(vid_section))[0]
-            vid_page_url = urlparse.urljoin('http://www.celebsnudeworld.com/', vid_page_url)
-            xml += "<item>"\
-                   "    <title>%s</title>"\
-                   "    <meta>"\
-                   "        <summary>%s</summary>"\
-                   "    </meta>"\
-                   "    <cnw>%s</cnw>"\
-                   "    <thumbnail>%s</thumbnail>"\
-                   "</item>" % (title,title,vid_page_url,thumbnail)
-
+    xml = fetch_from_db(url)
+    if not xml:
+        xml = ""
         try:
-            try:
-                next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[1]
-            except:
-                next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[0]
-            next_page = next_page.replace('/', '', 1)
             xml += "<dir>"\
-                   "    <title>Next Page</title>"\
+                   "    <title>Celebs Nude World Home</title>"\
                    "    <meta>"\
-                   "        <summary>Click here for more porn bitches!</summary>"\
+                   "        <summary>Go back to the CNW main menu</summary>"\
                    "    </meta>"\
-                   "    <cnw>category/%s</cnw>"\
-                   "    <thumbnail>%s</thumbnail>"\
-                   "</dir>" % (next_page,next_icon)
+                   "    <link>file://adult/cnw/main.xml</link>"\
+                   "</dir>"
+
+            headers = {'User_Agent':User_Agent}
+            html = requests.get(url,headers=headers).content
+            
+            cat_divs = dom_parser.parseDOM(html, 'ul', attrs={'class':'videos'})[0]
+            vid_entries = dom_parser.parseDOM(cat_divs, 'li')
+            for vid_section in vid_entries:
+                thumbnail = urlparse.urljoin('http://www.celebsnudeworld.com/', re.compile('src="(.+?)"',re.DOTALL).findall(str(vid_section))[0])
+                vid_page_url, title = re.compile('href="(.+?)"\stitle="(.+?)"',re.DOTALL).findall(str(vid_section))[0]
+                vid_page_url = urlparse.urljoin('http://www.celebsnudeworld.com/', vid_page_url)
+                xml += "<item>"\
+                       "    <title>%s</title>"\
+                       "    <meta>"\
+                       "        <summary>%s</summary>"\
+                       "    </meta>"\
+                       "    <cnw>%s</cnw>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</item>" % (title,title,vid_page_url,thumbnail)
+
+            try:
+                try:
+                    next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[1]
+                except:
+                    next_page = dom_parser.parseDOM(html, 'a', attrs={'class':'prevnext'}, ret='href')[0]
+                next_page = next_page.replace('/', '', 1)
+                xml += "<dir>"\
+                       "    <title>Next Page</title>"\
+                       "    <meta>"\
+                       "        <summary>Click here for more porn bitches!</summary>"\
+                       "    </meta>"\
+                       "    <cnw>category/%s</cnw>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</dir>" % (next_page,next_icon)
+            except:
+                pass
         except:
             pass
-    except:
-        pass
 
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
@@ -315,6 +326,61 @@ def play_cnw(url):
         xbmc.executebuiltin("PlayMedia(%s)" % vid_url)
     except:
         return
+
+
+def save_to_db(item, url):
+    if not item or not url:
+        return False
+    try:
+        koding.reset_db()
+        koding.Remove_From_Table(
+            "cnw_com_plugin",
+            {
+                "url": url
+            })
+
+        koding.Add_To_Table("cnw_com_plugin",
+                            {
+                                "url": url,
+                                "item": base64.b64encode(item),
+                                "created": time.time()
+                            })
+    except:
+        return False
+
+
+def fetch_from_db(url):
+    koding.reset_db()
+    cnw_plugin_spec = {
+        "columns": {
+            "url": "TEXT",
+            "item": "TEXT",
+            "created": "TEXT"
+        },
+        "constraints": {
+            "unique": "url"
+        }
+    }
+    koding.Create_Table("cnw_com_plugin", cnw_plugin_spec)
+    match = koding.Get_From_Table(
+        "cnw_com_plugin", {"url": url})
+    if match:
+        match = match[0]
+        if not match["item"]:
+            return None
+        created_time = match["created"]
+        if created_time and float(created_time) + CACHE_TIME >= time.time():
+            match_item = match["item"]
+            try:
+                result = base64.b64decode(match_item)
+            except:
+                return None
+            return result
+        else:
+            return
+    else:
+        return 
+
 
 def remove_non_ascii(text):
     return unidecode(text)

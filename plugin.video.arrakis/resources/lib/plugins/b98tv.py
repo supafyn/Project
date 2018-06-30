@@ -9,20 +9,26 @@
     this stuff is worth it, you can buy him a beer in return. - Muad'Dib
     ----------------------------------------------------------------------------
 
+    Version:
+        2018.6.29:
+            - Added caching to primary menus (Cache time is 3 hours)
+
 
 """
 
-import re,requests,os,traceback,urlparse
-import koding
 import __builtin__
+import base64,time
+import json,re,requests,os,traceback,urlparse
+import koding
 import xbmc,xbmcaddon,xbmcgui
 from koding import route
 from resources.lib.plugin import Plugin
-from resources.lib.player import JenPlayer
 from resources.lib.util import dom_parser
 from resources.lib.util.context import get_context_items
 from resources.lib.util.xml import JenItem, JenList, display_list
 from unidecode import unidecode
+
+CACHE_TIME = 10800  # change to wanted cache time in seconds
 
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
@@ -78,54 +84,57 @@ class B98TV(Plugin):
 
 @route(mode='B98Series', args=["url"])
 def get_B98Main_Processor(url):
-    xml = ""
     url = url.replace('serieslist/', '')
-    try:
-        url = urlparse.urljoin(base_main_link, url)
-        html = requests.get(url).content
-        item_list = dom_parser.parseDOM(html, 'div', attrs={'class': 'item col-lg-3 col-md-3 col-sm-12 '})
-        for content in item_list:
-            link = re.compile('href="(.+?)"',re.DOTALL).findall(content)[0]
-            icon, title = re.compile('img src="(.+?) alt="(.+?)"',re.DOTALL).findall(content)[0]
-            try:
-                link = link.replace(base_main_link,'')
-                title = replaceHTMLCodes(title)
-                if 'videos_categories' in link:
-                    if 'Darkwing Duck' not in title: # Why Dandy? Why?
-                        xml += "<dir>"\
+    url = urlparse.urljoin(base_main_link, url)
+
+    xml = fetch_from_db(url)
+    if not xml:
+        xml = ""
+        try:
+            html = requests.get(url).content
+            item_list = dom_parser.parseDOM(html, 'div', attrs={'class': 'item col-lg-3 col-md-3 col-sm-12 '})
+            for content in item_list:
+                link = re.compile('href="(.+?)"',re.DOTALL).findall(content)[0]
+                icon, title = re.compile('img src="(.+?) alt="(.+?)"',re.DOTALL).findall(content)[0]
+                try:
+                    link = link.replace(base_main_link,'')
+                    title = replaceHTMLCodes(title)
+                    if 'videos_categories' in link:
+                        if 'Darkwing Duck' not in title: # Why Dandy? Why?
+                            xml += "<dir>"\
+                                   "    <title>%s</title>"\
+                                   "    <meta>"\
+                                   "        <summary>%s</summary>"\
+                                   "    </meta>"\
+                                   "    <B98>serieslist/%s</B98>"\
+                                   "    <thumbnail>%s</thumbnail>"\
+                                   "</dir>" % (title,title,link,icon)
+                    else:
+                        xml += "<item>"\
                                "    <title>%s</title>"\
                                "    <meta>"\
                                "        <summary>%s</summary>"\
                                "    </meta>"\
-                               "    <B98>serieslist/%s</B98>"\
+                               "    <B98>playtoon/%s</B98>"\
                                "    <thumbnail>%s</thumbnail>"\
-                               "</dir>" % (title,title,link,icon)
-                else:
-                    xml += "<item>"\
-                           "    <title>%s</title>"\
-                           "    <meta>"\
-                           "        <summary>%s</summary>"\
-                           "    </meta>"\
-                           "    <B98>playtoon/%s</B98>"\
-                           "    <thumbnail>%s</thumbnail>"\
-                           "</item>" % (title,title,link,icon)
-            except:
-                continue
+                               "</item>" % (title,title,link,icon)
+                except:
+                    continue
 
-        try:
-            navi_link = re.compile('a class="next page-numbers" href="(.+?)"',re.DOTALL).findall(html)[0]
-            xml += "<dir>"\
-                   "    <title>Next Page >></title>"\
-                   "    <meta>"\
-                   "        <summary>Click here to see the next page of awesome content!</summary>"\
-                   "    </meta>"\
-                   "    <B98>serieslist/%s</B98>"\
-                   "    <thumbnail>%s</thumbnail>"\
-                   "</dir>" % (navi_link,next_icon)
+            try:
+                navi_link = re.compile('a class="next page-numbers" href="(.+?)"',re.DOTALL).findall(html)[0]
+                xml += "<dir>"\
+                       "    <title>Next Page >></title>"\
+                       "    <meta>"\
+                       "        <summary>Click here to see the next page of awesome content!</summary>"\
+                       "    </meta>"\
+                       "    <B98>serieslist/%s</B98>"\
+                       "    <thumbnail>%s</thumbnail>"\
+                       "</dir>" % (navi_link,next_icon)
+            except:
+                pass
         except:
             pass
-    except:
-        pass
 
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
@@ -148,6 +157,60 @@ def get_B98Play(url):
         return
     except:
         pass
+
+
+def save_to_db(item, url):
+    if not item or not url:
+        return False
+    try:
+        koding.reset_db()
+        koding.Remove_From_Table(
+            "b98_com_plugin",
+            {
+                "url": url
+            })
+
+        koding.Add_To_Table("b98_com_plugin",
+                            {
+                                "url": url,
+                                "item": base64.b64encode(item),
+                                "created": time.time()
+                            })
+    except:
+        return False
+
+
+def fetch_from_db(url):
+    koding.reset_db()
+    b98_plugin_spec = {
+        "columns": {
+            "url": "TEXT",
+            "item": "TEXT",
+            "created": "TEXT"
+        },
+        "constraints": {
+            "unique": "url"
+        }
+    }
+    koding.Create_Table("b98_com_plugin", b98_plugin_spec)
+    match = koding.Get_From_Table(
+        "b98_com_plugin", {"url": url})
+    if match:
+        match = match[0]
+        if not match["item"]:
+            return None
+        created_time = match["created"]
+        if created_time and float(created_time) + CACHE_TIME >= time.time():
+            match_item = match["item"]
+            try:
+                result = base64.b64decode(match_item)
+            except:
+                return None
+            return result
+        else:
+            return
+    else:
+        return 
 
 
 def replaceHTMLCodes(txt):

@@ -1,8 +1,20 @@
 CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
  
-[COLOR red]Arrakis - Version 0.0.3[/COLOR]
+[COLOR red]Arrakis - Version 0.0.4[/COLOR]
  
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
+
+[B][COLOR red]2018/06/30[/COLOR][/B]
+[COLOR lime]ver 0.0.4[/COLOR]
+    - Rework and cleanup of FXXXMovies (Thanks to KritikTV)
+    - Added Caching to Collection of Best Porn, Celebrity Nude World, EPorner,
+        and Full XXX Movies
+    - Added Caching to Documentary Heaven, Top Docs, and Documentary Storm
+    - Added Caching to B98
+    - Added Caching to PodcastOne and Podbay
+    - Added Arrakis YouTube Daily Limit Fix to Settings Menu
+    - Added YouTube Live/Dash and CAMS Viewing Fix to Settings Menu
+    - TMDB Code update (Thanks to Klepto)
 
 [B][COLOR red]2018/06/26[/COLOR][/B]
 [COLOR lime]ver 0.0.3[/COLOR]
