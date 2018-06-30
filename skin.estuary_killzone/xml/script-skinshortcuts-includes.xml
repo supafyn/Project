@@ -37,33 +37,28 @@
 		</item>
 		<item id="3">
 			<property name="id">$NUMBER[3]</property>
-			<label>[COLOR orange]Movies[/COLOR]</label>
-			<label2>Custom item</label2>
-			<icon>DefaultAddon.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.extendedinfo%5cicon.png/</thumb>
-			<property name="labelID">colororange-movies-color</property>
-			<property name="defaultID">script.extendedinfo</property>
-			<property name="translatedPath">RunAddOn(script.extendedinfo)</property>
+			<label>[COLOR orange]Movie Mania[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/addtile.png</icon>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.arrakis%2fresources%2fmedia%2fmovies.png/</thumb>
+			<property name="labelID">colororange-moviemania-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fmoviemania%2Fmain.xml&amp;name=Movie+Mania&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fmovies.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
 			<property name="widget.personalposter1">Addon</property>
 			<property name="widgetName.personalposter1">[COLORorange]I Love The 80s[/COLOR]</property>
 			<property name="widgetType.personalposter1">movies</property>
 			<property name="widgetTarget.personalposter1">videos</property>
 			<property name="widgetPath.personalposter1">plugin://plugin.video.neptune/?action=movies&amp;url=eighties&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</property>
 			<property name="widget.personalposter2">Addon</property>
-			<property name="widgetName.personalposter2">[COLORorange]CSB[/COLOR] [B][COLORorange]B.C (Direct Links) [/COLOR][/B]</property>
-			<property name="widgetType.personalposter2">videos</property>
+			<property name="widgetName.personalposter2">[COLOR orange]In-Cinema Movies [/COLOR]</property>
+			<property name="widgetType.personalposter2">movies</property>
 			<property name="widgetTarget.personalposter2">videos</property>
-			<property name="widgetPath.personalposter2">plugin://plugin.video.chocolatesaltyballs/?mode=get_list&amp;url=file%3A%2F%2Fblams%2Foneclick.xml&amp;name=%5BCOLOR+FFff10e701%5D%5BCOLOR+FFffffffff%5D%5BB%5D%5BCOLORorange%5DBlamo%27s+Collection+%28Direct+Links%29+%5B%2FCOLOR%5D%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cicon.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
-			<property name="widget.personalposter3">Addon</property>
-			<property name="widgetName.personalposter3">[COLOR orange]Reddit Top 250[/COLOR]</property>
-			<property name="widgetType.personalposter3">movies</property>
-			<property name="widgetTarget.personalposter3">videos</property>
-			<property name="widgetPath.personalposter3">plugin://plugin.video.copyandpaste/?mode=get_list&amp;url=https%3A%2F%2Flw762.ultraseedbox.com%2F%7Emafiatony%2Ffiles%2Fthumbs%2Freddit-top-250-2017-edition.xml&amp;name=%5BCOLOR+white%5DReddit+Top+250%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.copyandpaste%5Cicon.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.copyandpaste%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
-			<onclick>ActivateWindow(Videos,"plugin://script.extendedinfo?info=allmovies",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://script.extendedinfo?info=allmovies",return)</property>
-			<property name="list">plugin://script.extendedinfo?info=allmovies</property>
+			<property name="widgetPath.personalposter2">plugin://script.extendedinfo?info=incinemas</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fmoviemania%2Fmain.xml&amp;name=Movie+Mania&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fmovies.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fmoviemania%2Fmain.xml&amp;name=Movie+Mania&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fmovies.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fmoviemania%2Fmain.xml&amp;name=Movie+Mania&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fmovies.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">colororange-movies-color</property>
+			<property name="submenuVisibility">colororange-moviemania-color</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
@@ -82,10 +77,10 @@
 			<property name="widgetTarget.personalposter1">videos</property>
 			<property name="widgetPath.personalposter1">plugin://plugin.video.placenta/?action=calendar&amp;url=added&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widget.personalposter2">Addon</property>
-			<property name="widgetName.personalposter2">[COLORorange]CSB[/COLOR] - [COLOR FFff542ba4][COLOR FFffffffff][B][COLORwhite]24/7 TV Shows[/COLOR][/B][/COLOR][/COLOR]</property>
+			<property name="widgetName.personalposter2">[COLOR orange]24/7 TV Shows[/COLOR]</property>
 			<property name="widgetType.personalposter2">videos</property>
 			<property name="widgetTarget.personalposter2">videos</property>
-			<property name="widgetPath.personalposter2">plugin://plugin.video.chocolatesaltyballs/?mode=get_shows2&amp;url=shows&amp;name=%5BCOLOR+FFff542ba4%5D%5BCOLOR+FFffffffff%5D%5BB%5D%5BCOLORwhite%5D24%2F7+TV+Shows%5B%2FCOLOR%5D%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cicon.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
+			<property name="widgetPath.personalposter2">plugin://plugin.video.arrakis/?mode=get_shows2&amp;url=shows&amp;name=24%2F7+TV+Shows&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2F247.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<onclick>ActivateWindow(Videos,"plugin://script.extendedinfo?info=alltvshows",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://script.extendedinfo?info=alltvshows",return)</property>
 			<property name="list">plugin://script.extendedinfo?info=alltvshows</property>
@@ -97,30 +92,30 @@
 		<item id="5">
 			<property name="id">$NUMBER[5]</property>
 			<label>[COLOR orange]Kids Zone[/COLOR]</label>
-			<label2>Custom item</label2>
+			<label2>Video Add-On</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.squadcontrol%5cicon.png/</thumb>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.arrakis%2fresources%2fmedia%2fanime.png/</thumb>
 			<property name="labelID">colororange-kidszone-color</property>
-			<property name="defaultID">plugin.video.squadcontrol</property>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.squadcontrol",return)</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fanime.xml&amp;name=Anime+and+Toons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fanime.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
 			<property name="widget.personalposter1">Addon</property>
 			<property name="widgetName.personalposter1">[COLORorange]CSB[/COLOR] - [COLOR FFff0519c6][COLOR FFffffffff][B][COLORwhite]Popular Series[/COLOR][/B][/COLOR][/COLOR]</property>
 			<property name="widgetType.personalposter1">videos</property>
 			<property name="widgetTarget.personalposter1">videos</property>
 			<property name="widgetPath.personalposter1">plugin://plugin.video.chocolatesaltyballs/?mode=WCPopular&amp;url=popular-list&amp;name=%5BCOLOR+FFff0519c6%5D%5BCOLOR+FFffffffff%5D%5BB%5D%5BCOLORwhite%5DPopular+Series%5B%2FCOLOR%5D%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cicon.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.chocolatesaltyballs%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widget.personalposter2">Addon</property>
-			<property name="widgetName.personalposter2">[COLORorange]Kids Corner[/COLOR]</property>
+			<property name="widgetName.personalposter2">[COLOR orange]To Be A Hero[/COLOR]</property>
 			<property name="widgetType.personalposter2">videos</property>
 			<property name="widgetTarget.personalposter2">videos</property>
-			<property name="widgetPath.personalposter2">plugin://plugin.video.placenta/?action=kidscorner&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
+			<property name="widgetPath.personalposter2">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fdasupers.xml&amp;name=To+Be+A+Hero&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fhero.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widget.personalposter3">Addon</property>
 			<property name="widgetName.personalposter3">[COLORorange]Disney and Pixar[/COLOR]</property>
 			<property name="widgetType.personalposter3">movies</property>
 			<property name="widgetTarget.personalposter3">videos</property>
 			<property name="widgetPath.personalposter3">plugin://plugin.video.neptune/?action=movies&amp;url=disney&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.squadcontrol/?mode=WatchCartoon&amp;url=category%2Fcartoon-list&amp;name=Cartoons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.squadcontrol%2Fresources%2Fmedia%2Fcartoons.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.squadcontrol%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.squadcontrol/?mode=WatchCartoon&amp;url=category%2Fcartoon-list&amp;name=Cartoons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.squadcontrol%2Fresources%2Fmedia%2Fcartoons.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.squadcontrol%5Cfanart.jpg&amp;description=No+information+available",return)</property>
-			<property name="list">plugin://plugin.video.squadcontrol/?mode=WatchCartoon&amp;url=category%2Fcartoon-list&amp;name=Cartoons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.squadcontrol%2Fresources%2Fmedia%2Fcartoons.png&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.squadcontrol%5Cfanart.jpg&amp;description=No+information+available</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fanime.xml&amp;name=Anime+and+Toons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fanime.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fanime.xml&amp;name=Anime+and+Toons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fanime.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fanime.xml&amp;name=Anime+and+Toons&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fanime.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
 			<property name="submenuVisibility">colororange-kidszone-color</property>
 			<property name="group">mainmenu</property>
@@ -128,13 +123,13 @@
 		</item>
 		<item id="6">
 			<property name="id">$NUMBER[6]</property>
-			<label>[COLOR orange]Search Music[/COLOR]</label>
-			<label2>Music Add-On</label2>
+			<label>[COLOR orange]Live &amp; Loud[/COLOR]</label>
+			<label2>Video Add-On</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.audio.thunderstruck%5cart%2ficon.png/</thumb>
-			<property name="labelID">colororange-searchmusic-color</property>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.arrakis%2fresources%2fmedia%2fliveandloud.png/</thumb>
+			<property name="labelID">colororange-live-loud-color</property>
 			<property name="defaultID" />
-			<property name="translatedPath">ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=url&amp;mode=24&amp;name=Search+Songs&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=search songs&lt;&gt;url&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fconcerts.xml&amp;name=Live+and+Loud&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fliveandloud.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
 			<property name="widget.personalposter1">Addon</property>
 			<property name="widgetName.personalposter1">[COLOR orange][B]Alive[COLOR lime].[COLOR orange]HD[/B][/COLOR]</property>
 			<property name="widgetType.personalposter1">videos</property>
@@ -145,38 +140,38 @@
 			<property name="widgetType.personalposter2">videos</property>
 			<property name="widgetTarget.personalposter2">videos</property>
 			<property name="widgetPath.personalposter2">plugin://plugin.video.jamzz?reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
-			<onclick>ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=url&amp;mode=24&amp;name=Search+Songs&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=search songs&lt;&gt;url&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</onclick>
-			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=url&amp;mode=24&amp;name=Search+Songs&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=search songs&lt;&gt;url&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</property>
-			<property name="list">plugin://plugin.audio.thunderstruck/?url=url&amp;mode=24&amp;name=Search+Songs&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=search songs&lt;&gt;url&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fconcerts.xml&amp;name=Live+and+Loud&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fliveandloud.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fconcerts.xml&amp;name=Live+and+Loud&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fliveandloud.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fconcerts.xml&amp;name=Live+and+Loud&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fliveandloud.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">colororange-searchmusic-color</property>
+			<property name="submenuVisibility">colororange-live-loud-color</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
 		<item id="7">
 			<property name="id">$NUMBER[7]</property>
-			<label>[COLOR orange]LiveTV &amp; [COLOR orange]Sports[/COLOR] </label>
+			<label>[COLOR orange]Live TV &amp; Sports[/COLOR]</label>
 			<label2>Video Add-On</label2>
 			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.aragon%5cicon.png/</thumb>
-			<property name="labelID">script.module.mobdro</property>
-			<property name="defaultID">script.module.mobdro</property>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.module.mobdro",return)</property>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.arrakis%2fresources%2fmedia%2flivetv.png/</thumb>
+			<property name="labelID">colororange-livetv-sports-color</property>
+			<property name="defaultID" />
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Flive%2Fmain.xml&amp;name=Arrakis+TV&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Flivetv.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
 			<property name="widget.personalposter1">Addon</property>
-			<property name="widgetName.personalposter1">[COLOR orange]Sky Sports HD[/COLOR]</property>
+			<property name="widgetName.personalposter1">[COLOR orange]Sports Hub[/COLOR]</property>
 			<property name="widgetType.personalposter1">videos</property>
 			<property name="widgetTarget.personalposter1">videos</property>
-			<property name="widgetPath.personalposter1">plugin://plugin.video.ProjectMayhem/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FmCsvnTgc&amp;mode=1&amp;name=%5BCOLOR+lime%5DSky+Sports+HD%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.skysports.com%2Fcore%2Fimg%2Fchannels%2FSky-Sports-Logo.png&amp;fanart=&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
+			<property name="widgetPath.personalposter1">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fsports%2Fmain.xml&amp;name=Sports+Hub&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fsports.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widget.personalposter2">Addon</property>
 			<property name="widgetName.personalposter2"> [COLOR gray][B]Live[/B][/COLOR] [COLOR orange][B]Sports[/B][/COLOR]</property>
 			<property name="widgetType.personalposter2">videos</property>
 			<property name="widgetTarget.personalposter2">videos</property>
 			<property name="widgetPath.personalposter2">plugin://plugin.video.SportsMatrix/?url=aHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L0tacWY2ZlV5&amp;mode=1&amp;name=%5BCOLOR+gray%5D%5BB%5DLive%5B%2FB%5D%5B%2FCOLOR%5D+%5BCOLOR+orange%5D%5BB%5DSports%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Ffulldesktopbackgrounds.com%2Fwp-content%2Fuploads%2F2018%2F01%2Fsports-wallpaper-5.jpg&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
-			<onclick>ActivateWindow(Videos,"plugin://script.module.mobdro",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://script.module.mobdro",return)</property>
-			<property name="list">plugin://script.module.mobdro</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Flive%2Fmain.xml&amp;name=Arrakis+TV&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Flivetv.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Flive%2Fmain.xml&amp;name=Arrakis+TV&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Flivetv.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<property name="list">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Flive%2Fmain.xml&amp;name=Arrakis+TV&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Flivetv.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="submenuVisibility">script-module-mobdro</property>
+			<property name="submenuVisibility">colororange-livetv-sports-color</property>
 			<property name="group">mainmenu</property>
 			<property name="hasSubmenu">True</property>
 		</item>
@@ -217,10 +212,10 @@
 			<property name="defaultID">plugin.video.griff.docs</property>
 			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.griff.docs",return)</property>
 			<property name="widget.personalposter1">Addon</property>
-			<property name="widgetName.personalposter1">[COLOR orange]Crime Doc's[/COLOR]</property>
+			<property name="widgetName.personalposter1">[COLOR orange]Documented[/COLOR]</property>
 			<property name="widgetType.personalposter1">videos</property>
 			<property name="widgetTarget.personalposter1">videos</property>
-			<property name="widgetPath.personalposter1">plugin://plugin.video.documented.hd/?url=http%3A%2F%2Ffrenchdj.atspace.tv%2FFMC%2FDocumented.HD%2FCrime%2FCrime.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5D.+%5BCOLOR+white%5DCrime+%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.documented.hd%5Cfanart.gif&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
+			<property name="widgetPath.personalposter1">plugin://plugin.video.arrakis/?mode=get_list&amp;url=file%3A%2F%2Fdocumented%2Fmain.xml&amp;name=Documented&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.arrakis%2Fresources%2Fmedia%2Fdocu.png&amp;fanart=C%3A%5CUsers%5Csamue%5CDesktop%5CBlamo%5CportableKodi%5Cportable_data%5Caddons%5Cplugin.video.arrakis%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
 			<property name="widget.personalposter2">Addon</property>
 			<property name="widgetName.personalposter2">[B][I][COLOR yellow]Documentaries[/COLOR][/I][/B]</property>
 			<property name="widgetType.personalposter2">videos</property>
@@ -239,12 +234,12 @@
 			<label>[COLOR orange]Pairing Tool[/COLOR]</label>
 			<label2>Program</label2>
 			<icon>DefaultAddon.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.69DeathPair%5cicon.png/</thumb>
+			<thumb>image://C%3a%5cUsers%5csamue%5cDesktop%5cBlamo%5cportableKodi%5cportable_data%5caddons%5cscript.69DeathPair%5cicon.png/</thumb>
 			<property name="labelID">script.69DeathPair</property>
 			<property name="defaultID">script.69DeathPair</property>
 			<property name="translatedPath">RunAddOn(script.69DeathPair)</property>
 			<property name="widget.personalposter1">Addon</property>
-			<property name="widgetName.personalposter1">[COLOR orange]Internet Tools[/COLOR]</property>
+			<property name="widgetName.personalposter1">[COLOR orange]Speed Test[/COLOR]</property>
 			<property name="widgetType.personalposter1">program</property>
 			<property name="widgetTarget.personalposter1">programs</property>
 			<property name="widgetPath.personalposter1">plugin://plugin.program.blamowizard/?mode=net&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</property>
@@ -277,8 +272,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg",return)</property>
 			<property name="list">plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -294,8 +289,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.neptune/?action=movies&amp;url=imdb1",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.neptune/?action=movies&amp;url=imdb1",return)</property>
 			<property name="list">plugin://plugin.video.neptune/?action=movies&amp;url=imdb1</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -311,8 +306,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.blamo/?section=Movies&amp;mode=recent",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.blamo/?section=Movies&amp;mode=recent",return)</property>
 			<property name="list">plugin://plugin.video.blamo/?section=Movies&amp;mode=recent</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -328,8 +323,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://script.module.mobdro/list_channels/movies",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://script.module.mobdro/list_channels/movies",return)</property>
 			<property name="list">plugin://script.module.mobdro/list_channels/movies</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -481,8 +476,8 @@
 			<onclick>ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</onclick>
 			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</property>
 			<property name="list">plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -498,8 +493,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/",return)</property>
 			<property name="list">plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -515,8 +510,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -532,8 +527,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -549,29 +544,12 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
-			<label>[COLORlime]Joker Sports[/COLOR]</label>
-			<label2>Video Add-On</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.JokerSports%5cicon.png/</thumb>
-			<property name="labelID">plugin.video.JokerSports</property>
-			<property name="defaultID">plugin.video.JokerSports</property>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<property name="list">plugin://plugin.video.JokerSports</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR gold]Project Mayhem[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -583,12 +561,12 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ProjectMayhem",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ProjectMayhem",return)</property>
 			<property name="list">plugin://plugin.video.ProjectMayhem</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-livetv-sports-color)</visible>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR darkmagenta]Supremacy Sports[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -600,8 +578,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Supremacy.Sports",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Supremacy.Sports",return)</property>
 			<property name="list">plugin://plugin.video.Supremacy.Sports</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),colororange-livetv-sports-color)</visible>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="1">
@@ -668,7 +646,7 @@
 	<include name="skinshortcuts-group-alt-openelec">
 		<description>No items</description>
 	</include>
-	<include name="skinshortcuts-group-colororange-movies-color">
+	<include name="skinshortcuts-group-colororange-moviemania-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">3</property>
@@ -683,7 +661,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg",return)</property>
 			<property name="list">plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-movies-color</property>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -700,7 +678,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.neptune/?action=movies&amp;url=imdb1",return)</property>
 			<property name="list">plugin://plugin.video.neptune/?action=movies&amp;url=imdb1</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-movies-color</property>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -717,7 +695,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.blamo/?section=Movies&amp;mode=recent",return)</property>
 			<property name="list">plugin://plugin.video.blamo/?section=Movies&amp;mode=recent</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-movies-color</property>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -734,11 +712,11 @@
 			<property name="path">ActivateWindow(Videos,"plugin://script.module.mobdro/list_channels/movies",return)</property>
 			<property name="list">plugin://script.module.mobdro/list_channels/movies</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-movies-color</property>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-colororange-movies-color">
+	<include name="skinshortcuts-group-alt-colororange-moviemania-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">3</property>
@@ -752,8 +730,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg",return)</property>
 			<property name="list">plugin://plugin.video.supremacy/?url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2F4K%2520Movies%2F4K%2520Movies.txt&amp;mode=1&amp;name=%5BCOLOR+aqua%5D4K+Movies%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fstephen-builds.uk%2Fart%2F20839702_10207884860798337_363786087_o.jpg</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -769,8 +747,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.neptune/?action=movies&amp;url=imdb1",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.neptune/?action=movies&amp;url=imdb1",return)</property>
 			<property name="list">plugin://plugin.video.neptune/?action=movies&amp;url=imdb1</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -786,8 +764,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.blamo/?section=Movies&amp;mode=recent",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.blamo/?section=Movies&amp;mode=recent",return)</property>
 			<property name="list">plugin://plugin.video.blamo/?section=Movies&amp;mode=recent</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -803,8 +781,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://script.module.mobdro/list_channels/movies",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://script.module.mobdro/list_channels/movies",return)</property>
 			<property name="list">plugin://script.module.mobdro/list_channels/movies</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-movies-color)</visible>
-			<property name="group">colororange-movies-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-moviemania-color)</visible>
+			<property name="group">colororange-moviemania-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
@@ -1088,7 +1066,7 @@
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-colororange-searchmusic-color">
+	<include name="skinshortcuts-group-colororange-live-loud-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">6</property>
@@ -1103,7 +1081,7 @@
 			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</property>
 			<property name="list">plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1120,7 +1098,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/",return)</property>
 			<property name="list">plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1137,7 +1115,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -1154,7 +1132,7 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -1171,11 +1149,11 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-colororange-searchmusic-color">
+	<include name="skinshortcuts-group-alt-colororange-live-loud-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
 			<property name="mainmenuid">6</property>
@@ -1189,8 +1167,8 @@
 			<onclick>ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</onclick>
 			<property name="path">ActivateWindow(Music,"plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=",return)</property>
 			<property name="list">plugin://plugin.audio.thunderstruck/?url=http%3A%2F%2Fmusicmp3.ru%2Fgenres.html&amp;mode=12&amp;name=Top+Albums&amp;iconimage=C%3A%5CUsers%5Csamue%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.audio.thunderstruck%5Cart%2Ficon.png&amp;list=top albums&lt;&gt;http://musicmp3.ru/genres.html&lt;&gt;C:\\Users\\samue\\AppData\\Roaming\\Kodi\\addons\\plugin.audio.thunderstruck\\art/icon.png&amp;type=</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="2">
@@ -1206,8 +1184,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/",return)</property>
 			<property name="list">plugin://plugin.video.youtube/kodion/search/query/?q=crazy drum solo/</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="3">
@@ -1223,8 +1201,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FBackpage%2520Hoe%2520Hoe%2520Hoe%2FMixHome.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+orange%5D%2A%2A------Mixtape+Kingz------%2A%2A%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fjjpeogq.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FE2hlwzC.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="4">
@@ -1240,8 +1218,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FBattles%2Fbattles%2520home.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+yellow%5DRap+Battles%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FEwUYvfK.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 		<item id="5">
@@ -1257,31 +1235,14 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available",return)</property>
 			<property name="list">plugin://plugin.video.urbankingz/?mode=get_list&amp;url=http%3A%2F%2Fkingofkodi.info%2FPeterPan%2FMusic%2FUrbanMusicMain.xml&amp;name=%5BB%5D%5BI%5D%5BCOLOR+red%5DMusic+Videos%5B%2FCOLOR%5D%5B%2FI%5D%5B%2FB%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2Fvl0mjC0.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2F7zebdnv.png&amp;description=No+information+available</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-searchmusic-color)</visible>
-			<property name="group">colororange-searchmusic-color</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-live-loud-color)</visible>
+			<property name="group">colororange-live-loud-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-script-module-mobdro">
+	<include name="skinshortcuts-group-colororange-livetv-sports-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
-			<label>[COLORlime]Joker Sports[/COLOR]</label>
-			<label2>Video Add-On</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.JokerSports%5cicon.png/</thumb>
-			<property name="labelID">plugin.video.JokerSports</property>
-			<property name="defaultID">plugin.video.JokerSports</property>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<property name="list">plugin://plugin.video.JokerSports</property>
-			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">script.module.mobdro</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR gold]Project Mayhem[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1294,11 +1255,11 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ProjectMayhem",return)</property>
 			<property name="list">plugin://plugin.video.ProjectMayhem</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">script.module.mobdro</property>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR darkmagenta]Supremacy Sports[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1311,30 +1272,13 @@
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Supremacy.Sports",return)</property>
 			<property name="list">plugin://plugin.video.Supremacy.Sports</property>
 			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
-			<property name="group">script.module.mobdro</property>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
-	<include name="skinshortcuts-group-alt-script-module-mobdro">
+	<include name="skinshortcuts-group-alt-colororange-livetv-sports-color">
 		<item id="1">
 			<property name="id">$NUMBER[1]</property>
-			<property name="mainmenuid">7</property>
-			<label>[COLORlime]Joker Sports[/COLOR]</label>
-			<label2>Video Add-On</label2>
-			<icon>special://skin/extras/icons/addtile.png</icon>
-			<thumb>image://C%3a%5cUsers%5csamue%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.JokerSports%5cicon.png/</thumb>
-			<property name="labelID">plugin.video.JokerSports</property>
-			<property name="defaultID">plugin.video.JokerSports</property>
-			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<onclick>ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</onclick>
-			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.JokerSports",return)</property>
-			<property name="list">plugin://plugin.video.JokerSports</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
-			<property name="isSubmenu">True</property>
-		</item>
-		<item id="2">
-			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR gold]Project Mayhem[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1346,12 +1290,12 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ProjectMayhem",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ProjectMayhem",return)</property>
 			<property name="list">plugin://plugin.video.ProjectMayhem</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-livetv-sports-color)</visible>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
-		<item id="3">
-			<property name="id">$NUMBER[3]</property>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
 			<property name="mainmenuid">7</property>
 			<label>[COLOR darkmagenta]Supremacy Sports[/COLOR]</label>
 			<label2>Video Add-On</label2>
@@ -1363,8 +1307,8 @@
 			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Supremacy.Sports",return)</onclick>
 			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Supremacy.Sports",return)</property>
 			<property name="list">plugin://plugin.video.Supremacy.Sports</property>
-			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),script-module-mobdro)</visible>
-			<property name="group">script.module.mobdro</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Window(10000).Property(submenuVisibility),colororange-livetv-sports-color)</visible>
+			<property name="group">colororange-livetv-sports-color</property>
 			<property name="isSubmenu">True</property>
 		</item>
 	</include>
