@@ -135,7 +135,7 @@ def authTrakt():
         control.setSetting(id='trakt.refresh', value=refresh)
         raise Exception()
     except:
-        control.openSettings('3.1')
+        control.openSettings('4.1')
 
 
 def getTraktCredentialsInfo():
