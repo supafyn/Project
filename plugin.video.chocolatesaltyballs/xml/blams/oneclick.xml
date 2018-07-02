@@ -4,6 +4,90 @@
 </item>
 
 <item>
+	<title>[COLOR red]The Gambler[/COLOR]</title>
+	<meta>
+		<imdb>tt2039393</imdb>
+		<content>movie</content>
+		<title>The Gambler</title>
+		<year>2014</year>
+	</meta>
+	<link>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//ilgnN4esei2fDpTYCpxV6oEzL07.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//1RJPQF39moa25GeB02Q5P9TxRQf.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR orange]The Week Of[/COLOR]</title>
+	<meta>
+		<imdb>tt6821012</imdb>
+		<content>movie</content>
+		<title>The Week Of</title>
+		<year>2018</year>
+	</meta>
+	<link>
+		<sublink>https://streamango.com/embed/noppettpemrtfetk (1080P)</sublink>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//2MW56TDpVEv4Zi8VyclL35VxhTM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//pGIcZ1WD0cxpiQ0JaGy9VFvAZwW.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR red]Incoming[/COLOR]</title>
+	<meta>
+		<imdb>tt6678874</imdb>
+		<content>movie</content>
+		<title>Incoming</title>
+		<year>2018</year>
+	</meta>
+	<link>
+		<sublink>https://streamango.com/embed/dstdfcnldokcncsa/Incoming_2018_1080p_BluRay_x264-_5movies_to_mp4 (720P)</sublink>
+		<sublink>https://vev.io/embed/543v1z2lyp30</sublink>
+		<sublink>search</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//gb21lRTWA6uo1IdIIYotPCHHUP9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//eIlAKDRlKN3doj4R6OG4UEzD6jI.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR orange]The Inbetweeners 2[/COLOR]</title>
+	<meta>
+		<imdb>tt3097204</imdb>
+		<content>movie</content>
+		<title>The Inbetweeners 2</title>
+		<year>2014</year>
+	</meta>
+	<link>
+		<sublink>https://streamango.com/f/ccsfrpdoeqbebetq (1080P)</sublink>
+		<sublink>https://openload.co/embed/um-hhivFrT4 (1080P)</sublink>
+		<sublink>https://vidzi.tv/daqgnmqsivim.html</sublink>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//qaUeXI9am1IkEoDoccnBy5W6kA4.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//4qyOBWkymaX4SwENJLquhgorm6c.jpg</fanart>
+</item>
+
+<item>
+	<title>[COLOR red]Kingsman: The Golden Circle[/COLOR]</title>
+	<meta>
+		<imdb>tt4649466</imdb>
+		<content>movie</content>
+		<title>Kingsman: The Golden Circle</title>
+		<year>2017</year>
+	</meta>
+	<link>
+		<sublink>https://streamango.com/embed/celsllrnneentfsl (1080P)</sublink>
+		<sublink>https://estream.to/i82y5dhrsvx8.html (1080P)</sublink>
+		<sublink>https://vidzi.tv/y4b21ehi6t9c.html</sublink>
+		<sublink>searchhd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/w1280//34xBL6BXNYFqtHO9zhcgoakS4aP.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/w1280//uExPmkOHJySrbJyJDJylHDqaT58.jpg</fanart>
+</item>
+
+<item>
 	<title>[COLOR orange]Gotti[/COLOR]</title>
 	<meta>
 		<imdb>tt1801552</imdb>
@@ -73,7 +157,7 @@
 </item>
 
 <item>
-	<title>[COLOR darkmagenta]12 Strong[/COLOR]</title>
+	<title>[COLOR red]12 Strong[/COLOR]</title>
 	<meta>
 		<content>movie</content>
 		<imdb>tt1413492</imdb>
@@ -107,7 +191,7 @@
 </item>
 
 <item>
-	<title>[COLOR darkmagenta]Blow (2001)[/COLOR]</title>
+	<title>[COLOR red]Blow (2001)[/COLOR]</title>
 	<meta>
 		<content>movie</content>
 		<imdb>tt0221027</imdb>
@@ -185,7 +269,7 @@
 </dir>
 
 <item>
-	<title>[COLOR darkmagenta]Escape Plan 2: Hades[/COLOR]</title>
+	<title>[COLOR orange]Escape Plan 2: Hades[/COLOR]</title>
 	<meta>
 		<imdb>tt6513656</imdb>
 		<content>movie</content>

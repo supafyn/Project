@@ -5,18 +5,18 @@
 </item>
 
 <item>
-<title>[COLOR=red]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+<title>[COLOR=orange]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
 <heading></heading>
 </item>
 
 <plugin>
-	<name>[COLOR red]Pair and Auth RD[/COLOR]</name>
+	<title>[COLOR red]Pair and Auth RD[/COLOR]</title>
    <link>plugin://script.69DeathPair</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
 </plugin>
 
 <item>
-    <title>Settings</title>
+    <title>[COLOR orange]Settings[/COLOR]</title>
     <mysettings>0/0</mysettings>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/settings.png</thumbnail>
     <info>Open the Settings for the addon</info>
@@ -26,47 +26,52 @@
     <title>[COLORlimegreen]User Requests[/COLOR]</title>
     <link>file://requests.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
-    <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
 </dir>
 
 <dir>
-    <name>[COLOR red]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</name>
+    <title>[COLOR red]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</title>
     <link>file://blams/oneclick.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
 </dir>
 
 <dir>
-	<title>[COLOR=orange]CopyKatz[/COLOR]</title>
-	<link>file://blams/cpastas.xml</link>
-	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
-</dir>
-
-<dir>
-	<title>[COLOR=red]Action Movies[/COLOR]</title>
-	<link>file://blams/greatm/greatesta.xml</link>
-	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
-</dir>
-
-<dir>
-    <name>[COLOR orange]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</name>
-    <link>file://blams/realdebrid.xml</link>
-    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
-</dir>
-
-<dir>
-    <name>[COLOR red]Direct Kids[/COLOR] [COLOR orange]Movies[/COLOR]</name>
+    <title>[COLOR red]Kids Movies[/COLOR] [COLOR orange]Direct[/COLOR]</title>
     <link>file://blams/kidsmo.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kidsmo.jpg</thumbnail>
 </dir>
 
 <dir>
-    <name>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
+	<title>[COLOR orange]CopyKatz[/COLOR]</title>
+	<link>file://blams/cpastas.xml</link>
+	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
+</dir>
+
+<dir>
+	<title>[COLOR red]Action Movies[/COLOR]</title>
+	<link>file://blams/greatm/greatesta.xml</link>
+	<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</title>
+    <link>file://blams/realdebrid.xml</link>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
+</dir>
+
+<dir>
+    <title>[COLOR red]Direct Kids[/COLOR] [COLOR orange]Movies[/COLOR]</title>
+    <link>file://blams/kidsmo.xml</link>
+    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kidsmo.jpg</thumbnail>
+</dir>
+
+<dir>
+    <title>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
     <link>file://adulttoon/adulttoon.xml</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/adults.jpg</thumbnail>
 </dir>
 
 <dir>
-    <name>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</name>
+    <title>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
     <link>file://kidstoon/kidtoon.xml</link>
    <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kids.jpg</thumbnail>
 </dir>
@@ -97,10 +102,9 @@
     <title>[COLOR red]Trakt Portal[/COLOR]</title>
     <link>file://blams/traktportal.xml</link>
     <thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/trakt-logo.png</thumbnail>
-    <fanart>special://home/addons/plugin.video.chocolatesaltyballs/fanart.jpg</fanart>
 </dir>
 
 <dir>
-    <name>[COLOR blue]Music[/COLOR]</name>
+    <title>[COLOR blue]Music[/COLOR]</title>
     <link>file://music.xml</link>
 </dir>
