@@ -28,6 +28,15 @@ def start_info_actions(infos, params):
         params["imdb_id"] = params["imdbid"]
     for info in infos:
         data = [], ""
+        if info == 'authTrakt':
+            from TraktManager import authTrakt
+            authTrakt()
+            return
+        if info == 'traktManager':
+            from TraktManager import manager
+            if params["name"] and params["tmdb"] and params["content"]:
+                manager( params["name"], params["tmdb"], params["content"] )
+            return
         #  Images
         if info == 'xkcd':
             from MiscScraper import get_xkcd_images
