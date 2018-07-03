@@ -1,13 +1,17 @@
 		<item>
 			<title>[COLOR snow]Follow me on Twitter:[/COLOR] [COLOR=red]@Daddy_Blamo[/COLOR]</title>
-			<heading></heading>
+            <meta>
+                <summary>20 Cents is 20 Cents</summary>
+            </meta>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/twitter.jpg</thumbnail>
 		</item>
 
 		<item>
 			<title>[COLOR=orange]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+            <meta>
+                <summary>20 Cents is 20 Cents</summary>
+            </meta>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/20centslol.png</thumbnail>
-			<heading></heading>
 		</item>
 
 		<plugin>
