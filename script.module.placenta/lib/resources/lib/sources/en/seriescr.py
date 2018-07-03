@@ -26,8 +26,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['seriescr.com']
-        self.base_link = 'http://seriescr.com'
-        self.search_link = '/?s=%s'
+        self.base_link = 'http://seriescr.com/'
+        self.search_link = '/search/%s/feed/rss2/'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:

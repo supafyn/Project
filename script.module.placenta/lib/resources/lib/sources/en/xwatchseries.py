@@ -25,8 +25,8 @@ class source:
         self.language = ['en']
         self.domains = ['xwatchseries.to','onwatchseries.to','itswatchseries.to','dwatchseries.to']
         self.base_link = 'https://www1.swatchseries.to/'
-        self.search_link = 'https://www1.swatchseries.to/show/search-shows-json'
-        self.search_link_2 = 'https://www1.swatchseries.to/?s=%s'
+        self.search_link = 'https://www1.swatchseries.to/?s=%s'
+        self.search_link_2 = 'https://www1.swatchseries.to/show/search-shows-json'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:

@@ -35,7 +35,7 @@ class navigator:
     HOMEPATH      = xbmc.translatePath('special://home/')
     ADDONSPATH    = os.path.join(HOMEPATH, 'addons')
     THISADDONPATH = os.path.join(ADDONSPATH, ADDON_ID)
-    NEWSFILE      = base64.b64decode(b'aHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L25XY1pTeDhh')
+    NEWSFILE      = base64.b64decode(b'aHR0cHM6Ly9wYXN0ZWJpbi5jb20vcmF3L2ZBaGE5RVRD')
     LOCALNEWS     = os.path.join(THISADDONPATH, 'whatsnew.txt')
     
     def root(self):
