@@ -1,19 +1,19 @@
 <dir>
-<title>[B][COLORyellow]The Simpsons TV Shows[/COLOR][/B]</title>
+<title>[COLORyellow]The Simpsons TV Shows[/COLOR]</title>
 <tmdb>list/47076</tmdb>
 <thumbnail>https://i.imgur.com/w17V1dm.jpg</thumbnail>
 <fanart>https://i.imgur.com/lM9rPTX.jpg</fanart>
 </dir>
 
 <dir>
-<title>[B][COLORwhite]The Simpsons Movies[/COLOR][/B]</title>
+<title>[COLORwhite]The Simpsons Movies[/COLOR]</title>
 <tmdb>list/47075</tmdb>
 <thumbnail>https://i.imgur.com/20I33DB.jpg</thumbnail>
 <fanart>https://i.imgur.com/lM9rPTX.jpg</fanart>
 </dir>
 
 <item>
-	<title>[B][COLORwhite]The Simpsons Movie[/COLOR][/B]</title>
+	<title>[COLORwhite]The Simpsons Movie[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>movie</content>

@@ -1,0 +1,17 @@
+			<dir>
+			<title>[COLOR limegreen]User Requests[/COLOR]</title>
+			<link>file://requests.xml</link>
+			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
+			</dir>
+		  <dir>
+			<title>[COLOR red]Toons[/COLOR]</title>
+			<link>file://cartoons/toons.xml</link>
+		  </dir>
+		  <dir>
+			<title>[COLOR orange]Kids Movies[/COLOR]</title>
+			<link>file://cartoons/kidsmo.xml</link>
+		  </dir>
+		  <dir>
+			<title>[COLOR red]Kids Area[/COLOR]</title>
+			<link>file://cartoons/toons.xml</link>
+		  </dir>

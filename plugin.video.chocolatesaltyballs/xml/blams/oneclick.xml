@@ -220,7 +220,7 @@
 </item>
 
 <item>
-	<title>[B][COLORorange]Bleeding Steel[/COLOR][/B]</title>
+	<title>[COLOR orange]Bleeding Steel[/COLOR]</title>
 	<meta>
 		<imdb>tt5813366</imdb>
 		<content>movie</content>
@@ -238,7 +238,7 @@
 </item>
 
 <item>
-	<title>[B][COLORlimegreen]Braveheart[/COLOR][/B]</title>
+	<title>[COLOR limegreen]Braveheart[/COLOR]</title>
 	<meta>
 		<imdb>tt0112573</imdb>
 		<content>movie</content>
@@ -287,7 +287,7 @@
 </item>
 
 <item>
-	<title>[B][COLORlimegreen]Grandma's Boy[/COLOR][/B]</title>
+	<title>[COLOR limegreen]Grandma's Boy[/COLOR]</title>
 	<meta>
 		<imdb>tt0456554</imdb>
 		<content>movie</content>
@@ -305,7 +305,7 @@
 </item>
 
 <item>
-	<title>[B][COLORlimegreen]The Humanity Bureau[/COLOR][/B]</title>
+	<title>[COLOR limegreen]The Humanity Bureau[/COLOR]</title>
 	<meta>
 		<imdb>tt6143568</imdb>
 		<content>movie</content>
@@ -323,7 +323,7 @@
 </item>
 
 <item>
-	<title>[B][COLORlimegreen]Super Troopers[/COLOR][/B]</title>
+	<title>[COLOR limegreen]Super Troopers[/COLOR]</title>
 	<meta>
 		<imdb>tt0247745</imdb>
 		<content>movie</content>
@@ -340,7 +340,7 @@
 	<fanart>https://image.tmdb.org/t/p/w1280//dyHIPT1Q2nZjsciWBuTPikYOxzA.jpg</fanart>
 </item>
 <item>
-	<title>[B][COLORorange]Super Troopers 2[/COLOR][/B] [B][COLORlawngreen](COMING SOON)[/COLOR][/B]</title>
+	<title>[COLOR orange]Super Troopers 2[/COLOR] [COLORlawngreen](COMING SOON)[/COLOR]</title>
 	<meta>
 		<imdb>tt0859635</imdb>
 		<content>movie</content>
@@ -355,7 +355,7 @@
 </item>
 
 <item>
-	<title>[B][COLORorange]Gringo[/COLOR][/B]</title>
+	<title>[COLOR orange]Gringo[/COLOR]</title>
 	<meta>
 		<imdb>tt3721964</imdb>
 		<content>movie</content>
@@ -373,7 +373,7 @@
 </item>
 
 <item>
-	<title>[B][COLORlimegreen]Solo: A Star Wars Story CAM[/COLOR][/B] [B][COLORlawngreen](MORE LINKS SOON)[/COLOR][/B]</title>
+	<title>[COLOR limegreen]Solo: A Star Wars Story CAM[/COLOR] [COLORlawngreen](MORE LINKS SOON)[/COLOR]</title>
 	<meta>
 		<imdb>tt3778644</imdb>
 		<content>movie</content>
@@ -395,116 +395,116 @@
 </item>
 
 <dir>
-    <title>[B][COLORorange]Rick and Morty[/COLOR][/B]</title>
+    <title>[COLOR orange]Rick and Morty[/COLOR]</title>
     <wctoon>wcsearch/rick and morty</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Fugget About It[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Fugget About It[/COLOR]</title>
     <wctoon>wcsearch/fugget about it</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]The Simpsons[/COLOR][/B]</title>
+    <title>[COLOR orange]The Simpsons[/COLOR]</title>
     <wctoon>wcsearch/the simpsons</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Camp WWE[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Camp WWE[/COLOR]</title>
     <wctoon>wcsearch/camp wwe</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]American Dad[/COLOR][/B]</title>
+    <title>[COLOR orange]American Dad[/COLOR]</title>
     <wctoon>wcsearch/american dad</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Looney Tunes[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Looney Tunes[/COLOR]</title>
     <wctoon>wcsearch/looney tunes</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Johnny Bravo[/COLOR][/B]</title>
+    <title>[COLOR orange]Johnny Bravo[/COLOR]</title>
     <wctoon>wcsearch/johnny bravo</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Dungeons and Dragons[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Dungeons and Dragons[/COLOR]</title>
     <wctoon>wcsearch/dungeons and dragons</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Scooby Doo[/COLOR][/B]</title>
+    <title>[COLOR orange]Scooby Doo[/COLOR]</title>
     <wctoon>wcsearch/scooby doo</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Archie's Weird Mysteries[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Archie's Weird Mysteries[/COLOR]</title>
     <wctoon>wcsearch/archies weird mysteries</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Aqua Teen Hunger Force[/COLOR][/B]</title>
+    <title>[COLOR orange]Aqua Teen Hunger Force[/COLOR]</title>
     <wctoon>wcsearch/aqua teen hunger force</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Stargate Infinity[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Stargate Infinity[/COLOR]</title>
     <wctoon>wcsearch/stargate</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Thundercats (1985)[/COLOR][/B]</title>
+    <title>[COLOR orange]Thundercats (1985)[/COLOR]</title>
     <wctoon>wcsearch/thundercats 1985</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Inspector Gadget[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Inspector Gadget[/COLOR]</title>
     <wctoon>wcsearch/inspector gadget</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Jumanji[/COLOR][/B]</title>
+    <title>[COLOR orange]Jumanji[/COLOR]</title>
     <wctoon>wcsearch/jumanji</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]G.I. Joe[/COLOR][/B]</title>
+    <title>[COLOR limegreen]G.I. Joe[/COLOR]</title>
     <wctoon>wcsearch/g.i. joe</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Red vs Blue[/COLOR][/B]</title>
+    <title>[COLOR orange]Red vs Blue[/COLOR]</title>
     <wctoon>wcsearch/red vs blue</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]F is for Family[/COLOR][/B]</title>
+    <title>[COLOR limegreen]F is for Family[/COLOR]</title>
     <wctoon>wcsearch/f is for family</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Duck Dodgers[/COLOR][/B]</title>
+    <title>[COLOR orange]Duck Dodgers[/COLOR]</title>
     <wctoon>wcsearch/duck dodgers</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Doctor Who[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Doctor Who[/COLOR]</title>
     <wctoon>wcsearch/doctor who</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Brickleberry[/COLOR][/B]</title>
+    <title>[COLOR orange]Brickleberry[/COLOR]</title>
     <wctoon>wcsearch/brickleberry</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORlimegreen]Beavis and Butt Head[/COLOR][/B]</title>
+    <title>[COLOR limegreen]Beavis and Butt Head[/COLOR]</title>
     <wctoon>wcsearch/beavis and butt head</wctoon>
 </dir>
 
 <dir>
-    <title>[B][COLORorange]Peppa Pig[/COLOR][/B]</title>
+    <title>[COLOR orange]Peppa Pig[/COLOR]</title>
     <wctoon>wcsearch/peppa pig</wctoon>
 </dir>
