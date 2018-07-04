@@ -696,7 +696,7 @@ def get_sources(item):
     jenplayer.setItem(item)
 
     busy_dialog.create(xbmcaddon.Addon().getAddonInfo('name'),
-                       _("Processing Link"))
+                       _("Depositing Twenty Cents"))
     preset = choose_quality(link)
     message = get_searching_message(preset)
     played = False

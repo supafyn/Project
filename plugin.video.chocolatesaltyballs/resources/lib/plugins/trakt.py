@@ -723,6 +723,45 @@ def trakt_refresh_token():
         addon.setSetting("TRAKT_REFRESH_TOKEN", response["refresh_token"])
         return response["access_token"]
 
+def set_watched(self, section, item, season='', episode='', watched=True):
+    url = '/sync/history'
+    if not watched: url = url + '/remove'
+    data = self.__make_media_list(section, item, season, episode)
+    return self.__call_trakt(url, data=data, cache_limit=0)
+
+def get_hidden_progress(self, cached=True):
+    url = 'https://api.trakt.tv/users/hidden/progress_watched'
+    params = {'type': 'show', 'limit': HIDDEN_SIZE, 'page': 1}
+    length = -1
+    result = []
+    while length != 0 or length == HIDDEN_SIZE:
+        cache_limit = self.__get_cache_limit('shows', 'hidden_at', cached)
+        hidden = self.__call_trakt(url, params=params, cache_limit=cache_limit, cached=cached)
+        length = len(hidden)
+        result += hidden
+        params['page'] += 1
+    return result
+
+def get_last_activity(self, media=None, activity=None):
+    url = '/sync/last_activities'
+    result = self.__call_trakt(url, cache_limit=.01)
+    if media is not None and media in result:
+        if activity is not None and activity in result[media]:
+           return result[media][activity]
+        else:
+           return result[media]
+        
+    return result
+
+def get_show_progress(self, show_id, full=False, hidden=False, specials=False, cached=True, cache_limit=None):
+    if cache_limit is None:
+        cache_limit = self.__get_cache_limit('episodes', 'watched_at', cached)
+    url = '/shows/%s/progress/watched' % (show_id)
+    params = {}
+    if full: params['extended'] = 'full'
+    if hidden: params['hidden'] = 'true'
+    if specials: params['specials'] = 'true'
+    return self.__call_trakt(url, params=params, cache_limit=cache_limit, cached=cached)
 
 def remove_non_ascii(text):
     return unidecode(unicode(text))

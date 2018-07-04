@@ -684,7 +684,7 @@ msgid "Please Wait"
 msgstr ""
 
 msgctxt "#30033"
-msgid "Processing Link"
+msgid "Depositing Twenty Cents"
 msgstr ""
 
 msgctxt "#30034"
