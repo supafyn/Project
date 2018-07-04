@@ -1,3 +1,8 @@
+v0.0.5
+    - Clear Cache added to plugins that already support cache
+    - Added The Archives to the main menu
+    - Updated for more Kodi 18 support
+
 v0.0.4
     - Rework and cleanup of FXXXMovies (Thanks to KritikTV)
     - Added Caching to Collection of Best Porn, Celebrity Nude World, EPorner,

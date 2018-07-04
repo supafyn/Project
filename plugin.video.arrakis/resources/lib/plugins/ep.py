@@ -1,23 +1,20 @@
 """
 
-    Copyright (C) 2018, MuadDib
+    Copyright (C) 2018 MuadDib
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-    -------------------------------------------------------------
+    ----------------------------------------------------------------------------
+    "THE BEER-WARE LICENSE" (Revision 42):
+    @tantrumdev wrote this file.  As long as you retain this notice you can do 
+    whatever you want with this stuff. Just Ask first when not released through
+    the tools and parser GIT. If we meet some day, and you think this stuff is
+    worth it, you can buy him a beer in return. - Muad'Dib
+    ----------------------------------------------------------------------------
 
     Changelog:
+        2018.7.2:
+            - Added Clear Cache function
+            - Minor update on fetch cache returns
+
         2018.6.29:
             - Added caching to primary menus (Cache time is 3 hours)
 
@@ -171,6 +168,10 @@ class EPORNER(Plugin):
             result_item['fanart_small'] = result_item["fanart"]
             return result_item
 
+    def clear_cache(self):
+        dialog = xbmcgui.Dialog()
+        if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear EPorner Plugin Cache?"):
+            koding.Remove_Table("eporner_com_plugin")
 
 @route(mode='EPorner_Cat', args=["url"])
 def category_eporner(url):
@@ -220,6 +221,8 @@ def category_eporner(url):
         except:
             pass
 
+        save_to_db(xml, url)
+
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
 
@@ -259,6 +262,8 @@ def pornstars_eporner(url):
                 pass
         except:
             pass
+
+        save_to_db(xml, url)
 
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
@@ -411,9 +416,9 @@ def fetch_from_db(url):
                 return None
             return result
         else:
-            return
+            return None
     else:
-        return 
+        return None
 
 
 def remove_non_ascii(text):

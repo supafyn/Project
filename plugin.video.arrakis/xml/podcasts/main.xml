@@ -3,7 +3,6 @@
         <dir>
             <title>[COLOR yellow]69 Death Squad - Recommended Shows[/COLOR]</title>
             <meta>
-                <title>69 Death Squad - Recommended Shows</title>
                 <summary>69 Death Squad - Recommended Shows</summary>
             </meta>
             <link>file://podcasts/69list.xml</link>
@@ -13,7 +12,6 @@
         <dir>
             <title>P[COLOR red]o[/COLOR]dcast[COLOR red]One[/COLOR]</title>
             <meta>
-                <title>PodcastOne</title>
                 <summary>Browse all the free content from PodcastOne shows</summary>
             </meta>
             <link>file://podcasts/podcastone.xml</link>
@@ -23,7 +21,6 @@
         <dir>
             <title>Podbay.fm</title>
             <meta>
-                <title>Podbay.fm</title>
                 <summary>Enjoy all the podcasts hosted by Podbay.fm</summary>
             </meta>
             <link>file://podcasts/podbay.xml</link>

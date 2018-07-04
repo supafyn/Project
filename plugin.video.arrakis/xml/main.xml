@@ -128,6 +128,15 @@
         </dir>
 
         <dir>
+            <title>The Archives</title>
+            <meta>
+                <summary>The ultimate collection of free domain audio and video anywhere in Kodi. If you see it elsewhere, it's a copy</summary>
+            </meta>
+            <link>file://archives/main.xml</link>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/archives.png</thumbnail>
+        </dir>
+
+        <dir>
             <title>The Voices Within</title>
             <meta>
                 <title>The Voices Within</title>

@@ -4,9 +4,10 @@
 
     ----------------------------------------------------------------------------
     "THE BEER-WARE LICENSE" (Revision 42):
-    @tantrumdev wrote this file.  As long as you retain this notice you
-    can do whatever you want with this stuff. If we meet some day, and you think
-    this stuff is worth it, you can buy him a beer in return. - Muad'Dib
+    @tantrumdev wrote this file.  As long as you retain this notice you can do 
+    whatever you want with this stuff. Just Ask first when not released through
+    the tools and parser GIT. If we meet some day, and you think this stuff is
+    worth it, you can buy him a beer in return. - Muad'Dib
     ----------------------------------------------------------------------------
 
 
@@ -15,6 +16,10 @@
         Drop this PY in the plugins folder. See examples below on use.
 
     Version:
+        2018.7.2:
+            - Added Clear Cache function
+            - Minor update on fetch cache returns
+
         2018.6.29:
             - Added caching to primary menus (Cache time is 3 hours)
 
@@ -288,6 +293,10 @@ class DocuStreams(Plugin):
             result_item['fanart_small'] = result_item["fanart"]
             return result_item
 
+    def clear_cache(self):
+        dialog = xbmcgui.Dialog()
+        if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear Documentary Storm Plugin Cache?"):
+            koding.Remove_Table("docustorm_com_plugin")
 
 def get_category_id(category_name):
     json_url = 'https://documentarystorm.com/wp-json/wp/v2/categories?per_page=100&page=1&search=%s' % category_name
@@ -408,6 +417,8 @@ def get_DScats(url):
         except:
             pass
 
+        save_to_db(xml, url)
+
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
 
@@ -461,9 +472,9 @@ def fetch_from_db(url):
                 return None
             return result
         else:
-            return
+            return None
     else:
-        return 
+        return None
 
 
 def replaceHTMLCodes(txt):

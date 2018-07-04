@@ -1,8 +1,15 @@
 CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
  
-[COLOR red]Arrakis - Version 0.0.4[/COLOR]
+[COLOR red]Arrakis - Version 0.0.5[/COLOR]
  
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
+
+
+[B][COLOR red]2018/07/4[/COLOR][/B]
+[COLOR lime]ver 0.0.5[/COLOR]
+    - Clear Cache added to plugins that already support cache
+    - Added The Archives to the main menu
+    - Updated for more Kodi 18 support
 
 [B][COLOR red]2018/06/30[/COLOR][/B]
 [COLOR lime]ver 0.0.4[/COLOR]
