@@ -1108,13 +1108,13 @@
 						<visible>Skin.HasSetting(UseCustomBackground) + !String.IsEmpty(Skin.String(CustomBackgroundPath))</visible>
 						
 					</control>					
-<!-- 					<control type="image" id="32111">
+					<control type="image" id="32111">
 						<include>FullScreenDimensions</include>
 						<aspectratio>scale</aspectratio>
 						<texture background="true" >$VAR[MediaFanartVar]</texture>
 						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
-					</control> -->
-<!-- 					<control type="image">
+					</control>
+					<control type="image">
 						<left>-3</left>
 						<top>0</top>
 						<right>1193</right>
@@ -1125,7 +1125,7 @@
 						
 						<texture background="true" >$VAR[PosterVar]</texture>
 						<visible>!Control.IsVisible(32111)</visible>
-					</control> -->
+					</control>
 					<include>ColoredBackgroundImages</include>
 				</control>
 			</control>
