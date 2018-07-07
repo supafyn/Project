@@ -885,10 +885,5 @@
             <thumbnail>https://image.tmdb.org/t/p/w1280//3APC28fVHvSNUJVSVYIggbv1RzO.jpg</thumbnail>
             <fanart>https://image.tmdb.org/t/p/w1280//yhGfKR5xzhMYkIktxa5bjTm3jYD.jpg</fanart>
         </item>
-        <dir>
-            <title>Next Page >></title>
-            <trakt>https://api.trakt.tv/users/bentkatu/lists/2014/items?page=2</trakt>
-            <summary>Go To Page 2</summary>
-        </dir>
     </horroryears>
 </arrakis>

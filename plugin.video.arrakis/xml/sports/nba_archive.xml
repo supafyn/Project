@@ -7,12 +7,12 @@
 
         <dir>
             <title>[COLOR yellow][ NBAReplay ][/COLOR] Archive #1</title>
-            <sportshub>sh_nba/6/1</sportshub>
+            <sportshub>nbareplayhd/6/1</sportshub>
         </dir>
 
         <dir>
             <title>[COLOR yellow][ NBAReplay ][/COLOR] Archive #2</title>
-            <sportshub>sh_nba/43/1</sportshub>
+            <sportshub>nbareplayhd/43/1</sportshub>
         </dir>
     </sportsmain>
 </arrakis>
