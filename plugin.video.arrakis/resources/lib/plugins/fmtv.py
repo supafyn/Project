@@ -524,6 +524,7 @@ def FullMatch_WWE_Replays(url):
 
 def clean_titles(title):
     try:
+        title = remove_non_ascii(title)
         title = title.replace('&#8211;','-').replace(' at ', ' vs ')
         tmp = title.split(' - ')
         tmp_d = time.strptime(str(tmp[-1]), '%b %d, %Y')
