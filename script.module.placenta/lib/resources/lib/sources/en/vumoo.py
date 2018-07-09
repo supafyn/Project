@@ -24,8 +24,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['vumoo.li']
-        self.base_link = 'http://vumoo.li/'
+        self.domains = ['vumoo.to']
+        self.base_link = 'http://vumoo.to/'
         self.cdn_link = 'http://cdn.123moviesapp.net'
         self.search_path = '/search?q=%s'
         self.password = 'iso10126'

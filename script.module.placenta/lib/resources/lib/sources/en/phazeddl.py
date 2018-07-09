@@ -72,7 +72,7 @@ class source:
 
                     c = client.parseDOM(post, 'content.+?')[0]
 
-                    u = re.findall('>Single Link(.+?)p>\s*<span', c.replace('\n', ''))[0]
+                    u = re.findall('>article class=(.+?)p>\s*<span', c.replace('\n', ''))[0]
 
                     u = client.parseDOM(u, 'a', ret='href')
 

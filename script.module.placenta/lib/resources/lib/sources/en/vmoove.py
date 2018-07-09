@@ -25,10 +25,10 @@ class source:
         self.language = ['en']
         self.domain = 'vmovee.xyz'
         self.base_link = 'https://vmovee.xyz'
-        self.search_link = '/gold-app/gold-includes/GOLD.php?seasons_post_name='
-        self.search_episode_link = '/gold-app/gold-includes/GOLD.php?season_id='
-        self.movie_link = '/gold-app/gold-includes/GOLD.php?movie_id='
-        self.episode_link = '/gold-app/gold-includes/GOLD.php?episode_id='
+        self.search_link = '/search?q=%s&x=0&y=0'
+        self.search_episode_link = '/search?q=%s&x=0&y=0'
+        self.movie_link = '/search?q=%s&x=0&y=0'
+        self.episode_link = '/search?q=%s&x=0&y=0'
         self.headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36'}
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):

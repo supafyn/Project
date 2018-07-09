@@ -19,9 +19,9 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domain = 'http://rlsscn.in/'
+        self.domain = 'rlsscn.in'
         self.base_link = 'http://rlsscn.in/'
-        self.search_link = '/?s=%s'
+        self.search_link = '?s=%s'
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
@@ -73,7 +73,6 @@ class source:
         for i in soup:
             for h in hostDict:
                 if h in i['href']:
-                    if not '.rar' in i['href']:
                         source_list.append(i['href'])
         for i in source_list:
             host = i.replace('www.', '')

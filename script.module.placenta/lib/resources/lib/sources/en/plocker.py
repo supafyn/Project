@@ -1,12 +1,12 @@
 # -*- coding: UTF-8 -*-
-#######################################################################
+# ######################################################################
  # ----------------------------------------------------------------------------
  # "THE BEER-WARE LICENSE" (Revision 42):
  # @Daddy_Blamo wrote this file.  As long as you retain this notice you
  # can do whatever you want with this stuff. If we meet some day, and you think
  # this stuff is worth it, you can buy me a beer in return. - Muad'Dib
  # ----------------------------------------------------------------------------
-#######################################################################
+# ######################################################################
 
 # Addon Name: Placenta
 # Addon id: plugin.video.placenta
@@ -28,7 +28,6 @@ class source:
         self.base_link = 'https://www2.putlockertv.to/'
         self.movie_search_path = ('search?keyword=%s')
         self.episode_search_path = ('/filter?keyword=%s&sort=post_date:Adesc'
-        self.ajax_search_path = '/ajax/film/search?ts=%s'
         self.film_path = '/watch/%s'
         self.info_path = '/ajax/episode/info?ts=%s&_=%s&id=%s&server=28&update=0'
         self.grabber_path = '/grabber-api/?ts=%s&id=%s&token=%s&mobile=0'

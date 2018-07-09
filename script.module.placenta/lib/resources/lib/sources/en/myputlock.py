@@ -23,6 +23,7 @@ class source:
         self.language = ['en']
         self.domain = 'myputlocker.me'
         self.base_link = 'http://myputlocker.me/'
+        self.search_link = '/?s=%s'
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
