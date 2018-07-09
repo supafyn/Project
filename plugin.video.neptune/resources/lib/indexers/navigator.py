@@ -433,6 +433,7 @@ class navigator:
 		self.addDirectoryItem(32049, 'viewsNavigator', 'tools.jpg', 'DefaultAddonProgram.jpg')
 		self.addDirectoryItem(32050, 'clearSources', 'tools.jpg', 'DefaultAddonProgram.jpg')
 		self.addDirectoryItem(32052, 'clearCache', 'tools.jpg', 'DefaultAddonProgram.jpg')
+		self.addDirectoryItem(32075, 'urlResolver', 'urlresolver.png', 'DefaultAddonProgram.png')
 
 		self.endDirectory()
 
