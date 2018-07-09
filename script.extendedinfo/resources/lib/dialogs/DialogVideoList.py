@@ -147,11 +147,11 @@ def get_tmdb_window(window_type):
                         show_playlist = xbmc.translatePath("special://profile/playlists/video/%s.xsp" % (tvdb_id, SETTING("player_alt")))
                         if os.path.exists(show_playlist):
                             url = show_playlist
-                        else: url = 'plugin://plugin.video.chappaai/tv/play/%s/1/1/%s' % (tvdb_id, SETTING("player_alt"))
-                    else: url = 'plugin://plugin.video.chappaai/tv/play/%s/1/1/%s' % (tvdb_id, SETTING("player_alt"))
+                        else: url = 'plugin://plugin.video.chappaai/tv/play/%s/1/1/library' % (tvdb_id)
+                    else: url = 'plugin://plugin.video.chappaai/tv/play/%s/1/1/library' % (tvdb_id)
                 else:
                     if self.listitem.getProperty("dbid"): url = 'temp'
-                    else: url = 'plugin://plugin.video.chappaai/movies/play/tmdb/%s/%s' % (item_id, SETTING("player_alt"))
+                    else: url = 'plugin://plugin.video.chappaai/movies/play/tmdb/%s/library' % (item_id)
                 PLAYER.qlickplay(url, listitem=None, dbid=dbid, window=self)
             elif selection == 1:
                 if self.type == "tv" or self.type == "episode":

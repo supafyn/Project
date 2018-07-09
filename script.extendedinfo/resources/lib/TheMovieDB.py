@@ -665,6 +665,9 @@ def get_image_urls(poster=None, still=None, fanart=None, profile=None):
 
 
 def get_movie_tmdb_id(imdb_id=None, name=None, dbid=None):
+    # Aeon Nox Silvo skin (maybe others) has this appended to the id when bringing up the info screen for movies
+    if imdb_id.find("xx",0,2) != -1:
+        imdb_id = imdb_id.replace("xx","")
     if dbid and (int(dbid) > 0):
         movie_id = get_imdb_id_from_db("movie", dbid)
         log("IMDB Id from local DB: %s" % (movie_id))
