@@ -1,3 +1,6 @@
+[B]1.6.1[/B]
+- Changed few images 
+- Chasnged pointer color
 [B]1.5.9[/B]
 - Changed font to (Kunt)
 - Tweaked skin a bit more
