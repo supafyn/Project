@@ -105,6 +105,7 @@
         <setting id="provider.filmxy" type="bool" label="FILMXY" default="false" />
         <setting id="provider.flix" type="bool" label="FLIX" default="true" />
         <setting id="provider.flixanity" type="bool" label="FLIXANITY" default="true" />
+        <setting id="provider.freeputlocker" type="bool" label="FREEPUTLOCKER" default="true" />
         <setting id="provider.fmovied6" type="bool" label="FMOVIED6" default="true" />
         <setting id="provider.gogoanime" type="bool" label="GOGOANIME" default="true" />
         <setting id="provider.gomovies" type="bool" label="GOMOVIE" default="true" />
@@ -114,11 +115,13 @@
         <setting id="provider.huluplus" type="bool" label="HULUPLUS" default="true" />
         <setting id="provider.hulufilm" type="bool" label="HULUFILM" default="true" />
         <setting id="provider.icefilms" type="bool" label="ICEFILMS" default="true" />
+        <setting id="provider.kattv" type="bool" label="KATTV" default="false" />
         <setting id="provider.library" type="bool" label="LIBRARY" default="true" />
         <setting id="provider.movie4kto" type="bool" label="MOVIE4KTO" default="false" />
         <setting id="provider.movie4korg" type="bool" label="MOVIE4K" default="true" />
         <setting id="provider.movieon" type="bool" label="MOVIEON" default="true" />
         <setting id="provider.m4u" type="bool" label="M4U" default="true" />
+        <setting id="provider.m4ufree" type="bool" label="M4UFREE" default="true" />
         <setting id="provider.megahd" type="bool" label="MEGAHD" default="true" />
         <setting id="provider.monm" type="bool" label="MONMN" default="true" />
         <setting id="provider.phazeddl" type="bool" label="PHAZEDLL" default="true" />

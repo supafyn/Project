@@ -30,9 +30,6 @@ def HostChcker():
     if url_ok("http://kat.tv"):
         useurl = 'http://kat.tv'
 
-    elif url_ok("http://kat.bypassed.bz"):
-        useurl = 'http://kat.bypassed.bz'
-
     else: useurl = 'http://localhost/'
     
     return useurl
@@ -44,7 +41,6 @@ class source:
         self.domains = ['kat.tv']
         self.base_link = HostChcker()
         self.search_link = '/search-movies/%s.html'
-
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:

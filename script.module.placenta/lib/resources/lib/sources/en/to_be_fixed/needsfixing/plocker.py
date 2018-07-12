@@ -158,7 +158,7 @@ class source:
     def sources(self, url, hostDict, hostprDict):
         sources = []
         try:
-            data = urlparse.parse_qs(url)
+            data = urlparse.parse (url)
             data = dict((i, data[i][0]) if data[i] else (i, '') for i in data)
             data['sources'] = re.findall("[^', u\]\[]+", data['sources'])
             for i,s in data['sources']:
