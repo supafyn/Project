@@ -17,17 +17,33 @@ import re, urlparse, urllib, base64
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import cache
-from resources.lib.modules import cfscrape
 from resources.lib.modules import dom_parser2
 
+import requests
+def url_ok(url):
+    r = requests.head(url)
+    if r.status_code == 200 or r.status_code == 301:
+        return True
+    else: return False
+
+def HostChcker():
+    if url_ok("http://kat.tv"):
+        useurl = 'http://kat.tv'
+
+    elif url_ok("http://kat.bypassed.bz"):
+        useurl = 'http://kat.bypassed.bz'
+
+    else: useurl = 'http://localhost/'
+    
+    return useurl
 
 class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['123-netflix.com']
-        self.base_link = 'http://123-netflix.com/'
-        self.search_link = '?s=%s'
+        self.domains = ['kat.tv']
+        self.base_link = HostChcker()
+        self.search_link = '/search-movies/%s.html'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):
@@ -35,14 +51,12 @@ class source:
             clean_title = cleantitle.geturl(title)
             search_url = urlparse.urljoin(self.base_link, self.search_link % clean_title.replace('-', '+'))
             r = cache.get(client.request, 1, search_url)
-            r = client.parseDOM(r, 'div', {'id': 'movie-featured'})
-            r = [(client.parseDOM(i, 'a', ret='href'),
-                  re.findall('.+?elease:\s*(\d{4})</', i),
-                  re.findall('<b><i>(.+?)</i>', i)) for i in r]
-            r = [(i[0][0], i[1][0], i[2][0]) for i in r if
-                 (cleantitle.get(i[2][0]) == cleantitle.get(title) and i[1][0] == year)]
+            r = dom_parser2.parse_dom(r, 'li', {'class': 'item'})
+            r = [(dom_parser2.parse_dom(i, 'a', attrs={'class': 'title'}),
+                  re.findall('status-year">(\d{4})</div', i.content, re.DOTALL)[0]) for i in r if i]
+            r = [(i[0][0].attrs['href'], re.findall('(.+?)</b><br', i[0][0].content, re.DOTALL)[0], i[1]) for i in r if i]
+            r = [(i[0], i[1], i[2]) for i in r if (cleantitle.get(i[1]) == cleantitle.get(title) and i[2] == year)]
             url = r[0][0]
-
             return url
         except Exception:
             return
@@ -66,11 +80,13 @@ class source:
                 clean_title = cleantitle.geturl(url['tvshowtitle'])+'-season-%d' % int(season)
                 search_url = urlparse.urljoin(self.base_link, self.search_link % clean_title.replace('-', '+'))
                 r = cache.get(client.request, 1, search_url)
-                r = client.parseDOM(r, 'div', {'id': 'movie-featured'})
-                r = [(client.parseDOM(i, 'a', ret='href'),
-                      re.findall('<b><i>(.+?)</i>', i)) for i in r]
-                r = [(i[0][0], i[1][0]) for i in r if
-                     cleantitle.get(i[1][0]) == cleantitle.get(clean_title)]
+                r = dom_parser2.parse_dom(r, 'li', {'class': 'item'})
+                r = [(dom_parser2.parse_dom(i, 'a', attrs={'class': 'title'}),
+                      dom_parser2.parse_dom(i, 'div', attrs={'class':'status'})[0]) for i in r if i]
+                r = [(i[0][0].attrs['href'], re.findall('(.+?)</b><br', i[0][0].content, re.DOTALL)[0],
+                      re.findall('(\d+)', i[1].content)[0]) for i in r if i]
+                r = [(i[0], i[1].split(':')[0], i[2]) for i in r
+                     if (cleantitle.get(i[1].split(':')[0]) == cleantitle.get(url['tvshowtitle']) and i[2] == str(int(season)))]
                 url = r[0][0]
             except:
                 pass
@@ -133,8 +149,14 @@ class source:
 
     def resolve(self, url):
         if self.base_link in url:
-            url = client.request(url)
-            v = re.findall('document.write\(Base64.decode\("(.+?)"\)', url)[0]
-            b64 = base64.b64decode(v)
-            url = client.parseDOM(b64, 'iframe', ret='src')[0]
+            try:
+                r = client.request(url)
+                v = re.findall('document.write\(Base64.decode\("(.+?)"\)', r)[0]
+                b64 = base64.b64decode(v)
+                url = client.parseDOM(b64, 'iframe', ret='src')[0]
+            except:
+                r = client.request(url)
+                r = client.parseDOM(r, 'div', attrs={'class':'player'})
+                url = client.parseDOM(r, 'a', ret='href')[0]
+
         return url
