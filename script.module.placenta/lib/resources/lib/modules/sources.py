@@ -46,8 +46,6 @@ class sources:
         
             url = None
             
-            control.moderator()
-            
             items = self.getSources(title, year, imdb, tvdb, season, episode, tvshowtitle, premiered)
 
             select = control.setting('hosts.mode') if select == None else select
