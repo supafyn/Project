@@ -3,7 +3,6 @@
         <dir>
             <title>Documentary Heaven</title>
             <meta>
-                <title>Documentary Heaven</title>
                 <summary>One Click Play section from Documentary Heaven</summary>
             </meta>
             <link>file://documented/docuheaven.xml</link>
@@ -13,7 +12,6 @@
         <dir>
             <title>Documentary Storm</title>
             <meta>
-                <title>Documentary Storm</title>
                 <summary>One Click Play section from Documentary Storm</summary>
             </meta>
             <link>file://documented/docustorm.xml</link>
@@ -23,11 +21,19 @@
         <dir>
             <title>Top Documentaries</title>
             <meta>
-                <title>Top Documentaries</title>
                 <summary>One Click Play section from Top Documentary Films</summary>
             </meta>
             <link>file://documented/topdocs.xml</link>
             <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/docs/tdf.png</thumbnail>
+        </dir>
+
+        <dir>
+            <title>Tube Documentaries</title>
+            <meta>
+                <summary>One Click Play section from YouTube for various channels, lists, etc.</summary>
+            </meta>
+            <link>file://documented/tubedocs.xml</link>
+            <thumbnail>https://raw.githubusercontent.com/muaddibttv/artwork/master/arrakis/docs/tubedocs.png</thumbnail>
         </dir>
     </docmain>
 </arrakis>
