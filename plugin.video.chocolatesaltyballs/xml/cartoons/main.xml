@@ -1,17 +1,36 @@
-			<dir>
+<dipshit>
+	<wannabe>
+		<item>
+			<title>Hotel Transylvania 3: Summer Vacation</title>
+			<meta>
+				<imdb>tt5220122</imdb>
+				<content>movie</content>
+				<title>Hotel Transylvania 3: Summer Vacation</title>
+				<year>2018</year>
+			</meta>
+			<link>
+				<sublink>https://uptobox.com/nthwcao8rn81</sublink>
+				<sublink>searchhd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280//gjAFM4xhA5vyLxxKMz38ujlUfDL.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280//m03jul0YdVEOFXEQVUv6pOVQYGL.jpg</fanart>
+		</item>
+		<dir>
 			<title>[COLOR limegreen]User Requests[/COLOR]</title>
 			<link>file://requests.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
-			</dir>
-		  <dir>
-			<title>[COLOR red]Toons[/COLOR]</title>
-			<link>file://cartoons/toons.xml</link>
-		  </dir>
-		  <dir>
+		</dir>
+		<dir>
+			<title>[COLOR red]Kids Area[/COLOR]</title>
+			<link>file://cartoons/kidsarea.xml</link>
+		</dir>
+		<dir>
 			<title>[COLOR orange]Kids Movies[/COLOR]</title>
 			<link>file://cartoons/kidsmo.xml</link>
-		  </dir>
-		  <dir>
-			<title>[COLOR red]Kids Area[/COLOR]</title>
+		</dir>
+		<dir>
+			<title>[COLOR red]Toons[/COLOR]</title>
 			<link>file://cartoons/toons.xml</link>
-		  </dir>
+		</dir>
+	</wannabe>
+</dipshit>
