@@ -5,7 +5,7 @@
 											 
 	<defaultcontrol>9000</defaultcontrol>
 
-	<!-- <backgroundcolor>background</backgroundcolor> -->
+	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
@@ -66,7 +66,6 @@
 							<param name="list_id" value="51000"/>
 						</include>
 						
-							
 						<include content="WidgetListPoster">
 							<param name="content_path" value="$INFO[Container(9000).ListItem.Property(widgetPath.personalposter2)]"/>
 							<param name="widget_header" value="$INFO[Container(9000).ListItem.Property(widgetName.personalposter2)]"/>
@@ -387,7 +386,7 @@
 						</include>
 					</control>
 					<include content="ImageWidget">
-						<param name="image_path" value="special://skin/extras/home-images/SKINDEFAULT.jpg"/>
+						<param name="image_path" value="special://skin/extras/home-images/"/>
 						<param name="text_label" value="$LOCALIZE[31105]" />
 						<param name="button_label" value="$LOCALIZE[31110]" />
 						<param name="button_onclick" value="ActivateWindow(videos,root)"/>

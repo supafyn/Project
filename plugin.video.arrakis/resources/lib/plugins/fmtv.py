@@ -32,7 +32,7 @@ addon_id   = xbmcaddon.Addon().getAddonInfo('id')
 this_addon   = xbmcaddon.Addon(id=addon_id)
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
 addon_icon   = xbmcaddon.Addon().getAddonInfo('icon')
-User_Agent   = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
+headers = {'User_Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'} 
 
 nba_info   = { 'per_page':this_addon.getSetting('nba_replay'), 'category':'3' }
 nfl_info   = { 'per_page':this_addon.getSetting('nfl_replay'), 'category':'4' }
@@ -169,8 +169,6 @@ def FullMatch_NBA_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -230,8 +228,6 @@ def FullMatch_NFL_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -291,8 +287,6 @@ def FullMatch_NHL_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -357,8 +351,6 @@ def FullMatch_MLB_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -418,8 +410,6 @@ def FullMatch_MOTOR_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -479,8 +469,6 @@ def FullMatch_WWE_Replays(url):
 
     try:
         xml = ""
-
-        headers = {'User_Agent':User_Agent}
         response = requests.get(url,headers).json()
         try:
             if 'invalid' in response['code']:
@@ -536,6 +524,7 @@ def FullMatch_WWE_Replays(url):
 
 def clean_titles(title):
     try:
+        title = remove_non_ascii(title)
         title = title.replace('&#8211;','-').replace(' at ', ' vs ')
         tmp = title.split(' - ')
         tmp_d = time.strptime(str(tmp[-1]), '%b %d, %Y')

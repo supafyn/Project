@@ -72,7 +72,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</title>
+			<title>[COLOR orange]20 Cent Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -132,13 +132,6 @@
 			</meta>
 			<link>file://blams/traktportal.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/trakt-logo.png</thumbnail>
-		</dir>
-		<dir>
-			<title>[COLOR blue]Music[/COLOR]</title>
-			<meta>
-				<summary>Twenty Cents is Twenty Cents</summary>
-			</meta>
-			<link>file://music.xml</link>
 		</dir>
 	</wannabe>
 </dipshit>

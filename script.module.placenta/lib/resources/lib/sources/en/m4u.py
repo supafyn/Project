@@ -22,8 +22,8 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['m4ufree.net']
-        self.base_link = 'http://m4ufree.net/'
+        self.domains = ['m4ufree.tv']
+        self.base_link = 'http://m4ufree.tv/'
         self.search_link = '/watch/%s-%s-online-m4ufree.html'
         
     def movie(self, imdb, title, localtitle, aliases, year):

@@ -173,9 +173,9 @@ def get_swiftstreamz_category(url):
                        "    <meta>"\
                        "        <summary>%s</summary>"\
                        "    </meta>"\
-                       "    <swift>swiftplay/%s</swift>"\
+                       "    <swift>swiftplay/%s/%s</swift>"\
                        "    <thumbnail>%s</thumbnail>"\
-                       "</item>" % (name,desc,url,icon)
+                       "</item>" % (name,desc,name,url,icon)
     except:
         pass
 
@@ -186,11 +186,14 @@ def get_swiftstreamz_category(url):
 @route(mode='SwiftPlay', args=["url"])
 def get_swiftstreamz_play(url):
     url = url.replace('swiftplay/', '') # Strip our category tag off.
+    tmp = url.split('/',1)
+    title = tmp[0]
+    url = tmp[1]
     try:
         repair = False
         response = requests.get(base_dta_url,headers={'Authorization':'Basic U3dpZnRTdHJlYW16OkBTd2lmdFN0cmVhbXpA','User-Agent':User_Agent})
         data = response.json(strict=False)
-        
+
         if data['DATA'][0]['HelloUrl'] in url \
         or data['DATA'][0]['HelloUrl1'] in url:
             auth_url = data['DATA'][0]['HelloLogin']
@@ -214,10 +217,18 @@ def get_swiftstreamz_play(url):
             auth_token = ''.join([auth_token[:-59], auth_token[-58:-47], auth_token[-46:-35], auth_token[-34:-23], auth_token[-22:-11], auth_token[-10:]])
 
         if 'playlist.m3u8' in url:
-            url = url + '?wmsAuthSign=' + auth_token + '|User-Agent=123456'
-            xbmc.executebuiltin("PlayMedia(%s)" % url)
+            url = url + '?wmsAuthSign=' + auth_token + '|User-Agent=123456'  
+            item = xbmcgui.ListItem(label=title, path=url, iconImage=addon_icon, thumbnailImage=addon_icon)
+            item.setInfo( type="Video", infoLabels={ "Title": title } )
+            import resolveurl
+            koding.Play_Video(url,showbusy=False,ignore_dp=True,item=item,resolver=resolveurl)        
+            #xbmc.executebuiltin("PlayMedia(%s)" % url)
         else:
             url = url + '|User-Agent=123456'
-            xbmc.executebuiltin("PlayMedia(%s)" % url)
+            item = xbmcgui.ListItem(label=title, path=url, iconImage=addon_icon, thumbnailImage=addon_icon)
+            item.setInfo( type="Video", infoLabels={ "Title": title } )
+            import resolveurl
+            koding.Play_Video(url,showbusy=False,ignore_dp=True,item=item,resolver=resolveurl)
+            #xbmc.executebuiltin("PlayMedia(%s)" % url)
     except:
         xbmcgui.Dialog().ok('Stream', 'Unable to play stream')

@@ -1,3 +1,14 @@
+v0.0.7
+    - Live TV now displays title of channel being played in OSD
+    - Spice Room Password now only needed once every 24 hours
+    - Documentary content added
+
+v0.0.6a
+    - Update for Unicode characters on FM Archives
+
+v0.0.6
+    - Update to requests in several plugins
+
 v0.0.5
     - Clear Cache added to plugins that already support cache
     - Added The Archives to the main menu

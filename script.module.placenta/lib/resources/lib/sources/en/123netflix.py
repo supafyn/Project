@@ -17,6 +17,7 @@ import re, urlparse, urllib, base64
 from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import cache
+from resources.lib.modules import cfscrape
 from resources.lib.modules import dom_parser2
 
 
@@ -24,9 +25,9 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['123netflix.com']
-        self.base_link = 'https://123netflix.pro/'
-        self.search_link = '/search-movies/%s.html'
+        self.domains = ['123-netflix.com']
+        self.base_link = 'http://123-netflix.com/'
+        self.search_link = '?s=%s'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

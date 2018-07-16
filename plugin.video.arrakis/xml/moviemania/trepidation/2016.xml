@@ -1065,10 +1065,5 @@
             <thumbnail>https://image.tmdb.org/t/p/w1280//6KvFXyg3T3nQ94y7V14l9tbB6x9.jpg</thumbnail>
             <fanart>https://image.tmdb.org/t/p/w1280//3HkuzTqpMl2K9K0xJCwmGOAW4h8.jpg</fanart>
         </item>
-        <dir>
-            <title>Next Page >></title>
-            <trakt>https://api.trakt.tv/users/bentkatu/lists/2016/items?page=2</trakt>
-            <summary>Go To Page 2</summary>
-        </dir>
     </horroryears>
 </arrakis>

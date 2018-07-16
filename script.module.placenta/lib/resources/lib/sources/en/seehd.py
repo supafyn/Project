@@ -25,7 +25,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['seehd.club', 'seehd.unblckd.bet', 'seehd.pl']
-        self.base_link = 'http://www.seehd.pl/'
+        self.base_link = 'https://seehd.one/'
         self.movie_link = '/%s-%04d-watch-online/'
         self.tvshow_link = '/%s'
 

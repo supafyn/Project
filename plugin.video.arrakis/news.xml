@@ -1,9 +1,22 @@
 CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
- 
-[COLOR red]Arrakis - Version 0.0.5[/COLOR]
- 
+
+[COLOR red]Arrakis - Version 0.0.7[/COLOR]
+
 [COLOR red]-------------------------------------------------------------------------------------------------------[/COLOR]
 
+[B][COLOR red]2018/07/14[/COLOR][/B]
+[COLOR lime]ver 0.0.7[/COLOR]
+    - Live TV now displays title of channel being played in OSD
+    - Spice Room Password now only needed once every 24 hours
+    - Documentary content added
+
+[B][COLOR red]2018/07/7[/COLOR][/B]
+[COLOR lime]ver 0.0.6a[/COLOR]
+    - Update for Unicode characters on FM Archives
+
+[B][COLOR red]2018/07/7[/COLOR][/B]
+[COLOR lime]ver 0.0.6[/COLOR]
+    - Update to requests in several plugins
 
 [B][COLOR red]2018/07/4[/COLOR][/B]
 [COLOR lime]ver 0.0.5[/COLOR]
@@ -47,5 +60,5 @@ CURRENT STATUS: [COLOR springgreen]Good[/COLOR]
 [B][COLOR red]2018/06/15[/COLOR][/B]
 [COLOR lime]ver 0.0.1[/COLOR]
     - Initial Release
- 
+
 

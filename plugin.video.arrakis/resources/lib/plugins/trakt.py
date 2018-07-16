@@ -791,3 +791,4 @@ def fetch_from_db(url):
             return []
     else:
         return []
+

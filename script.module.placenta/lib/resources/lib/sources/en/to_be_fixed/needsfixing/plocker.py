@@ -1,22 +1,22 @@
 # -*- coding: UTF-8 -*-
-#######################################################################
+# ######################################################################
  # ----------------------------------------------------------------------------
  # "THE BEER-WARE LICENSE" (Revision 42):
  # @Daddy_Blamo wrote this file.  As long as you retain this notice you
  # can do whatever you want with this stuff. If we meet some day, and you think
  # this stuff is worth it, you can buy me a beer in return. - Muad'Dib
  # ----------------------------------------------------------------------------
-#######################################################################
+# ######################################################################
 
 # Addon Name: Placenta
 # Addon id: plugin.video.placenta
 # Addon Provider: Mr.Blamo
 
-# Kudos on updates by FilmNet
-
 import re,traceback,urllib,urlparse,json,random, time
 
-from resources.lib.modules import client, cleantitle, directstream
+from resources.lib.modules import client
+from resources.lib.modules import cleantitle
+from resources.lib.modules import directstream
 from resources.lib.modules import source_utils
 from resources.lib.modules import log_utils
 
@@ -24,11 +24,9 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['putlockertv.to','putlocker.se']
+        self.domains = ['putlocker.se','putlockertv.to']
         self.base_link = 'https://www2.putlockertv.to/'
         self.movie_search_path = ('search?keyword=%s')
-        self.episode_search_path = ('/filter?keyword=%s&sort=post_date:Adesc'
-        self.ajax_search_path = '/ajax/film/search?ts=%s'
         self.film_path = '/watch/%s'
         self.info_path = '/ajax/episode/info?ts=%s&_=%s&id=%s&server=28&update=0'
         self.grabber_path = '/grabber-api/?ts=%s&id=%s&token=%s&mobile=0'
@@ -160,7 +158,7 @@ class source:
     def sources(self, url, hostDict, hostprDict):
         sources = []
         try:
-            data = urlparse.parse_qs(url)
+            data = urlparse.parse (url)
             data = dict((i, data[i][0]) if data[i] else (i, '') for i in data)
             data['sources'] = re.findall("[^', u\]\[]+", data['sources'])
             for i,s in data['sources']:
