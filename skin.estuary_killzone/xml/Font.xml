@@ -55,7 +55,7 @@
 		<font>
 			<name>font45</name>
 			<filename>Kunt.ttf</filename>
-			<size>36</size>
+			<size>34</size>
 			<style>lighten</style>
 		</font>
 		<font>
@@ -97,28 +97,29 @@
 		<font>
 			<name>font36_title</name>
 			<filename>Kunt.ttf</filename>
-			<size>36</size>
+			<size>34</size>
 		</font>
 		<font>
 			<name>font45_title</name>
 			<filename>Kunt.ttf</filename>
-			<size>45</size>
+			<size>34</size>
 		</font>
 		<font>
 			<name>font52_title</name>
 			<filename>Kunt.ttf</filename>
-			<size>52</size>
+			<size>34</size>
 		</font>
 		<font>
 			<name>font_MainMenu</name>
 			<filename>Kunt.ttf</filename>
-			<size>60</size>
+			<size>30</size>
+			<style>bold</style>
 		</font>
 		<font>
 			<name>WeatherTemp</name>
 			<aspect>0.85</aspect>
 			<filename>Kunt.ttf</filename>
-			<size>120</size>
+			<size>60</size>
 		</font>
 		<font>
 			<name>Mono30</name>
@@ -208,7 +209,7 @@
 		<font>
 			<name>font36_title</name>
 			<filename>arial.ttf</filename>
-			<size>36</size>
+			<size>34</size>
 			<style>bold</style>
 		</font>
 		<font>
