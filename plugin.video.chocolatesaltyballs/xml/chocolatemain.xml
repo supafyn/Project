@@ -40,12 +40,28 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
+			<title>[COLOR orange]1995 Collection[/COLOR]</title>
+			<meta>
+				<summary>Requests Welcome</summary>
+			</meta>
+			<link>file://1995.xml</link>
+			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
+		</dir>
+		<dir>
 			<title>[COLOR red]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
 			<link>file://blams/oneclick.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
+		</dir>
+		<dir>
+			<title>[COLOR orange]Movie BoxSets[/COLOR]</title>
+			<meta>
+				<summary>Twenty Cents is Twenty Cents</summary>
+			</meta>
+			<link>file://boxsetmovies.xml</link>
+			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
 			<title>[COLOR red]Kids Arena[/COLOR]</title>

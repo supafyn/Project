@@ -24,7 +24,7 @@
 				<bottom>0</bottom>
 				<width>100%</width>
 				<height>470</height>
-				<texture colordiffuse="dialog_tint">colors/white.png</texture>
+				<texture>colors/purple.png</texture>
 			</control>
 			<control type="label" id="311">
 				<centerleft>50%</centerleft>

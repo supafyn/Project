@@ -5,69 +5,68 @@
 		<font>
 			<name>font10</name>
 			<filename>Kunt.ttf</filename>
-			<size>28</size>
+			<size>32</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font12</name>
 			<filename>Kunt.ttf</filename>
-			<size>28</size>
+			<size>32</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font13</name>
 			<filename>Kunt.ttf</filename>
-			<size>30</size>
+			<size>32</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font14</name>
 			<filename>Kunt.ttf</filename>
-			<size>30</size>
+			<size>32</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font25_narrow</name>
 			<filename>Kunt.ttf</filename>
-			<size>28</size>
+			<size>32</size>
 			<style>lighten</style>
 			<linespacing>0.8</linespacing>
 		</font>
 		<font>
 			<name>font27</name>
 			<filename>Kunt.ttf</filename>
-			<size>27</size>
+			<size>32</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font27_narrow</name>
 			<filename>Kunt.ttf</filename>
-			<size>28</size>
+			<size>32</size>
 			<style>lighten</style>
 			<linespacing>0.8</linespacing>
 		</font>
 		<font>
 			<name>font37</name>
 			<filename>Kunt.ttf</filename>
-			<size>30</size>
+			<size>35</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font45</name>
 			<filename>Kunt.ttf</filename>
-			<size>30</size>
+			<size>36</size>
 			<style>lighten</style>
 		</font>
 		<font>
 			<name>font60</name>
 			<filename>Kunt.ttf</filename>
-			<size>30</size>
-			<style>lighten</style>
+			<size>35</size>
 		</font>
 		<font>
 			<name>font_clock</name>
 			<filename>Kunt.ttf</filename>
-			<size>70</size>
+			<size>65</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
