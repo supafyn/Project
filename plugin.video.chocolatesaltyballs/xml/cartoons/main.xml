@@ -16,21 +16,41 @@
 			<fanart>https://image.tmdb.org/t/p/w1280//m03jul0YdVEOFXEQVUv6pOVQYGL.jpg</fanart>
 		</item>
 		<dir>
-			<title>[COLOR limegreen]User Requests[/COLOR]</title>
+			<title>[COLOR gold]Movie User Requests[/COLOR]</title>
 			<link>file://requests.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR red]Kids Area[/COLOR]</title>
-			<link>file://cartoons/kidsarea.xml</link>
+			<title>[COLOR red]A-C[/COLOR]</title>
+			<link>file://cartoons/a-c.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Kids Movies[/COLOR]</title>
-			<link>file://cartoons/kidsmo.xml</link>
+			<title>[COLOR orange]D-F[/COLOR]</title>
+			<link>file://cartoons/d-f.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR red]Toons[/COLOR]</title>
-			<link>file://cartoons/toons.xml</link>
+			<title>[COLOR red]G-J[/COLOR]</title>
+			<link>file://cartoons/g-j.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR orange]K-M[/COLOR]</title>
+			<link>file://cartoons/k-m.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR red]N-P[/COLOR]</title>
+			<link>file://cartoons/n-p.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR orange]Q-S[/COLOR]</title>
+			<link>file://cartoons/q-s.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR red]T-V[/COLOR]</title>
+			<link>file://cartoons/t-v.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR orange]W-Z[/COLOR]</title>
+			<link>file://cartoons/w-z.xml</link>
 		</dir>
 	</wannabe>
 </dipshit>

@@ -32,9 +32,9 @@
 			<info>Open the Settings for the addon</info>
 		</item>
 		<dir>
-			<title>[COLOR limegreen]User Requests[/COLOR]</title>
+			<title>[COLOR gold]User Requests[/COLOR]</title>
 			<meta>
-				<summary>Twenty Cents is Twenty Cents</summary>
+				<summary>Requests Welcome 20 Cent Charge</summary>
 			</meta>
 			<link>file://requests.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
@@ -64,7 +64,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR red]Kids Arena[/COLOR]</title>
+			<title>[COLOR red]Family Time[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -120,21 +120,21 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/24shows.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR white]Latest Release Cartoons[/COLOR]</title>
+			<title>[COLOR gold]Latest Release Cartoons[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
 			<wctoon>wcdaily-updates</wctoon>
 		</dir>
 		<dir>
-			<title>[COLOR white]Popular Series[/COLOR]</title>
+			<title>[COLOR gold]Popular Series[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
 			<wctoon>popular-list</wctoon>
 		</dir>
 		<dir>
-			<title>[COLOR white]Search[/COLOR]</title>
+			<title>[COLOR gold]Search[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
