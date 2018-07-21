@@ -6,7 +6,7 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]American Dad[/COLOR]</title>
+<title>[COLOR gold]American Dad[/COLOR]</title>
 <tmdb>list/47077</tmdb>
 <thumbnail>https://i.imgur.com/0UJnTWT.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -27,7 +27,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR orange]The Simpsons[/COLOR]</name>
+    <title>[COLOR gold]The Simpsons[/COLOR]</name>
     <link>file://adulttoon/simpsons.xml</link>
     <thumbnail>https://i.imgur.com/D1qBOP4.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -41,7 +41,7 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]Bob's Burgers[/COLOR]</title>
+<title>[COLOR gold]Bob's Burgers[/COLOR]</title>
 <tmdb>list/47081</tmdb>
 <thumbnail>https://i.imgur.com/5FbV9LB.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -55,7 +55,7 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]Rick and Morty[/COLOR]</title>
+<title>[COLOR gold]Rick and Morty[/COLOR]</title>
 <tmdb>list/47144</tmdb>
 <thumbnail>https://i.imgur.com/2o0HH8u.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -69,7 +69,7 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]King of the Hill[/COLOR]</title>
+<title>[COLOR gold]King of the Hill[/COLOR]</title>
 <tmdb>list/47145</tmdb>
 <thumbnail>https://i.imgur.com/dIU8EFt.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -104,14 +104,14 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]Aqua Teen Hunger Force[/COLOR]</title>
+<title>[COLOR gold]Aqua Teen Hunger Force[/COLOR]</title>
 <tmdb>list/47173</tmdb>
 <thumbnail>https://i.imgur.com/uhbLXCJ.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR orange]Brickleberry[/COLOR]</title>
+<title>[COLOR gold]Brickleberry[/COLOR]</title>
 <tmdb>list/47182</tmdb>
 <thumbnail>https://i.imgur.com/t1KtnNw.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -131,7 +131,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]Camp WWE[/COLOR]</title>
+	<title>[COLOR gold]Camp WWE[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -155,7 +155,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]Fugget About It[/COLOR]</title>
+	<title>[COLOR gold]Fugget About It[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>

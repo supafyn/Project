@@ -1,12 +1,12 @@
 <plugin>
-<title>[COLOR orange]iLL WiLL PrEss - All Videos[/COLOR]</title>
+<title>[COLOR gold]iLL WiLL PrEss - All Videos[/COLOR]</title>
 <link>plugin://plugin.video.youtube/channel/UC19RiHSy28vMxg_dC1AI_fA/</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 </plugin>
 
 <plugin>
-<title>[COLOR orange]iLL WiLL PrEss - Playlists[/COLOR]</title>
+<title>[COLOR gold]iLL WiLL PrEss - Playlists[/COLOR]</title>
 <link>plugin://plugin.video.youtube/channel/UC19RiHSy28vMxg_dC1AI_fA/playlists/</link>
 <thumbnail></thumbnail>
 <fanart></fanart>

@@ -151,6 +151,36 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/bJxxhsBkn9KufhbWTmfdDPtyIRS.jpg</fanart>
 		</item>
 		<item>
+			<title>Dragon Ball Z: Doragon - Kami to Kami (2013)</title>
+			<meta>
+				<content>movie</content>
+				<imdb>tt2263944</imdb>
+				<title>Dragon Ball Z: Doragon - Kami to Kami</title>
+				<year>2013</year>
+			</meta>
+			<link>
+				<sublink>searchhd</sublink>
+				<sublink>searchsd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280/xI5LlCzSkp8iFSbmla0Dh4iT5ie.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280/eVrW2OF0vulxB2tnsJEt4oCDXVl.jpg</fanart>
+		</item>
+		<item>
+			<title>Dragon Ball Z: Doragon - Resurrection 'F' (2015)</title>
+			<meta>
+				<content>movie</content>
+				<imdb>tt3819668</imdb>
+				<title>Dragon Ball Z: Doragon - Resurrection 'F'</title>
+				<year>2015</year>
+			</meta>
+			<link>
+				<sublink>searchhd</sublink>
+				<sublink>searchsd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280/uYgE4QiNEDNbYTthVH5MJuCIBsX.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280/j98rDMOFD7iWdFV4JMFinq3UMj2.jpg</fanart>
+		</item>
+		<item>
 			<title>Dragonslayer (1981)</title>
 			<meta>
 				<content>movie</content>
@@ -451,7 +481,7 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/pCshecgO5A15qURScLMqFtyPer4.jpg</fanart>
 		</item>
         <item>
-            <title>[COLOR orange]Frozen[/COLOR]</title>
+            <title>[COLOR gold]Frozen[/COLOR]</title>
             <meta>
                 <imdb>tt2294629</imdb>
                 <content>movie</content>

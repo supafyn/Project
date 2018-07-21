@@ -25,7 +25,7 @@
 			<link>file://cartoons/a-c.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR orange]D-F[/COLOR]</title>
+			<title>[COLOR gold]D-F[/COLOR]</title>
 			<link>file://cartoons/d-f.xml</link>
 		</dir>
 		<dir>
@@ -33,7 +33,7 @@
 			<link>file://cartoons/g-j.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR orange]K-M[/COLOR]</title>
+			<title>[COLOR gold]K-M[/COLOR]</title>
 			<link>file://cartoons/k-m.xml</link>
 		</dir>
 		<dir>
@@ -41,7 +41,7 @@
 			<link>file://cartoons/n-p.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Q-S[/COLOR]</title>
+			<title>[COLOR gold]Q-S[/COLOR]</title>
 			<link>file://cartoons/q-s.xml</link>
 		</dir>
 		<dir>
@@ -49,7 +49,7 @@
 			<link>file://cartoons/t-v.xml</link>
 		</dir>
 		<dir>
-			<title>[COLOR orange]W-Z[/COLOR]</title>
+			<title>[COLOR gold]W-Z[/COLOR]</title>
 			<link>file://cartoons/w-z.xml</link>
 		</dir>
 	</wannabe>

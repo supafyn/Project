@@ -1,5 +1,5 @@
 <plugin>
-<title>[COLOR orange]All Episodes[/COLOR]</title>
+<title>[COLOR gold]All Episodes[/COLOR]</title>
 <link>plugin://plugin.video.youtube/playlist/PL19B0B5CCFEF1C0C9/</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -13,7 +13,7 @@
 </plugin>
 
 <plugin>
-<title>[COLOR orange]TV Episodes[/COLOR]</title>
+<title>[COLOR gold]TV Episodes[/COLOR]</title>
 <link>plugin://plugin.video.youtube/playlist/PLB41A78E48B73AAC0/</link>
 <thumbnail></thumbnail>
 <fanart></fanart>

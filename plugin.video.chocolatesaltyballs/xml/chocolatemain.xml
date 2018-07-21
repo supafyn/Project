@@ -8,7 +8,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/twitter.jpg</thumbnail>
 		</item>
 		<item>
-			<title>[COLOR=orange]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+			<title>[COLOR=gold]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -23,7 +23,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
 		</plugin>
 		<item>
-			<title>[COLOR orange]Settings[/COLOR]</title>
+			<title>[COLOR gold]Settings[/COLOR]</title>
 			<mysettings>0/0</mysettings>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
@@ -40,7 +40,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]1995 Collection[/COLOR]</title>
+			<title>[COLOR gold]1995 Collection[/COLOR]</title>
 			<meta>
 				<summary>Requests Welcome</summary>
 			</meta>
@@ -48,7 +48,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR red]Blamo's Collection[/COLOR] [COLOR orange](Direct Links)[/COLOR]</title>
+			<title>[COLOR red]Blamo's Collection[/COLOR] [COLOR gold](Direct Links)[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -56,7 +56,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Movie BoxSets[/COLOR]</title>
+			<title>[COLOR gold]Movie BoxSets[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -72,7 +72,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kidsmo.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]CopyKatz[/COLOR]</title>
+			<title>[COLOR gold]CopyKatz[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -80,15 +80,15 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/copycat.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR red]Action Movies[/COLOR]</title>
+			<title>[COLOR red]Best Action Collections[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
-			<link>file://blams/greatm/greatesta.xml</link>
+			<link>file://blams/greatm/main.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]20 Cent Real Debrid[/COLOR] [COLOR orange]Movies[/COLOR]</title>
+			<title>[COLOR gold]20 Cent Real Debrid[/COLOR] [COLOR gold]Movies[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -96,7 +96,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/realdebrid.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
+			<title>[COLOR gold]Adult Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -104,7 +104,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/adults.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
+			<title>[COLOR gold]Kids Toons[/COLOR] [COLOR red]Scrapers[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -112,7 +112,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/kids.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR orange]24/7 TV Shows[/COLOR]</title>
+			<title>[COLOR gold]24/7 TV Shows[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>

@@ -1,12 +1,12 @@
 <dir>
-    <title>[COLOR orange]Animaniacs[/COLOR]</name>
+    <title>[COLOR gold]Animaniacs[/COLOR]</name>
     <link>file://kidstoon/animaniacs.xml</link>
     <thumbnail>https://i.imgur.com/ezj9yZR.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-    <title>[COLOR orange]Drawn Together[/COLOR]</name>
+    <title>[COLOR gold]Drawn Together[/COLOR]</name>
     <link>file://kidstoon/drawntogether.xml</link>
     <thumbnail>https://i.imgur.com/T81U6zQ.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -20,21 +20,21 @@
 </dir>
 
 <dir>
-    <title>[COLOR orange]Daria[/COLOR]</name>
+    <title>[COLOR gold]Daria[/COLOR]</name>
     <link>file://kidstoon/daria.xml</link>
     <thumbnail>https://i.imgur.com/qV2aKKJ.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR orange]Adventure Time[/COLOR]</title>
+<title>[COLOR gold]Adventure Time[/COLOR]</title>
 <tmdb>list/47163</tmdb>
 <thumbnail>https://i.imgur.com/x9GRpli.png</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR orange]Rocko's Modern Life[/COLOR]</title>
+<title>[COLOR gold]Rocko's Modern Life[/COLOR]</title>
 <tmdb>list/47165</tmdb>
 <thumbnail>https://i.imgur.com/fvnPfTD.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -48,7 +48,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR orange]SpongeBob SquarePants[/COLOR]</name>
+    <title>[COLOR gold]SpongeBob SquarePants[/COLOR]</name>
     <link>file://kidstoon/spongebob.xml</link>
     <thumbnail>https://i.imgur.com/gmkl4QH.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -62,7 +62,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR orange]Regular Show[/COLOR]</name>
+    <title>[COLOR gold]Regular Show[/COLOR]</name>
     <link>file://kidstoon/regularshow.xml</link>
     <thumbnail>https://i.imgur.com/9ywK584.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -83,21 +83,21 @@
 </dir>
 
 <dir>
-<title>[COLOR orange]Squidbillies[/COLOR]</title>
+<title>[COLOR gold]Squidbillies[/COLOR]</title>
 <tmdb>list/47439</tmdb>
 <thumbnail>https://i.imgur.com/ANDbGtT.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-    <title>[COLOR orange]Joe Cartoon[/COLOR]</title>
+    <title>[COLOR gold]Joe Cartoon[/COLOR]</title>
     <link>file://kidstoon/joecartoon.xml</link>
     <thumbnail>file://icons/joecartoon_icon.png</thumbnail>
     <fanart>file://icons/joecartoon_fanart.jpg</fanart>
 </dir>
 
 <dir>
-	<title>[COLOR orange]The Batman[/COLOR]</title>
+	<title>[COLOR gold]The Batman[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -121,7 +121,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]The Tom & Jerry Kids Show[/COLOR]</title>
+	<title>[COLOR gold]The Tom & Jerry Kids Show[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -146,7 +146,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]DuckTales[/COLOR]</title>
+	<title>[COLOR gold]DuckTales[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -170,7 +170,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]Fullmetal Alchemist: Brotherhood[/COLOR]</title>
+	<title>[COLOR gold]Fullmetal Alchemist: Brotherhood[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -194,7 +194,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]The Smurfs[/COLOR]</title>
+	<title>[COLOR gold]The Smurfs[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -219,7 +219,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]Dexter's Laboratory[/COLOR]</title>
+	<title>[COLOR gold]Dexter's Laboratory[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -251,7 +251,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR orange]Ed, Edd n Eddy[/COLOR]</title>
+	<title>[COLOR gold]Ed, Edd n Eddy[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>

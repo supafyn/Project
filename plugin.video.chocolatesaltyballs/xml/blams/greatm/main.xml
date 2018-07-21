@@ -1,0 +1,29 @@
+<dipshit>
+	<wannabe>
+		<dir>
+			<title>[COLOR gold]Movie User Requests[/COLOR]</title>
+			<link>file://requests.xml</link>
+			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
+		</dir>
+		<dir>
+			<title>[COLOR red]Top Action[/COLOR]</title>
+			<link>file://blams/greatm/action-a.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR gold]Action Time[/COLOR]</title>
+			<link>file://blams/greatm/action-b.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR red]20 Cents Action[/COLOR]</title>
+			<link>file://blams/greatm/action-c.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR gold]Action To Watch[/COLOR]</title>
+			<link>file://blams/greatm/action-d.xml</link>
+		</dir>
+		<dir>
+			<title>[COLOR red]Alpha Action[/COLOR]</title>
+			<link>file://blams/greatm/action-e.xml</link>
+		</dir>
+	</wannabe>
+</dipshit>

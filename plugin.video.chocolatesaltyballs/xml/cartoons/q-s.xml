@@ -31,21 +31,6 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/mZlf2J8qAuKr4lV0LP0FaFiyWl.jpg</fanart>
 		</item>
 		<item>
-			<title>Ratatouille (2007)</title>
-			<meta>
-				<content>movie</content>
-				<imdb>tt0382932</imdb>
-				<title>Ratatouille</title>
-				<year>2007</year>
-			</meta>
-			<link>
-				<sublink>searchhd</sublink>
-				<sublink>searchsd</sublink>
-			</link>
-			<thumbnail>https://image.tmdb.org/t/p/w1280/jEiEU8viSb8CIIHcfprVr2V6XDz.jpg</thumbnail>
-			<fanart>https://image.tmdb.org/t/p/w1280/mZlf2J8qAuKr4lV0LP0FaFiyWl.jpg</fanart>
-		</item>
-		<item>
 			<title>Redline (2009)</title>
 			<meta>
 				<content>movie</content>
@@ -166,7 +151,7 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/xl6Tj9HoUezt8fBMyROxs2Mz2Ij.jpg</fanart>
 		</item>
         <item>
-            <title>[COLOR orange]Saludos Amigos[/COLOR]</title>
+            <title>[COLOR gold]Saludos Amigos[/COLOR]</title>
             <meta>
                 <imdb>tt0036326</imdb>
                 <content>movie</content>
@@ -331,7 +316,7 @@
             <fanart>https://image.tmdb.org/t/p/w1280/zWKl0O88hHRinqadToYFVWuPkdG.jpg</fanart>
         </item>
         <item>
-            <title>[COLOR orange]Snow White and the Seven Dwarfs[/COLOR]</title>
+            <title>[COLOR gold]Snow White and the Seven Dwarfs[/COLOR]</title>
             <meta>
                 <imdb>tt0029583</imdb>
                 <content>movie</content>
@@ -391,7 +376,7 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/7hchjLbgiYdrNoblNa7i1DRivnM.jpg</fanart>
 		</item>
         <item>
-            <title>[COLOR orange]Spirit: Stallion of the Cimarron[/COLOR]</title>
+            <title>[COLOR gold]Spirit: Stallion of the Cimarron[/COLOR]</title>
             <meta>
                 <imdb>tt0166813</imdb>
                 <content>movie</content>
