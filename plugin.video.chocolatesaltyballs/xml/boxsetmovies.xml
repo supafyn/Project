@@ -683,6 +683,38 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/mou66QcacavDahfyuaqKfaCLdoI.jpg</fanart>
 		</item>
 		<item>
+			<title>John Wick</title>
+			<meta>
+				<imdb>tt2911666</imdb>
+				<content>movie</content>
+				<title>John Wick</title>
+				<year>2014</year>
+			</meta>
+			<link>
+				<sublink>http://dl.serverdl.in/1/files/John.Wick.2014.BluRay.4K.Ultra.HD.2160p.5.1CH.SalamDL.mkv (4K UHD)</sublink>
+				<sublink>http://dl.serverdl.in/1/files/John.Wick.2014.1080p.Bluray.6CH.ShAaNiG.mkv (1080P)</sublink>
+				<sublink>searchhd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280//5vHssUeVe25bMrof1HyaPyWgaP.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280//umC04Cozevu8nn3JTDJ1pc7PVTn.jpg</fanart>
+		</item>
+		<item>
+			<title>John Wick: Chapter 2</title>
+			<meta>
+				<imdb>tt4425200</imdb>
+				<content>movie</content>
+				<title>John Wick: Chapter 2</title>
+				<year>2017</year>
+			</meta>
+			<link>
+				<sublink>http://dl.serverdl.in/1/files/John.Wick.Chapter.2.2017.BluRay.Full.HD.SPARKS.mkv (1080P FULLHD)</sublink>
+				<sublink>http://dl.serverdl.in/1/files/John.Wick.Chapter.2.2017.Bluray.1080p.6CH.ShAaNiG.mkv (1080P)</sublink>
+				<sublink>searchhd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280//zkXnKIwX5pYorKJp2fjFSfNyKT0.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280//5qEaTFR3dVHgP85YXraZJiRBHt1.jpg</fanart>
+		</item>
+		<item>
 			<title>Lethal Weapon (1987)</title>
 			<meta>
 				<content>movie</content>

@@ -13,7 +13,7 @@
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Ren & Stimpy[/COLOR]</title>
+<title>[COLOR gold]Ren & Stimpy[/COLOR]</title>
 <tmdb>list/47157</tmdb>
 <thumbnail>https://i.imgur.com/CFU4i8v.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -41,7 +41,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Johnny Bravo[/COLOR]</name>
+    <title>[COLOR gold]Johnny Bravo[/COLOR]</name>
     <link>file://kidstoon/johnny.xml</link>
     <thumbnail>https://i.imgur.com/h5bbVHW.png</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -55,7 +55,7 @@
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Courage the Cowardly Dog[/COLOR]</title>
+<title>[COLOR gold]Courage the Cowardly Dog[/COLOR]</title>
 <tmdb>list/47172</tmdb>
 <thumbnail>https://i.imgur.com/i5b0hl9.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -69,14 +69,14 @@
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Cow and Chicken[/COLOR]</title>
+<title>[COLOR gold]Cow and Chicken[/COLOR]</title>
 <tmdb>list/47180</tmdb>
 <thumbnail>https://i.imgur.com/tnoMXFE.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Back at the Barnyard[/COLOR]</title>
+<title>[COLOR gold]Back at the Barnyard[/COLOR]</title>
 <tmdb>list/47217</tmdb>
 <thumbnail>https://i.imgur.com/DsdgTF7.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -109,7 +109,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Tom and Jerry[/COLOR]</title>
+	<title>[COLOR gold]Tom and Jerry[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -134,7 +134,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Rugrats[/COLOR]</title>
+	<title>[COLOR gold]Rugrats[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -158,7 +158,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]DuckTales[/COLOR]</title>
+	<title>[COLOR gold]DuckTales[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -182,7 +182,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Paw Patrol[/COLOR]</title>
+	<title>[COLOR gold]Paw Patrol[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -206,7 +206,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Garfield and Friends[/COLOR]</title>
+	<title>[COLOR gold]Garfield and Friends[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -232,7 +232,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]InuYasha[/COLOR]</title>
+	<title>[COLOR gold]InuYasha[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -244,7 +244,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]ScoobyDoo Movies & Shows[/COLOR]</name>
+    <title>[COLOR gold]ScoobyDoo Movies & Shows[/COLOR]</name>
     <link>file://kidstoons/scoobydoo.xml</link>
     <thumbnail>https://image.tmdb.org/t/p/w1280//kGbYwGQHFoPPMu68F5jOvfuPucG.jpg</thumbnail>
     <fanart>https://image.tmdb.org/t/p/w1280//jBWrRPuIdftrxYt4tCcyktgdQIC.jpg</fanart>

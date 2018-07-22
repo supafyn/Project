@@ -1,5 +1,5 @@
 <dir>
-    <title>[COLOR limegreen]South Park[/COLOR]</name>
+    <title>[COLOR gold]South Park[/COLOR]</name>
     <link>file://adulttoon/southpark.xml</link>
     <thumbnail>https://i.imgur.com/jK3Kzao.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -13,14 +13,14 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Family Guy[/COLOR]</name>
+    <title>[COLOR gold]Family Guy[/COLOR]</name>
     <link>file://adulttoon/familyguy.xml</link>
     <thumbnail>https://i.imgur.com/plXnsGo.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR limegreen]The Cleveland Show[/COLOR]</title>
+<title>[COLOR gold]The Cleveland Show[/COLOR]</title>
 <tmdb>list/47177</tmdb>
 <thumbnail>https://i.imgur.com/UycmoqK.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -34,7 +34,7 @@
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Archer[/COLOR]</title>
+<title>[COLOR gold]Archer[/COLOR]</title>
 <tmdb>list/47080</tmdb>
 <thumbnail>https://i.imgur.com/LDOsjpF.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -48,7 +48,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Futurama[/COLOR]</name>
+    <title>[COLOR gold]Futurama[/COLOR]</name>
     <link>file://adulttoon/futurama.xml</link>
     <thumbnail>https://i.imgur.com/R5qQc96.png</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -62,7 +62,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Tripping the Rift[/COLOR]</name>
+    <title>[COLOR gold]Tripping the Rift[/COLOR]</name>
     <link>file://adulttoon/trippingtherift.xml</link>
     <thumbnail>https://i.imgur.com/7t0zB6S.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -76,28 +76,28 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Beavis and Butt-head[/COLOR]</name>
+    <title>[COLOR gold]Beavis and Butt-head[/COLOR]</name>
     <link>file://adulttoon/beavis.xml</link>
     <thumbnail>https://i.imgur.com/y6btN5a.png</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]Robot Chicken[/COLOR]</name>
+    <title>[COLOR gold]Robot Chicken[/COLOR]</name>
     <link>file://adulttoon/robotchicken.xml</link>
     <thumbnail>https://i.imgur.com/tqVBo1L.jpg</thumbnail>
     <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR limegreen]The Boondocks[/COLOR]</title>
+<title>[COLOR gold]The Boondocks[/COLOR]</title>
 <tmdb>list/47162</tmdb>
 <thumbnail>https://i.imgur.com/YH7qIrJ.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
 </dir>
 
 <dir>
-<title>[COLOR limegreen]Pinky and the Brain[/COLOR]</title>
+<title>[COLOR gold]Pinky and the Brain[/COLOR]</title>
 <tmdb>list/47164</tmdb>
 <thumbnail>https://i.imgur.com/wxuIjRo.jpg</thumbnail>
 <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
@@ -118,7 +118,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]F is for Family[/COLOR]</title>
+	<title>[COLOR gold]F is for Family[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -143,7 +143,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Mr. Pickles[/COLOR]</title>
+	<title>[COLOR gold]Mr. Pickles[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -168,7 +168,7 @@
 </dir>
 
 <dir>
-	<title>[COLOR limegreen]Monkey Dust[/COLOR]</title>
+	<title>[COLOR gold]Monkey Dust[/COLOR]</title>
 	<meta>
 		<imdb/>
 		<content>tvshow</content>
@@ -181,7 +181,7 @@
 </dir>
 
 <dir>
-    <title>[COLOR limegreen]iLL WiLL PrEss - (Foamy the Squirrel)[/COLOR]</title>
+    <title>[COLOR gold]iLL WiLL PrEss - (Foamy the Squirrel)[/COLOR]</title>
     <link>file://adulttoon/illwill.xml</link>
     <thumbnail>file://icons/foamy_icon.png</thumbnail>
     <fanart>file://icons/foamy_fanart.jpg</fanart>
