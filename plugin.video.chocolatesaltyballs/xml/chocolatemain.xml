@@ -40,11 +40,11 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR gold]1995 Collection[/COLOR]</title>
+			<title>[COLOR gold]Oldies But Goodies[/COLOR]</title>
 			<meta>
 				<summary>Requests Welcome</summary>
 			</meta>
-			<link>file://1995.xml</link>
+			<link>file://oldies.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon.png</thumbnail>
 		</dir>
 		<dir>

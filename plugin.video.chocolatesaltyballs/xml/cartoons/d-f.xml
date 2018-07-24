@@ -181,6 +181,21 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/j98rDMOFD7iWdFV4JMFinq3UMj2.jpg</fanart>
 		</item>
 		<item>
+			<title>Dragon Ball Z: Fusion Reborn</title>
+			<meta>
+				<imdb>tt0142236</imdb>
+				<content>movie</content>
+				<title>Dragon Ball Z: Fusion Reborn</title>
+				<year>1995</year>
+			</meta>
+			<link>
+				<sublink>searchhd</sublink>
+				<sublink>searchsd</sublink>
+			</link>
+			<thumbnail>https://image.tmdb.org/t/p/w1280//v34F63Efl0vY0aHBw7rF96Uahtc.jpg</thumbnail>
+			<fanart>https://image.tmdb.org/t/p/w1280//tr4UmvWNoJ6V5X8vRr0cnKKuJHL.jpg</fanart>
+		</item>
+		<item>
 			<title>Dragonslayer (1981)</title>
 			<meta>
 				<content>movie</content>
