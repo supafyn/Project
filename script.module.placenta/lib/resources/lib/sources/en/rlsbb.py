@@ -45,7 +45,6 @@ class source:
         try:
             url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
             url = urllib.urlencode(url)
-            log_utils.log("*****url = " + url)
             return url
         except:
             failure = traceback.format_exc()
@@ -60,7 +59,6 @@ class source:
             url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
             url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
             url = urllib.urlencode(url)
-            log_utils.log("*****url = " + url)
             return url
         except:
             failure = traceback.format_exc()
@@ -76,17 +74,11 @@ class source:
             if debrid.status() == False: raise Exception()
 
             data = urlparse.parse_qs(url)
-            log_utils.log("***** data = ")
-            log_utils.log(data)			
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
-            log_utils.log("***** data = ")
-            log_utils.log(data)
-            premDate = data['premiered']									#.replace("-",".")
-            log_utils.log("***** premDate=" + premDate)			
-            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title'] # redundant later?
+
+            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
             hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
-			# note HDLR is defined here!
-			
+
             query = '%s S%02dE%02d' % (
             data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (
             data['title'], data['year'])
@@ -95,18 +87,16 @@ class source:
             query = query.replace("&", "and")
             query = query.replace("  ", " ")
             query = query.replace(" ", "-")
-			
-            log_utils.log("***** query = " + query)
+
             url = self.search_link % urllib.quote_plus(query)
             url = urlparse.urljoin(self.base_link, url)
 
-            url = "http://rlsbb.ru/" + query								# this overwrites a bunch of previous lines!
-            log_utils.log("***** url = " + url)
+            url = "http://rlsbb.ru/" + query
+
             if 'tvshowtitle' not in data: url = url + "-1080p"
 
-            r = client.request(url)											# python version of curl ?
-			
-            query2 = query
+            r = client.request(url)
+
             if r == None and 'tvshowtitle' in data:
                 season = re.search('S(.*?)E', hdlr)
                 season = season.group(1)
@@ -119,34 +109,16 @@ class source:
                 url = "http://rlsbb.ru/" + query
                 r = client.request(url)
 
-            if r == None and 'tvshowtitle' in data:
-                #http://rlsbb.ru/the-daily-show-2018-07-24
-                #url = "http://rlsbb.ru/" + query
-                #datedQuery = re.sub(pat,repl,text)		
-				
-                datedQuery = re.sub(hdlr,'',query2) + premDate
-                url = "http://rlsbb.ru/" + datedQuery			
-                url = re.sub('The-Late-Show-with-Stephen-Colbert','Stephen-Colbert',url)	# "scene" is going by shortened show title (!!)			
-				
-                log_utils.log("***** hdlr = " + hdlr)
-                log_utils.log("***** query2 = " + query2)
-                log_utils.log("***** datedQuery = " + datedQuery)			
-                log_utils.log("***** url = " + url)
-                r = client.request(url)
-				
-            posts = client.parseDOM(r, "div", attrs={"class": "content"})	# get all <div class=content>...</div>
-            hostDict = hostprDict + hostDict								# ?
+            posts = client.parseDOM(r, "div", attrs={"class": "content"})
+            hostDict = hostprDict + hostDict
             items = []
             for post in posts:
                 try:
-                    u = client.parseDOM(post, 'a', ret='href')				# get all <a href=..... </a>
-                    for i in u:												# foreach href url
+                    u = client.parseDOM(post, 'a', ret='href')
+                    for i in u:
                         try:
-                            name = str(i)									# the url wasn't a string to start?
-                            #log_utils.log("***** name (href) = " + name)
+                            name = str(i)
                             if hdlr in name.upper(): items.append(name)
-                            elif premDate in name: items.append(name)
-                            elif premDate.replace("-",".") in name: items.append(name)
                         except:
                             pass
                 except:
