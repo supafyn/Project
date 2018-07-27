@@ -8,14 +8,14 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/twitter.jpg</thumbnail>
 		</item>
 		<item>
-			<title>[COLOR=gold]Some Links Require Pairing or Real Debrid:[/COLOR]</title>
+			<title>[COLOR=gold]Some Links Require Pairing, Real Debrid and or All Debrid:[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/20centslol.png</thumbnail>
 		</item>
 		<plugin>
-			<title>[COLOR red]Pair and Auth RD[/COLOR]</title>
+			<title>[COLOR red]Pair and Authorize Debrid[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
@@ -23,7 +23,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/pair.png</thumbnail>
 		</plugin>
 		<item>
-			<title>[COLOR gold]Settings[/COLOR]</title>
+			<title>[COLOR gold]Salty Settings[/COLOR]</title>
 			<mysettings>0/0</mysettings>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
@@ -32,7 +32,7 @@
 			<info>Open the Settings for the addon</info>
 		</item>
 		<dir>
-			<title>[COLOR gold]User Requests[/COLOR]</title>
+			<title>[COLOR gold]User Movie Requests[/COLOR]</title>
 			<meta>
 				<summary>Requests Welcome 20 Cent Charge</summary>
 			</meta>
@@ -50,7 +50,7 @@
 		<dir>
 			<title>[COLOR red]Blamo's Collection[/COLOR] [COLOR gold](Direct Links)[/COLOR]</title>
 			<meta>
-				<summary>Twenty Cents is Twenty Cents</summary>
+				<summary>if its Twenty Cents for me its Twenty Cents for you</summary>
 			</meta>
 			<link>file://blams/oneclick.xml</link>
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/blamoco.jpg</thumbnail>
@@ -88,7 +88,7 @@
 			<thumbnail>special://home/addons/plugin.video.chocolatesaltyballs/icon/actionm.jpg</thumbnail>
 		</dir>
 		<dir>
-			<title>[COLOR gold]20 Cent Real Debrid[/COLOR] [COLOR gold]Movies[/COLOR]</title>
+			<title>[COLOR gold]20 Cent Debrid[/COLOR] [COLOR red]Movies[/COLOR]</title>
 			<meta>
 				<summary>Twenty Cents is Twenty Cents</summary>
 			</meta>
