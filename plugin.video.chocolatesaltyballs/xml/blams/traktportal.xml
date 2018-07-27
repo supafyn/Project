@@ -20,7 +20,7 @@
 		</dir>
 		<dir>
 			<title>My Movie Watchlist</title>
-			<trakt>https://api.trakt.tv/sync/watchlist/shows</trakt>
+			<trakt>https://api.trakt.tv/sync/watchlist/movies</trakt>
 			<thumbnail>https://i.imgur.com/oyGOa3Vl.jpg</thumbnail>
 			<fanart>https://i.imgur.com/zEaS69Ol.png</fanart>
 		</dir>

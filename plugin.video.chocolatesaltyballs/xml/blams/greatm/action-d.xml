@@ -166,21 +166,6 @@
 			<fanart>https://image.tmdb.org/t/p/w1280/4liSXBZZdURI0c1Id1zLJo6Z3Gu.jpg</fanart>
 		</item>
 		<item>
-			<title>Jurassic Park (1993)</title>
-			<meta>
-				<content>movie</content>
-				<imdb>tt0107290</imdb>
-				<title>Jurassic Park</title>
-				<year>1993</year>
-			</meta>
-			<link>
-				<sublink>searchhd</sublink>
-				<sublink>searchsd</sublink>
-			</link>
-			<thumbnail>https://image.tmdb.org/t/p/w1280/c414cDeQ9b6qLPLeKmiJuLDUREJ.jpg</thumbnail>
-			<fanart>https://image.tmdb.org/t/p/w1280/8LZ0r7r2SdJIApRvGo2k6CXHq8x.jpg</fanart>
-		</item>
-		<item>
 			<title>Justice League (2017)</title>
 			<meta>
 				<content>movie</content>
