@@ -117,7 +117,7 @@ class Scraper(scraper.Scraper):
                     result = {'url': scraper_utils.pathify_url(show_url), 'title': scraper_utils.cleanse_title(match_title), 'year': ''}
                     results.append(result)
         elif video_type == VIDEO_TYPES.MOVIE:
-            search_url = scraper_utils.urljoin(self.base_url, '/search/%s/')
+            search_url = scraper_utils.urljoin(self.base_url, '/search/')
             search_title = re.sub('[^A-Za-z0-9 ]', '', title.lower())
             search_url = search_url % (urllib.quote_plus(search_title))
             headers = {'User-Agent': LOCAL_UA}

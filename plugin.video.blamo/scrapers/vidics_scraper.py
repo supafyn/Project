@@ -45,7 +45,7 @@ class Scraper(scraper.Scraper):
 
     @classmethod
     def get_name(cls):
-        return 'vidics.ch'
+        return 'Vidics'
 
     def resolve_link(self, link):
         url = scraper_utils.urljoin(self.base_url, link)
@@ -62,7 +62,7 @@ class Scraper(scraper.Scraper):
         if not source_url or source_url == FORCE_NO_MATCH: return hosters
         url = scraper_utils.urljoin(self.base_url, source_url)
         headers = {'Referer': self.base_url}
-        html = self._http_get(url, headers=headers, cache_limit=.5)
+        html = self._http_get(url, headers=headers, cache_limit=15)
         for _attrs, fragment in dom_parser2.parse_dom(html, 'div', {'class': 'lang'}):
             section_label = dom_parser2.parse_dom(fragment, 'div', {'title': re.compile('Language Flag\s+[^"]*')})
             lang, subs = self.__get_section_label(section_label)
@@ -93,7 +93,7 @@ class Scraper(scraper.Scraper):
     def search(self, video_type, title, year, season=''):  # @UnusedVariable
         search_url = '/Category-FilmsAndTV/Genre-Any/Letter-Any/ByPopularity/1/Search-%s.htm' % (urllib.quote(title))
         search_url = scraper_utils.urljoin(self.base_url, search_url)
-        html = self._http_get(search_url, cache_limit=8)
+        html = self._http_get(search_url, cache_limit=10)
 
         results = []
         for _attrs, result in dom_parser2.parse_dom(html, 'div', {'class': 'searchResult'}):
@@ -115,7 +115,7 @@ class Scraper(scraper.Scraper):
         title_pattern = 'href="(?P<url>[^"]+).*?class="episode_title">\s*-\s*(?P<title>.*?)\s+\('
         airdate_pattern = 'href="([^"]+)(?:[^>]+>){2}[^<][^<]+\({year} {month_name} {p_day}\)'
         show_url = scraper_utils.urljoin(self.base_url, show_url)
-        html = self._http_get(show_url, headers={'Referer': self.base_url}, cache_limit=2)
+        html = self._http_get(show_url, headers={'Referer': self.base_url}, cache_limit=15)
         parts = dom_parser2.parse_dom(html, 'div', {'class': 'season'})
         fragment = '\n'.join(part.content for part in parts)
         return self._default_get_episode_url(fragment, video, episode_pattern, title_pattern, airdate_pattern)

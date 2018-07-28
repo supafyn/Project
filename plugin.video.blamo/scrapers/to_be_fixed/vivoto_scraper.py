@@ -21,8 +21,6 @@ import urlparse
 import kodi
 import log_utils  # @UnusedImport
 import dom_parser2
-import requests
-from deaths_lib import cfscrape
 from deaths_lib import scraper_utils
 from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import QUALITIES
@@ -66,7 +64,7 @@ class Scraper(scraper.Scraper):
         source_url = self.get_url(video)
         if not source_url or source_url == FORCE_NO_MATCH: return hosters
         page_url = scraper_utils.urljoin(self.base_url, source_url)
-        html = requests.get(page_url, cache_limit=.1)
+        html = self._http_get(page_url, cache_limit=.5)
         page_quality = dom_parser2.parse_dom(html, 'dd', {'class': 'status'})
         if page_quality:
             page_quality = QUALITY_MAP.get(page_quality[0].content, QUALITIES.HIGH)
@@ -109,7 +107,7 @@ class Scraper(scraper.Scraper):
         results = []
         search_url = scraper_utils.urljoin(self.base_url, '/search/%s.html')
         search_url = search_url % (urllib.quote_plus(title))
-        html = self._http_get(search_url, cache_limit=5)
+        html = self._http_get(search_url, cache_limit=1)
         fragment = dom_parser2.parse_dom(html, 'div', {'class': 'movie'})
         if not fragment: return results
         

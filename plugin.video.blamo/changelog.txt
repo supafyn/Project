@@ -1,3 +1,7 @@
+[B]Version 2.6.2[/B]]
+- Updated 20 Cents code lol
+- Tweaks to some things
+- Scraper fixed removed few things
 [B]Version 2.6.0[/B]]
 -Few scraper fixed
 - Tweaks to code

@@ -27,7 +27,7 @@ from deaths_lib.constants import QUALITIES
 import scraper
 
 logger = log_utils.Logger.get_logger(__name__)
-BASE_URL = 'http://series9.online'
+BASE_URL = 'https://www2.series9.io'
 Q_MAP = {'TS': QUALITIES.LOW, 'CAM': QUALITIES.LOW, 'HDTS': QUALITIES.LOW, 'HD-720P': QUALITIES.HD720}
 
 class Scraper(scraper.Scraper):
@@ -103,7 +103,7 @@ class Scraper(scraper.Scraper):
 
     def search(self, video_type, title, year, season=''):
         results = []
-        search_url = scraper_utils.urljoin(self.base_url, '/movie/search/')
+        search_url = scraper_utils.urljoin(self.base_url, '/?s=')
         title = re.sub('[^A-Za-z0-9 ]', '', title)
         title = re.sub('\s+', '-', title)
         search_url += title

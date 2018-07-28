@@ -132,8 +132,9 @@ class Scraper(scraper.Scraper):
         return self._default_get_episode_url(season_url, video, episode_pattern)
     
     def search(self, video_type, title, year, season=''):
-        search_url = urlparse.urljoin(self.base_url, '/search/%s.html')
-        search_url = search_url % (urllib.quote_plus(title))
+        search_url = urlparse.urljoin(self.base_url, '/search/kw.html')
+        search_title = title.replace(' ', '-')
+        search_url = search_url % (urllib.quote_plus(search_title,title))
         html = self._http_get(search_url, cache_limit=8)
         results = []
         for thumb in dom_parser.parse_dom(html, 'div', {'class': 'thumb'}):

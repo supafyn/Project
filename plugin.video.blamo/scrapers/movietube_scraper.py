@@ -27,7 +27,7 @@ from deaths_lib.constants import QUALITIES
 import scraper
 
 
-BASE_URL = 'http://movietube.top'
+BASE_URL = 'http://www.movietubenow.bz'
 QUALITY_MAP = {'CAMRIP': QUALITIES.MEDIUM, 'HD': QUALITIES.HD720, '720 BLURAY': QUALITIES.HD720}
 
 class Scraper(scraper.Scraper):

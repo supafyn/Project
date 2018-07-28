@@ -51,7 +51,7 @@ class Scraper(scraper.Scraper):
     def resolve_link(self, link):
         if not link.startswith('http'):
             link = scraper_utils.urljoin(self.base_url, link)
-            html = self._http_get(link, cache_limit=.25)
+            html = self._http_get(link, cache_limit=15)
             fragment = dom_parser2.parse_dom(html, 'div', {'id': 'media-player'})
             if not fragment:
                 fragment = dom_parser2.parse_dom(html, 'div', {'id': 'player'})
@@ -82,7 +82,7 @@ class Scraper(scraper.Scraper):
         hosters = []
         if not source_url or source_url == FORCE_NO_MATCH: return hosters
         url = scraper_utils.urljoin(self.base_url, source_url)
-        html = self._http_get(url, cache_limit=8)
+        html = self._http_get(url, cache_limit=10)
         hosts = [r.content for r in dom_parser2.parse_dom(html, 'p', {'class': 'server_servername'})]
         links = [r.content for r in dom_parser2.parse_dom(html, 'p', {'class': 'server_play'})]
         for host, link_frag in zip(hosts, links):
@@ -122,7 +122,7 @@ class Scraper(scraper.Scraper):
         if match:
             data = {'link': match.group(1)}
             headers = {'Referer': link}
-            html = self._http_get(GK_URL, data=data, headers=headers, cache_limit=.5)
+            html = self._http_get(GK_URL, data=data, headers=headers, cache_limit=5)
             js_data = scraper_utils.parse_json(html, data)
             for link in js_data.get('link', []):
                 sources.append({'host': '', 'link': link['link']})
@@ -139,7 +139,7 @@ class Scraper(scraper.Scraper):
     def search(self, video_type, title, year, season=''):  # @UnusedVariable
         results = []
         search_url = scraper_utils.urljoin(self.base_url, '/search-movies/%s.html' % (urllib.quote_plus(title)))
-        html = self._http_get(search_url, cache_limit=8)
+        html = self._http_get(search_url, cache_limit=20)
         for _attrs, item in dom_parser2.parse_dom(html, 'li', {'class': 'item'}):
             match_url = dom_parser2.parse_dom(item, 'a', req='href')
             match_title_year = re.search('onmouseover="([^"]+)', item)
