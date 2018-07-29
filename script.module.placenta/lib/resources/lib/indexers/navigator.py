@@ -39,12 +39,12 @@ class navigator:
     LOCALNEWS     = os.path.join(THISADDONPATH, 'whatsnew.txt')
     
     def root(self):
-        self.addDirectoryItem('[COLOR=orange]Title search (TV)[/COLOR]', 'tvSearchnew', 'search.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('[COLOR=orange]Title search (Movies)[/COLOR]', 'movieSearchnew', 'search.png', 'DefaultMovies.png')
-        self.addDirectoryItem('[COLOR=orange]Recent searches (TV)[/COLOR]', 'tvSearch', 'search.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('[COLOR=orange]Recent searches (Movies)[/COLOR]', 'movieSearch', 'search.png', 'DefaultMovies.png')
-        self.addDirectoryItem('[COLOR=orange]People search (TV)[/COLOR]', 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('[COLOR=orange]People search (Movies)[/COLOR]', 'moviePerson', 'people-search.png', 'DefaultMovies.png')
+        self.addDirectoryItem('[COLOR=orange]TV: Title search[/COLOR]', 'tvSearchnew', 'search.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('[COLOR=orange]TV: Recent searches[/COLOR]', 'tvSearch', 'search.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('[COLOR=orange]TV: People search[/COLOR]', 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('[COLOR=orange]Movies: Title search[/COLOR]', 'movieSearchnew', 'search.png', 'DefaultMovies.png')
+        self.addDirectoryItem('[COLOR=orange]Movies: Recent searches[/COLOR]', 'movieSearch', 'search.png', 'DefaultMovies.png')
+        self.addDirectoryItem('[COLOR=orange]Movies: People search[/COLOR]', 'moviePerson', 'people-search.png', 'DefaultMovies.png')
         self.addDirectoryItem('[COLOR=green]News and Updates[/COLOR]', 'newsNavigator', 'tools.png', 'DefaultAddonProgram.png')
         self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
