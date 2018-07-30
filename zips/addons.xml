@@ -73,6 +73,21 @@
   </extension>
 </addon>
 
+<addon id="plugin.program.mrondemandwizard" name="MrOnDemand Wizard" version="2.1.0.a" provider-name="MrOnDemand">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">MrOnDemandWizard</summary>
+    <description lang="en">MrOnDemand allows you to get access to the latest MrOnDemand Custom Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.59" provider-name="spoyser">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
@@ -141,21 +156,6 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Terrorize Wizard</summary>
     <description lang="en">Terrorize Wizard allows you to get access to the latest Terrorize Custom Builds.</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.tvguidewizard" name="tvguidewizard" version="2.0.a" provider-name="Mr. On Demand">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">tvguidewizard</summary>
-    <description lang="en">Mr. On Demand's Wizards allows you to get access to the latest Custom Builds from Mr. On Demand</description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -600,7 +600,7 @@ This is a Non-profit resource, organized solely for educational purposes which i
 
 <addon
   id="plugin.video.SportsDevil"
-  version="2017.12.03"
+  version="2018.04.11"
   name="SportsDevil"
   provider-name="SportsDevil">
   <requires>
@@ -609,22 +609,19 @@ This is a Non-profit resource, organized solely for educational purposes which i
    <import addon="script.module.simplejson" />
    <import addon="script.module.six" />
    <import addon="script.module.requests" />
-   <import addon="script.module.livestreamer" />
-   <!-- <import addon="script.video.F4mProxy" /> -->
-   <!-- <import addon="plugin.video.f4mTester" /> -->
+   <import addon="script.module.streamlink.base" />
+   <import addon="plugin.video.f4mTester" />
   </requires>
   <extension
     point="xbmc.python.pluginsource"
     library="default.py">
    <provides>video</provides>
   </extension>
-  <extension point="xbmc.service" library="service/proxy_service.py" start="startup" />
+  <extension point="xbmc.service" library="service/streamlink_proxy.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">SportsDevil addon</summary>
     <description lang="en">Play videos of different ad-financed sports streaming sites.</description>
-    <description lang="he">נגן סרטונים של אתרי ספורט שונים הממומנים על ידי מודעות.</description>
-    <disclaimer lang="en">SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme.</disclaimer>
-    <disclaimer lang="he">SportsDevil אינו מספק שום הזרמה; איכות הזרם, התוכן וזכויות היוצרים הם באחריות אתר האינטרנט הממומן על ידי המודעה. לעדכונים בדוק את קובץ readme</disclaimer>
+	<disclaimer lang="en">SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme.</disclaimer>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
