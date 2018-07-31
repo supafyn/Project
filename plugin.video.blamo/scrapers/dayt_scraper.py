@@ -76,8 +76,8 @@ class Scraper(scraper.Scraper):
 
     def search(self, video_type, title, year, season=''):  # @UnusedVariable
         results = []
-        page_url = scraper_utils.urljoin(self.base_url, '/movies/search.php')
-        html = self._http_get(page_url, params={'dayq': title}, cache_limit=48)
+        page_url = scraper_utils.urljoin(self.base_url, '/search.php')
+        html = self._http_get(page_url, params={'dayq': title}, cache_limit=60)
         html = re.sub('<!--.*?-->', '', html)
         norm_title = scraper_utils.normalize_title(title)
         for _attrs, td in dom_parser2.parse_dom(html, 'td', {'class': 'topic_content'}):
@@ -87,7 +87,7 @@ class Scraper(scraper.Scraper):
 
             match_url = match_url[0].attrs['href']
             match_title_year = match_title_year[0].attrs['alt']
-            if not match_url.startswith('/'): match_url = '/movies/' + match_url
+            # if not match_url.startswith('/'): match_url = '/tvseries/' + match_url
             match_title, match_year = scraper_utils.extra_year(match_title_year)
             if (norm_title in scraper_utils.normalize_title(match_title)) and (not year or not match_year or year == match_year):
                 result = {'url': scraper_utils.pathify_url(match_url), 'title': scraper_utils.cleanse_title(match_title), 'year': match_year}

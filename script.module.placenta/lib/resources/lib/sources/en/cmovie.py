@@ -18,6 +18,7 @@ from resources.lib.modules import client
 from resources.lib.modules import cleantitle
 from resources.lib.modules import directstream
 from resources.lib.modules import dom_parser2
+from resources.lib.modules import cfscrape
 
 class source:
     def __init__(self):
@@ -26,6 +27,7 @@ class source:
         self.domains = ['cutemovie.net']
         self.base_link = 'http://cutemovie.net/'
         self.movies_search_path = ('search-movies/%s.html')
+        self.scraper = cfscrape.create_scraper()
 
     def movie(self, imdb, title, localtitle, aliases, year):
         try:

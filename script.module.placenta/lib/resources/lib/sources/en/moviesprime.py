@@ -24,7 +24,7 @@ class source:
     def __init__(self):
         self.priority = 1
         self.language = ['en']
-        self.domains = ['https://www.moviesprimeonline.net/']
+        self.domains = ['https://www.moviesprimeonline.site/']
         self.base_link = '/?s=%s'
 
 

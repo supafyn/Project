@@ -48,7 +48,7 @@ class source:
         self.language = ['en']
         self.domains = ['solarmoviez.to', 'solarmoviez.ru']
         self.base_link = 'https://solarmoviez.ru/'
-        self.search_link = '/movie/search/%s.html'
+        self.search_link = '/search/%s.html'
         self.info_link = '/ajax/movie_info/%s.html?is_login=false'
         self.server_link = '/ajax/v4_movie_episodes/%s'
         self.embed_link = '/ajax/movie_embed/%s'

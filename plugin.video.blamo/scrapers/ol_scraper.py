@@ -26,7 +26,7 @@ from deaths_lib.constants import VIDEO_TYPES
 from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import QUALITIES
 
-BASE_URL = 'http://openloadmovies.tv'
+BASE_URL = 'https://openloadmovies.tv'
 Q_MAP = {'HD': QUALITIES.HD720, 'DVD': QUALITIES.HIGH, 'CAM': QUALITIES.LOW}
 
 class Scraper(scraper.Scraper):

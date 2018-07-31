@@ -1,6 +1,6 @@
 """
     Death Streams Addon
-    Copyright (C) 2017 Mr Blamo.Blamo
+    Copyright (C) 2017 Mr.Blamo
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -28,8 +28,8 @@ import scraper
 
 logger = log_utils.Logger.get_logger()
 
-BASE_URL = 'https://tvshows-hdtv.org'
-EP_PAGE = '/index.html'
+BASE_URL = 'http://tvshows-hdtv.org'
+EP_PAGE = '/_new.episodes.%s.html'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

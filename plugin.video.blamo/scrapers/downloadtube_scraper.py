@@ -30,7 +30,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import Q_ORDER
 from deaths_lib.constants import XHR
 
-BASE_URL = 'https://mydownloadtube.to'
+BASE_URL = 'https://www1.mydownloadtube.tv/'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

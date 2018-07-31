@@ -24,7 +24,7 @@ class source:
         self.language = ['en']
         self.domain = 'soaptv.me'
         self.base_link = 'https://soaptv.me/'
-        self.search_link = 'https://soaptv.me/index.php?do=search'
+        self.search_link = 'https://soaptv.me/index.php?name=search'
         self.headers = {'referer':'https://soaptv.me'}
 
 

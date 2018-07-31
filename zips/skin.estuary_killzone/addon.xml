@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary_killzone" version="1.6.1" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
+<addon id="skin.estuary_killzone" version="1.6.3" name="Estuary KillZone MOD" provider-name="phil65, SchisM, MR Blamo">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="script.grab.fanart" />

@@ -28,8 +28,8 @@ from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
 
-BASE_URL = 'http://movieocean.net'
-SEARCH_URL = '/?s=%s'
+BASE_URL = 'https://hdmovie14.website/'
+SEARCH_URL = '/?s='
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

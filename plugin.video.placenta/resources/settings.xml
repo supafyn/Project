@@ -264,6 +264,10 @@
         <setting id="ororo.user" type="text" label="32304" default="" />
         <setting id="ororo.pass" type="text" option="hidden" label="32307" default="" />
         <setting type="sep" />
+        <setting type="lsep" label="Gostream" />
+        <setting id="gostream.user" type="text" label="32303" default="" />
+        <setting id="gostream.pass" type="text" label="32307" default="" />
+        <setting type="sep" />
         <setting type="lsep" label="SerienStream.to" />
         <setting id="serienstream.user" type="text" label="32304" default="" />
         <setting id="serienstream.pass" type="text" label="32307" default="" />
@@ -275,7 +279,19 @@
         <setting type="lsep" label="PRON" />
         <setting id="pron.api" type="text" label="32309" default="" />
         <setting id="pron.limit" type="labelenum" label="32581" default="10" values="10|20|30|40|50|60|70|80|90|100|150|200" />
-        <setting id="pron.download" type="bool" label="32009" default="false" />        
+        <setting id="pron.download" type="bool" label="32009" default="false" />
+        <setting type="sep" />
+        <setting type="lsep" label="Chillax.ws" />
+        <setting type="lsep" label="Security Warning: Chillax does not use SSL" />
+        <setting type="lsep" label="Your login details are not protected" />
+        <setting id="chillax.username" type="text" label="32303" default="" />
+        <setting id="chillax.password" type="text" option="hidden" label="32307" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="Furk.net" />
+        <setting id="furk.user_name" type="text" label="Furk Username" default="" />
+        <setting id="furk.user_pass" type="text" label="Furk Password" option="hidden" default="" />
+        <setting id="furk.api" type="text" label="Furk API Key" default="" />
+        <setting id="furk.limit" label="Limit results" type="slider" default="25" range="5,5,200" option="int" />
     </category>
     <category label="32541">
         <setting id="library.movie" type="folder" label="32543" default="special://userdata/addon_data/plugin.video.placenta/Movies" />

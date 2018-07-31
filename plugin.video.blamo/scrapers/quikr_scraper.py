@@ -30,8 +30,8 @@ import scraper
 
 logger = log_utils.Logger.get_logger(__name__)
 
-BASE_URL = 'https://quikrmovies.to'
-DIRECT_HOSTS = ['quikr.stream', 'openload.stream', 'qvideos.stream']
+BASE_URL = 'https://quikrmovies.to/'
+DIRECT_HOSTS = ['quikr.stream', 'openload.co', 'qvideos.stream', 'downace.com', 'vidoza.net']
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL

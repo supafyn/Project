@@ -28,7 +28,7 @@ from deaths_lib.constants import FORCE_NO_MATCH
 from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
-BASE_URL = 'http://bestrls.net'
+BASE_URL = 'http://bestrls.xyz'
 SEARCH_URL = '?s=%s+%s&go=Search'
 
 class Scraper(scraper.Scraper):

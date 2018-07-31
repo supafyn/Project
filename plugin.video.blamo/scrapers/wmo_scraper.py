@@ -24,7 +24,7 @@ from deaths_lib.constants import QUALITIES
 from deaths_lib.constants import VIDEO_TYPES
 import scraper
 
-BASE_URL = 'http://watchmovies-online.org'
+BASE_URL = 'http://watchmoviesonline.co/'
 
 class Scraper(scraper.Scraper):
     base_url = BASE_URL
