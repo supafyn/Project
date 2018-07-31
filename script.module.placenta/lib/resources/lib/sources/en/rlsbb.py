@@ -73,13 +73,8 @@ class source:
 
             if debrid.status() == False: raise Exception()
 
-            data = urlparse.parse_qs(url)
-            #log_utils.log("***** data = ")
-            #log_utils.log(data)            
-            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
-            #log_utils.log("***** data = ")
-            #log_utils.log(data)
-            #log_utils.log("***** premDate = " + premDate)          
+            data = urlparse.parse_qs(url)         
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])        
             title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
             hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
             
@@ -92,13 +87,11 @@ class source:
             query = query.replace("  ", " ")
             query = query.replace(" ", "-")
             
-            #log_utils.log("***** query = " + query)
             url = self.search_link % urllib.quote_plus(query)
             url = urlparse.urljoin(self.base_link, url)
 
             url = "http://rlsbb.ru/" + query                                # this overwrites a bunch of previous lines!
-            #log_utils.log("***** url = " + url)
-            if 'tvshowtitle' not in data: url = url + "-1080p"
+            if 'tvshowtitle' not in data: url = url + "-1080p"				# NB: I don't think this works anymore! 2b-checked. 
 
             r = client.request(url)                                         # curl as DOM object
             
@@ -122,14 +115,12 @@ class source:
                 premDate = re.sub('[ \.]','-',data['premiered'])                            # date looks usually YYYY-MM-DD but dunno if always
                 query = re.sub('[\\\\:;*?"<>|/\-\']', '', data['tvshowtitle'])              # quadruple backslash = one backslash :p
                 query = query.replace("&", " and ").replace("  ", " ").replace(" ", "-")    # throw in extra spaces around & just in case
-                query = query + "-" + premDate              
-                #log_utils.log("***** cleanup v2 title = " + query)             
+                query = query + "-" + premDate                      
                 
                 url = "http://rlsbb.ru/" + query            
                 url = url.replace('The-Late-Show-with-Stephen-Colbert','Stephen-Colbert')   # 
                 #url = url.replace('Some-Specific-Show-Title-No2','Scene-Title2')           # shows I want...
                 #url = url.replace('Some-Specific-Show-Title-No3','Scene-Title3')           #         ...but theTVDB title != Scene release
-                #log_utils.log("***** date-based url = " + url) 
 
                 r = client.request(url)
                 
@@ -142,7 +133,6 @@ class source:
                     for i in u:                                             # foreach href url
                         try:
                             name = str(i)
-                            #log_utils.log("***** name (href) = " + name)
                             if hdlr in name.upper(): items.append(name)
                             elif premDate in name.replace(".","-"): items.append(name)      # s00e00 serial failed: try again with YYYY-MM-DD
                             # NOTE: the vast majority of rlsbb urls are just hashes! Future careful link grabbing would yield 2x or 3x results
