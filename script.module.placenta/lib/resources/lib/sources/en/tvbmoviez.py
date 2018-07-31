@@ -26,7 +26,7 @@ class source:
         self.language = ['en']
         self.domains = ['best-moviez.ws']
         self.base_link = 'http://www.best-moviez.ws'
-        self.search_link = '/?s=%s&submit=Search'
+        self.search_link = 'https://www.google.com/url?q=https://www.best-moviez.ws/'
 
 
     def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):

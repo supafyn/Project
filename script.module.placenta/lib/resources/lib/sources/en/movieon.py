@@ -24,7 +24,7 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['moviesonline.la']
-        self.base_link = 'http://www1.moviesonline.la/'
+        self.base_link = 'http://www2.moviesonline.la/'
         self.search_link = '/search-movies/%s.html'
 
 
