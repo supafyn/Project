@@ -40,7 +40,6 @@ class source:
         # $.ajax({ type: "POST",  url: "https://gomostream.com/getv2.php" .....
         
     def movie(self, imdb, title, localtitle, aliases, year):
-        url = {'title': title, 'year': year}
         try:
             url = {'title': title, 'year': year}
             return urllib.urlencode(url)
