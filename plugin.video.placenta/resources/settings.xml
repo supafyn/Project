@@ -266,11 +266,11 @@
         <setting type="sep" />
         <setting type="lsep" label="Gostream" />
         <setting id="gostream.user" type="text" label="32303" default="" />
-        <setting id="gostream.pass" type="text" label="32307" default="" />
+        <setting id="gostream.pass" type="text" option="hidden" label="32307" default="" />
         <setting type="sep" />
         <setting type="lsep" label="SerienStream.to" />
         <setting id="serienstream.user" type="text" label="32304" default="" />
-        <setting id="serienstream.pass" type="text" label="32307" default="" />
+        <setting id="serienstream.pass" type="text" option="hidden" label="32307" default="" />
         <setting type="sep" />
         <setting type="lsep" label="Seriesever.net" />
         <setting id="seriesever.user" type="text" label="32303" default="" />
