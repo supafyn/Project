@@ -73,12 +73,11 @@ class source:
 
             if debrid.status() == False: raise Exception()
 
-            data = urlparse.parse_qs(url)
-            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
-
+            data = urlparse.parse_qs(url)         
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])        
             title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
             hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
-
+            
             query = '%s S%02dE%02d' % (
             data['tvshowtitle'], int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (
             data['title'], data['year'])
@@ -87,16 +86,15 @@ class source:
             query = query.replace("&", "and")
             query = query.replace("  ", " ")
             query = query.replace(" ", "-")
-
+            
             url = self.search_link % urllib.quote_plus(query)
             url = urlparse.urljoin(self.base_link, url)
 
-            url = "http://rlsbb.ru/" + query
+            url = "http://rlsbb.ru/" + query                                # this overwrites a bunch of previous lines!
+            if 'tvshowtitle' not in data: url = url + "-1080p"				# NB: I don't think this works anymore! 2b-checked. 
 
-            if 'tvshowtitle' not in data: url = url + "-1080p"
-
-            r = client.request(url)
-
+            r = client.request(url)                                         # curl as DOM object
+            
             if r == None and 'tvshowtitle' in data:
                 season = re.search('S(.*?)E', hdlr)
                 season = season.group(1)
@@ -109,16 +107,35 @@ class source:
                 url = "http://rlsbb.ru/" + query
                 r = client.request(url)
 
-            posts = client.parseDOM(r, "div", attrs={"class": "content"})
-            hostDict = hostprDict + hostDict
+            if r == None and 'tvshowtitle' in data:                                         # s00e00 serial failed: try again with YYYY-MM-DD
+                # http://rlsbb.ru/the-daily-show-2018-07-24                                 ... example landing urls
+                # http://rlsbb.ru/stephen-colbert-2018-07-24                                ... case and "date dots" get fixed by rlsbb
+                #query= re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)','',data['tvshowtitle'])   # this RE copied from above is just trash
+                
+                premDate = re.sub('[ \.]','-',data['premiered'])                            # date looks usually YYYY-MM-DD but dunno if always
+                query = re.sub('[\\\\:;*?"<>|/\-\']', '', data['tvshowtitle'])              # quadruple backslash = one backslash :p
+                query = query.replace("&", " and ").replace("  ", " ").replace(" ", "-")    # throw in extra spaces around & just in case
+                query = query + "-" + premDate                      
+                
+                url = "http://rlsbb.ru/" + query            
+                url = url.replace('The-Late-Show-with-Stephen-Colbert','Stephen-Colbert')   # 
+                #url = url.replace('Some-Specific-Show-Title-No2','Scene-Title2')           # shows I want...
+                #url = url.replace('Some-Specific-Show-Title-No3','Scene-Title3')           #         ...but theTVDB title != Scene release
+
+                r = client.request(url)
+                
+            posts = client.parseDOM(r, "div", attrs={"class": "content"})   # get all <div class=content>...</div>
+            hostDict = hostprDict + hostDict                                # ?
             items = []
             for post in posts:
                 try:
-                    u = client.parseDOM(post, 'a', ret='href')
-                    for i in u:
+                    u = client.parseDOM(post, 'a', ret='href')              # get all <a href=..... </a>
+                    for i in u:                                             # foreach href url
                         try:
                             name = str(i)
                             if hdlr in name.upper(): items.append(name)
+                            elif premDate in name.replace(".","-"): items.append(name)      # s00e00 serial failed: try again with YYYY-MM-DD
+                            # NOTE: the vast majority of rlsbb urls are just hashes! Future careful link grabbing would yield 2x or 3x results
                         except:
                             pass
                 except:
@@ -155,6 +172,7 @@ class source:
                     host = client.replaceHTMLCodes(host)
                     host = host.encode('utf-8')
                     sources.append({'source': host, 'quality': quality, 'language': 'en', 'url': host2, 'info': info, 'direct': False, 'debridonly': True})
+                    # why is this hardcoded to debridonly=True? seems like overkill but maybe there's a resource-management reason?
                 except:
                     pass
             check = [i for i in sources if not i['quality'] == 'CAM']

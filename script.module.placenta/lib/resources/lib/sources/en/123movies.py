@@ -26,12 +26,19 @@ class source:
         self.language = ['en']
         self.domains = ['123movies.ph']
         self.base_link = 'https://123movies.ph/'
-        self.source_link = 'https://putstream.win'
+        self.source_link = 'https://123movies.ph/'
         self.episode_path = '/episodes/%s-%sx%s/'
-        self.movie_path = '/movies/%s-watch-online-free-123movies/'
-        self.decode_file = '/decoding_v2.php'
-        self.grabber_file = '/get.php'
-
+        self.movie_path0 = '/movies/%s-watch-online-free-123movies-%s/'
+        self.movie_path = '/movies/%s/'
+#       self.decode_file = '/decoding_v2.php'
+#       self.decode_file = '/decoding_v3.php'
+        self.decode_file = 'https://gomostream.com/decoding_v3.php'
+#       self.grabber_file = '/get.php'
+#       self.grabber_file = '/getv2.php'
+        self.grabber_file = 'https://gomostream.com/getv2.php'
+        # $.ajax({ type: "POST",  url: "https://gomostream.com/decoding_v3.php" .....
+        # $.ajax({ type: "POST",  url: "https://gomostream.com/getv2.php" .....
+        
     def movie(self, imdb, title, localtitle, aliases, year):
         try:
             url = {'title': title, 'year': year}
@@ -78,8 +85,13 @@ class source:
             response = client.request(url)
 
             token = re.findall('var tc = \'(.+?)\'', response)[0]
-            seeds = re.findall('_tsd_tsd\(s\) .+\.slice\((.+?),(.+?)\).+ return .+? \+ \"(.+?)\"\+\"(.+?)";', response)[0]
+            
+            # _tsd_tsd_ds(s) ~~~  .slice(3,29) ~~~~ "29"+"341404";   <----- seeds phrase has changed
+#           seeds = re.findall('_tsd_tsd\(s\) .+\.slice\((.+?),(.+?)\).+ return .+? \+ \"(.+?)\"\+\"(.+?)";', response)[0]
+            seeds = re.findall('_tsd_tsd_ds\(s\) .+\.slice\((.+?),(.+?)\).+ return .+? \+ \"(.+?)\"\+\"(.+?)\";', response)[0]
             pair = re.findall('\'type\': \'.+\',\s*\'(.+?)\': \'(.+?)\'', response)[0]
+            
+            
 
             header_token = self.__xtoken(token, seeds)
             body = 'tokenCode=' + token
@@ -89,14 +101,16 @@ class source:
                 'x-token': header_token
             }
 
-            url = urlparse.urljoin(self.source_link, self.decode_file)
+            url = self.decode_file
             response = client.request(url, XHR=True, post=body, headers=headers)
 
             sources_dict = json.loads(response)
 
+#           [u'https://video.xx.fbcdn.net/v/t42.9040-2/10000000_226259417967008_8033841240334139392_n.mp4?_nc_cat=0&efg=eyJybHIiOjE1MDAsInJsYSI6NDA5NiwidmVuY29kZV90YWciOiJzdmVfaGQifQ%3D%3D&rl=1500&vabr=616&oh=27f4d11aec3aa54dbe1ca72c81fbaa03&oe=5B4C6DF5', u'https://movienightplayer.com/tt0253754', u'https://openload.co/embed/ALXqqto-fQI', u'https://streamango.com/embed/pndcsolkpnooffdk']
             for source in sources_dict:
                 try:
-                    if 'vidushare.com' in source:
+#                   if 'vidushare.com' in source:
+                    if '.mp4' in source:
                         sources.append({
                             'source': 'CDN',
                             'quality': 'HD',
@@ -161,8 +175,9 @@ class source:
 
     def __get_movie_url(self, data):
             clean_title = cleantitle.geturl(data['title'])
-            query = self.movie_path % clean_title
-
+            
+            query0 = self.movie_path0 % (clean_title,data['year'])  # the "long" version appears to use year (and its optional)
+            query = self.movie_path % clean_title                   # no fancy stuff should work fine (at least almost always)
             url = urlparse.urljoin(self.base_link, query)
             html = client.request(url)
 
