@@ -25,7 +25,7 @@ class source:
         self.domain = 'furk.net'
         self.meta_search_link = "/api/plugins/metasearch?api_key=%s&q=%s&cached=yes&moderated=yes" \
                                 "&match=all&sort=cached&type=video&offset=0&limit=%s"
-        self.base_link = 'https://www.furk.net/'
+        self.base_link = 'https://www.furk.net'
         self.api_key = control.setting('furk.api')
         self.search_limit = control.setting('furk.limit')
 
